@@ -1,0 +1,13 @@
+pandas
+numpy
+requests
+pyyaml
+aiohttp
+asyncio
+aiofiles
+tqdm
+loguru
+flask
+python-dotenv
+pyinstaller
+pywin32

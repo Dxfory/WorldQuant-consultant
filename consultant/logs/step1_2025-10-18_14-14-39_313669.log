@@ -1,0 +1,1 @@
+2025-10-18 14:19:21.903 | WARNING  | __main__:_simulate_with_retry:195 - 2025-10-18 14:19:21.903397 收到 KeyboardInterrupt，中断当前批次并安全退出。

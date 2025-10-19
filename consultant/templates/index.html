@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>量化因子挖掘平台</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>量化因子挖掘平台</h1>
+            <div class="user-info">
+                用户: {{ user_id }}
+                <button id="logout-btn">注销</button>
+            </div>
+        </div>
+
+        <div class="task-controls">
+            <h2>启动任务</h2>
+            <form id="task-form">
+                <div class="form-group">
+                    <label for="task-select">选择任务:</label>
+                    <select id="task-select" name="task" required>
+                        {% for task in tasks %}
+                            <option value="{{ task }}">{{ task }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div id="task-params"></div>
+
+                <button type="submit">启动任务</button>
+            </form>
+        </div>
+
+        <div class="task-list">
+            <h2>任务列表</h2>
+            <div id="active-tasks"></div>
+        </div>
+
+        <div class="task-logs">
+            <h2>任务日志</h2>
+            <pre id="task-log"></pre>
+        </div>
+    </div>
+
+    <script>
+        // 任务参数配置
+        const taskParams = {
+            'check': [
+                {name: 'mode', label: '模式', type: 'select', options: ['PPAC', 'USER', 'CONSULTANT'], value: 'analyst4'},
+                {name: 'n_jobs', label: '并发数', type: 'number', value: '1'}
+            ],
+            'digging_consultant_1step': [
+                {name: 'dataset_id', label: '数据集ID', type: 'text', value: 'analyst4'},
+                {name: 'region', label: '区域', type: 'select', options: ['USA', 'GLB', 'EUR', 'ASI', 'CHN'], value: 'EUR'},
+                {name: 'delay', label: '延迟', type: 'select', options: [0, 1], value: 1},
+                {name: 'instrumentType', label: '资产类型', type: 'select', options: ['EQUITY', 'CRYPTO'], value: 'EQUITY'},
+                {name: 'universe', label: '投资范围', type: 'text', value: 'TOP2500'},
+                {name: 'n_jobs', label: '并发数', type: 'number', value: '3'}
+            ],
+            'digging_consultant_2step': [
+                {name: 'dataset_id', label: '数据集ID', type: 'text', value: 'analyst4'},
+                {name: 'region', label: '区域', type: 'select', options: ['USA', 'GLB', 'EUR', 'ASI', 'CHN'], value: 'EUR'},
+                {name: 'delay', label: '延迟', type: 'select', options: [0, 1], value: 1},
+                {name: 'instrumentType', label: '资产类型', type: 'select', options: ['EQUITY', 'CRYPTO'], value: 'EQUITY'},
+                {name: 'universe', label: '投资范围', type: 'text', value: 'TOP2500'},
+                {name: 'n_jobs', label: '并发数', type: 'number', value: '2'}
+            ],
+            'digging_consultant_3step': [
+                {name: 'dataset_id', label: '数据集ID', type: 'text', value: 'analyst4'},
+                {name: 'region', label: '区域', type: 'select', options: ['USA', 'GLB', 'EUR', 'ASI', 'CHN'], value: 'EUR'},
+                {name: 'delay', label: '延迟', type: 'select', options: [0, 1], value: 1},
+                {name: 'instrumentType', label: '资产类型', type: 'select', options: ['EQUITY', 'CRYPTO'], value: 'EQUITY'},
+                {name: 'universe', label: '投资范围', type: 'text', value: 'TOP2500'},
+                {name: 'n_jobs', label: '并发数', type: 'number', value: '2'}
+            ],
+            'digging_consultant_4step': [
+                {name: 'dataset_id', label: '数据集ID', type: 'text', value: 'analyst4'},
+                {name: 'region', label: '区域', type: 'select', options: ['USA', 'GLB', 'EUR', 'ASI', 'CHN'], value: 'EUR'},
+                {name: 'delay', label: '延迟', type: 'select', options: [0, 1], value: 1},
+                {name: 'instrumentType', label: '资产类型', type: 'select', options: ['EQUITY', 'CRYPTO'], value: 'EQUITY'},
+                {name: 'universe', label: '投资范围', type: 'text', value: 'TOP2500'},
+                {name: 'n_jobs', label: '并发数', type: 'number', value: '2'}
+            ]
+            // 其他任务的参数配置...
+        };
+
+        // 当前选中的任务ID
+        let currentTaskId = null;
+        let logIntervalId = null;
+
+        // 初始化页面
+        $(document).ready(function() {
+            // 当任务选择变化时，更新参数表单
+            $('#task-select').change(function() {
+                const taskName = $(this).val();
+                updateTaskParams(taskName);
+            });
+
+            // 初始化参数表单
+            updateTaskParams($('#task-select').val());
+
+            // 加载活动任务
+            loadActiveTasks();
+
+            // 定时刷新活动任务列表
+            setInterval(loadActiveTasks, 5000);
+
+            // 提交任务表单
+            $('#task-form').submit(function(e) {
+                e.preventDefault();
+                startTask();
+            });
+
+            // 注销按钮
+            $('#logout-btn').click(function(e) {
+                e.preventDefault();  // 防止默认行为
+                $.post('/logout')
+                    .done(function() {
+                        window.location.href = '/login';
+                    });
+            });
+        });
+
+        // 更新任务参数表单
+        function updateTaskParams(taskName) {
+            const paramsContainer = $('#task-params');
+            paramsContainer.empty();
+
+            if (taskParams[taskName]) {
+                taskParams[taskName].forEach(param => {
+                    const group = $('<div class="form-group"></div>');
+                    const label = $(`<label for="${param.name}">${param.label}:</label>`);
+                    let input;
+
+                    if (param.type === 'select') {
+                        input = $(`<select name="${param.name}" id="${param.name}" required></select>`);
+                        param.options.forEach(option => {
+                            const optionEl = $(`<option value="${option}">${option}</option>`);
+                            if (option === param.value) {
+                                optionEl.attr('selected', true);
+                            }
+                            input.append(optionEl);
+                        });
+                    } else {
+                        input = $(`<input type="${param.type}" name="${param.name}" id="${param.name}" value="${param.value}" required>`);
+                    }
+
+                    group.append(label);
+                    group.append(input);
+                    paramsContainer.append(group);
+                });
+            } else {
+                paramsContainer.append('<p>此任务无需额外参数</p>');
+            }
+        }
+
+        // 启动任务
+        function startTask() {
+            const formData = $('#task-form').serialize();
+
+            $.post('/start_task', formData)
+                .done(function(response) {
+                    currentTaskId = response.task_id;
+                    loadActiveTasks();
+                    monitorTaskLogs(currentTaskId);
+                })
+                .fail(function(xhr) {
+                    if (xhr.status === 401) {
+                        alert('认证失败: ' + xhr.responseJSON.error);
+                    } else {
+                        alert('启动任务失败');
+                    }
+                });
+        }
+
+        // 加载活动任务
+        function loadActiveTasks() {
+            $.get('/tasks')
+                .done(function(tasks) {
+                    const container = $('#active-tasks');
+                    container.empty();
+
+                    if (Object.keys(tasks).length === 0) {
+                        container.append('<p>没有运行中的任务</p>');
+                        return;
+                    }
+
+                    Object.keys(tasks).forEach(taskId => {
+                        const task = tasks[taskId];
+                        const taskEl = $(`
+                            <div class="task-item" data-task-id="${taskId}">
+                                <h3>${task.name} <span class="status ${task.status}">${task.status}</span></h3>
+                                <p>开始时间: ${task.start_time || '未开始'}</p>
+                                <p>结束时间: ${task.end_time || '未结束'}</p>
+                                <div class="task-actions">
+                                    <button class="view-logs" data-task-id="${taskId}">查看日志</button>
+                                </div>
+                            </div>
+                        `);
+                        container.append(taskEl);
+                    });
+
+                    // 添加日志查看事件
+                    $('.view-logs').click(function() {
+                        const taskId = $(this).data('task-id');
+                        currentTaskId = taskId;
+                        monitorTaskLogs(taskId);
+                    });
+
+                });
+        }
+
+        // 监控任务日志
+        function monitorTaskLogs(taskId) {
+            // 清除之前的日志监控
+            if (logIntervalId) {
+                clearInterval(logIntervalId);
+            }
+
+            $('#task-log').text('加载日志中...');
+
+            // 先获取当前所有日志
+            $.get(`/task_logs/${taskId}`)
+                .done(function(data) {
+                    $('#task-log').text(data.logs.join('\n'));
+                    // 自动滚动到底部
+                    const logElement = document.getElementById('task-log');
+                    logElement.scrollTop = logElement.scrollHeight;
+                });
+
+            // 定时更新日志
+            logIntervalId = setInterval(() => {
+                if (currentTaskId !== taskId) {
+                    clearInterval(logIntervalId);
+                    return;
+                }
+
+                $.get(`/task_logs/${taskId}`)
+                    .done(function(data) {
+                        $('#task-log').text(data.logs.join('\n'));
+                        // 自动滚动到底部
+                        const logElement = document.getElementById('task-log');
+                        logElement.scrollTop = logElement.scrollHeight;
+                    });
+            }, 2000);
+        }
+    </script>
+
+    <button onclick="shutdown()">安全关闭</button>
+    <script>
+    function shutdown() {
+        fetch('/shutdown', { method: 'POST' })
+        setTimeout(() => window.close(), 1000)
+    }
+    </script>
+</body>
+</html>
