@@ -9,18 +9,6 @@ Zach｜Quant--WQ  世坤因子挖掘  （submit 检查器）
 - get_alphas 返回健壮解析
 """
 
-"""
-鑫鑫鑫｜Quant--WQ
-世坤因子挖掘
-
-版权所有 ©️ 鑫鑫鑫
-微信: xinxinjijin8
-
-本代码仅供个人学习使用，未经授权不得复制、修改或用于商业用途。
-
-Author: 鑫鑫鑫
-"""
-
 import os
 import time
 import threading
@@ -448,3 +436,4 @@ if __name__ == "__main__":
     print(f"\n>>> 将以模式={mode_in}, n_jobs={n_jobs_in}, start_date>={DEFAULT_START_DATE}, "
           f"chunk_size={DEFAULT_CHUNK_SIZE}, color_exclude_red={COLOR_EXCLUDE_RED} 开始检查…\n")
     run_task(mode_in, n_jobs_in)
+
