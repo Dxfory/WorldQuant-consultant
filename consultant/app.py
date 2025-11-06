@@ -1,12 +1,6 @@
-"""鑫鑫鑫｜Quant--WQ
-世坤因子挖掘
-
-版权所有 ©️ 鑫鑫鑫
-微信: xinxinjijin8
-
-本代码仅供个人学习使用，未经授权不得复制、修改或用于商业用途。
-
-Author: 鑫鑫鑫
+"""
+Zach
+Zheng Xing
 """
 import signal
 
@@ -299,4 +293,5 @@ def open_browser():
 if __name__ == '__main__':
     # 在另一个线程中打开浏览器
     threading.Thread(target=open_browser).start()
+
     app.run(host='0.0.0.0', port=5000, debug=False, use_reloader=False)
