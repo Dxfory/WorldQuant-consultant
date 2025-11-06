@@ -1,13 +1,6 @@
 """
-鑫鑫鑫｜Quant--WQ
-世坤因子挖掘
-
-版权所有 ©️ 鑫鑫鑫
-微信: xinxinjijin8
-
-本代码仅供个人学习使用，未经授权不得复制、修改或用于商业用途。
-
-Author: 鑫鑫鑫
+Zach 
+Zheng Xing
 """
 import os
 import PyInstaller.__main__
@@ -62,4 +55,5 @@ for file in os.listdir('tasks'):
         pyinstaller_args.append(f'--add-data=tasks/{file};tasks')
 
 # 执行打包
+
 PyInstaller.__main__.run(pyinstaller_args)
