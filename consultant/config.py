@@ -1,13 +1,6 @@
 """
-鑫鑫鑫｜Quant--WQ
-世坤因子挖掘
-
-版权所有 ©️ 鑫鑫鑫
-微信: xinxinjijin8
-
-本代码仅供个人学习使用，未经授权不得复制、修改或用于商业用途。
-
-Author: 鑫鑫鑫
+Zach
+Zheng Xing
 """
 import os
 import sys
@@ -71,3 +64,4 @@ UNIVERSE_UNIQUE = ['TOP2000U', 'TOP1200', 'TOP800', 'ILLIQUID_MINVOL1M', 'TOP100
                    'TOPSP500', 'TOP1000', 'TOP3000', 'TOP200', 'MINVOL1M', 'TOP400']
 
 os.makedirs(RECORDS_PATH, exist_ok=True)
+
