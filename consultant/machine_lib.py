@@ -167,7 +167,22 @@ def get_datafields(
     return datafields_df
 
 
-def process_datafields(df, data_type):
+def process_datafields(df, data_type, min_start_date: str = "2016-01-01"):
+    if min_start_date and "startDate" in df.columns:
+        try:
+            cutoff = pd.to_datetime(min_start_date)
+            start_dates = pd.to_datetime(df["startDate"], errors="coerce")
+            valid_mask = start_dates.isna() | (start_dates <= cutoff)
+            removed = (~valid_mask).sum()
+            if removed:
+                print(
+                    f"[process_datafields] {removed} fields skipped: startDate after {min_start_date},",
+                    "likely to avoid long-term NaN exposure.",
+                )
+            df = df.loc[valid_mask]
+        except Exception as exc:
+            print(f"[process_datafields] Failed to filter by startDate ({exc}); using all fields.")
+
     if data_type == "matrix":
         datafields = df[df['type'] == "MATRIX"]["id"].tolist()
     elif data_type == "vector":
