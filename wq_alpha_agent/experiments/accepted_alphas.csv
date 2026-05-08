@@ -1,0 +1,624 @@
+region,universe,decay,neutralization,delay,alpha_expr,sharpe,fitness,turnover,weight_concentration
+USA,TOP3000,4,SUBINDUSTRY,1,rank(close-open),1.34,1.34,0.6,0.5
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_mean(-ts_corr(rank(volume), 10)",1.41,1.41,0.57,0.56
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_rank(-ts_corr(rank(volume), 10)",2.17,1.57,0.55,0.19
+USA,TOP3000,4,SUBINDUSTRY,1,"decay_linear(-ts_corr(rank(volume), 2)",2.5,1.5,0.04,0.74
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_mean(rank(ts_rank(close), 20)",1.56,1.76,0.29,0.45
+USA,TOP3000,4,SUBINDUSTRY,1,"decay_linear(rank(ts_rank(close), 4)",2.76,2.16,0.25,0.64
+USA,TOP3000,4,SUBINDUSTRY,1,"decay_linear(rank(ts_rank(close), 8)",1.4,1.8,0.22,0.74
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_mean(zscore(ts_rank(close), 5)",1.96,1.76,0.09,0.83
+USA,TOP3000,4,SUBINDUSTRY,1,"decay_linear(zscore(ts_rank(close), 8)",2.57,2.17,0.05,0.04
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_mean(ts_mean(ts_rank(close, 10), 5)",1.82,1.42,0.28,0.53
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_rank(ts_mean(ts_rank(close, 10), 5)",2.63,1.23,0.44,0.69
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_rank(ts_mean(ts_rank(close, 10), 20)",2.27,1.47,0.09,0.32
+USA,TOP3000,4,SUBINDUSTRY,1,"decay_linear(ts_mean(ts_rank(close, 10), 4)",1.65,1.85,0.6,0.87
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_mean(ts_rank(ts_rank(close, 20), 20)",2.53,1.73,0.13,0.86
+USA,TOP3000,4,SUBINDUSTRY,1,"decay_linear(ts_rank(ts_rank(close, 20), 4)",2.73,1.13,0.54,0.93
+USA,TOP3000,4,SUBINDUSTRY,1,"decay_linear(ts_rank(ts_rank(close, 20), 8)",2.53,1.13,0.26,0.63
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_mean(rank(rank(close-open)), 5)",1.83,1.83,0.46,0.88
+USA,TOP3000,4,SUBINDUSTRY,1,"decay_linear(rank(rank(close-open)), 8)",2.5,1.3,0.42,0.45
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_rank(ts_mean(rank(close-open), 10), 5)",2.72,1.72,0.28,0.93
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_mean(ts_mean(rank(close-open), 10), 20)",2.34,1.14,0.27,0.85
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_mean(ts_rank(rank(close-open), 20), 10)",1.78,1.98,0.24,0.99
+USA,TOP3000,4,SUBINDUSTRY,1,"decay_linear(ts_rank(rank(close-open), 20), 2)",2.78,1.58,0.29,0.11
+USA,TOP3000,4,SUBINDUSTRY,1,"decay_linear(ts_rank(rank(close-open), 20), 8)",1.94,1.34,0.0,0.3
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_mean(rank(-ts_corr(rank(volume)), 5)",1.23,1.03,0.59,0.02
+USA,TOP3000,4,SUBINDUSTRY,1,"decay_linear(rank(-ts_corr(rank(volume)), 4)",2.27,1.87,0.18,0.67
+USA,TOP3000,4,SUBINDUSTRY,1,"decay_linear(rank(-ts_corr(rank(volume)), 8)",1.63,1.43,0.51,0.1
+USA,TOP3000,4,SUBINDUSTRY,1,zscore(-ts_corr(rank(volume)),1.31,1.51,0.17,0.08
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_mean(ts_mean(-ts_corr(rank(volume), 10), 5)",2.48,1.48,0.34,0.62
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_mean(ts_mean(-ts_corr(rank(volume), 10), 10)",1.61,2.01,0.34,0.63
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_rank(ts_rank(-ts_corr(rank(volume), 20), 10)",2.43,1.23,0.46,0.68
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_rank(ts_rank(-ts_corr(rank(volume), 20), 20)",2.03,1.43,0.1,0.89
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_rank(rank(rank(ts_std_dev(returns), 5)",1.2,1.6,0.11,0.25
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_mean(rank(rank(ts_std_dev(returns), 20)",2.2,1.2,0.55,0.84
+USA,TOP3000,4,SUBINDUSTRY,1,"decay_linear(rank(rank(ts_std_dev(returns), 2)",1.75,1.75,0.06,0.87
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_rank(zscore(rank(ts_std_dev(returns), 5)",2.12,1.32,0.41,0.19
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_rank(zscore(rank(ts_std_dev(returns), 20)",1.75,2.15,0.57,0.35
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_rank(ts_mean(rank(ts_std_dev(returns, 10), 5)",1.92,1.52,0.6,0.12
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_mean(ts_rank(rank(ts_std_dev(returns, 20), 10)",2.44,1.24,0.07,0.86
+USA,TOP3000,4,SUBINDUSTRY,1,"ts_mean(ts_rank(rank(ts_std_dev(returns, 20), 20)",2.64,2.04,0.44,0.46
+USA,TOP3000,4,SECTOR,1,"ts_rank(ts_rank(close, 5)",2.64,1.44,0.4,0.57
+USA,TOP3000,4,SECTOR,1,"decay_linear(ts_rank(close, 8)",1.9,1.3,0.34,0.71
+USA,TOP3000,4,SECTOR,1,"ts_rank(rank(close-open), 10)",1.83,1.43,0.03,0.17
+USA,TOP3000,4,SECTOR,1,"decay_linear(rank(close-open), 2)",1.91,1.11,0.25,0.59
+USA,TOP3000,4,SECTOR,1,"ts_mean(-ts_corr(rank(volume), 5)",1.46,2.06,0.28,0.5
+USA,TOP3000,4,SECTOR,1,"ts_mean(-ts_corr(rank(volume), 20)",2.65,1.65,0.15,0.4
+USA,TOP3000,4,SECTOR,1,"decay_linear(-ts_corr(rank(volume), 2)",1.66,1.86,0.22,0.63
+USA,TOP3000,4,SECTOR,1,"ts_mean(rank(ts_std_dev(returns, 5)",2.1,1.7,0.37,0.07
+USA,TOP3000,4,SECTOR,1,"decay_linear(rank(ts_std_dev(returns, 2)",2.02,1.62,0.36,0.48
+USA,TOP3000,4,SECTOR,1,"ts_mean(rank(ts_rank(close), 5)",1.58,1.98,0.46,0.04
+USA,TOP3000,4,SECTOR,1,"ts_rank(rank(ts_rank(close), 10)",1.93,1.13,0.6,0.94
+USA,TOP3000,4,SECTOR,1,"ts_rank(rank(ts_rank(close), 20)",1.68,2.08,0.26,0.28
+USA,TOP3000,4,SECTOR,1,zscore(ts_rank(close),2.1,2.1,0.45,0.84
+USA,TOP3000,4,SECTOR,1,"decay_linear(zscore(ts_rank(close), 4)",1.39,1.79,0.44,0.27
+USA,TOP3000,4,SECTOR,1,"ts_mean(ts_mean(ts_rank(close, 10), 5)",2.24,1.04,0.3,0.43
+USA,TOP3000,4,SECTOR,1,"decay_linear(ts_mean(ts_rank(close, 10), 8)",2.52,1.92,0.47,0.1
+USA,TOP3000,4,SECTOR,1,"ts_mean(ts_rank(ts_rank(close, 20), 5)",2.21,1.41,0.3,0.49
+USA,TOP3000,4,SECTOR,1,"ts_rank(ts_rank(ts_rank(close, 20), 20)",1.89,2.09,0.38,0.12
+USA,TOP3000,4,SECTOR,1,"decay_linear(ts_rank(ts_rank(close, 20), 4)",1.32,1.32,0.43,0.32
+USA,TOP3000,4,SECTOR,1,"decay_linear(rank(rank(close-open)), 2)",1.28,1.28,0.42,0.73
+USA,TOP3000,4,SECTOR,1,"decay_linear(rank(rank(close-open)), 4)",2.78,1.18,0.59,0.41
+USA,TOP3000,4,SECTOR,1,"ts_rank(zscore(rank(close-open)), 5)",2.04,2.04,0.06,0.07
+USA,TOP3000,4,SECTOR,1,"ts_rank(zscore(rank(close-open)), 10)",2.62,1.62,0.01,0.22
+USA,TOP3000,4,SECTOR,1,"ts_mean(ts_mean(rank(close-open), 10), 10)",2.26,1.86,0.52,0.73
+USA,TOP3000,4,SECTOR,1,"ts_mean(ts_mean(rank(close-open), 10), 20)",2.61,1.41,0.4,0.63
+USA,TOP3000,4,SECTOR,1,"ts_mean(ts_rank(rank(close-open), 20), 5)",2.06,1.46,0.23,0.19
+USA,TOP3000,4,SECTOR,1,"ts_rank(ts_rank(rank(close-open), 20), 10)",2.36,1.16,0.4,0.09
+USA,TOP3000,4,SECTOR,1,"ts_rank(ts_rank(rank(close-open), 20), 20)",1.59,2.19,0.42,0.1
+USA,TOP3000,4,SECTOR,1,"ts_mean(rank(-ts_corr(rank(volume)), 5)",1.34,2.14,0.3,0.38
+USA,TOP3000,4,SECTOR,1,"ts_mean(rank(-ts_corr(rank(volume)), 20)",2.55,2.15,0.35,0.1
+USA,TOP3000,4,SECTOR,1,"ts_mean(zscore(-ts_corr(rank(volume)), 5)",2.51,1.51,0.13,0.15
+USA,TOP3000,4,SECTOR,1,"ts_rank(zscore(-ts_corr(rank(volume)), 5)",2.52,1.52,0.13,0.86
+USA,TOP3000,4,SECTOR,1,"decay_linear(zscore(-ts_corr(rank(volume)), 2)",1.62,1.82,0.26,0.22
+USA,TOP3000,4,SECTOR,1,"ts_mean(ts_mean(-ts_corr(rank(volume), 10), 5)",2.47,1.47,0.12,0.45
+USA,TOP3000,4,SECTOR,1,"ts_rank(ts_mean(-ts_corr(rank(volume), 10), 5)",1.51,1.11,0.54,0.74
+USA,TOP3000,4,SECTOR,1,"ts_rank(ts_mean(-ts_corr(rank(volume), 10), 20)",1.61,1.01,0.17,0.87
+USA,TOP3000,4,SECTOR,1,"decay_linear(ts_mean(-ts_corr(rank(volume), 10), 4)",2.34,1.54,0.06,0.09
+USA,TOP3000,4,SECTOR,1,"ts_mean(ts_rank(-ts_corr(rank(volume), 20), 5)",2.73,2.13,0.16,0.23
+USA,TOP3000,4,SECTOR,1,"ts_mean(ts_rank(-ts_corr(rank(volume), 20), 20)",2.43,2.03,0.07,0.09
+USA,TOP3000,4,SECTOR,1,"ts_rank(ts_rank(-ts_corr(rank(volume), 20), 20)",1.57,1.37,0.46,0.16
+USA,TOP3000,4,SECTOR,1,"decay_linear(ts_rank(-ts_corr(rank(volume), 20), 2)",2.72,1.32,0.58,0.81
+USA,TOP3000,4,SECTOR,1,"ts_mean(zscore(rank(ts_std_dev(returns), 5)",1.44,1.44,0.1,0.8
+USA,TOP3000,4,SECTOR,1,"ts_rank(zscore(rank(ts_std_dev(returns), 10)",1.57,1.57,0.33,0.98
+USA,TOP3000,4,SECTOR,1,"ts_mean(ts_mean(rank(ts_std_dev(returns, 10), 10)",1.31,1.71,0.25,0.32
+USA,TOP3000,4,SECTOR,1,"ts_rank(ts_mean(rank(ts_std_dev(returns, 10), 10)",1.32,2.12,0.6,0.44
+USA,TOP3000,4,SECTOR,1,"decay_linear(ts_mean(rank(ts_std_dev(returns, 10), 8)",1.35,1.55,0.09,0.44
+USA,TOP3000,4,SECTOR,1,"ts_mean(ts_rank(rank(ts_std_dev(returns, 20), 20)",1.37,1.37,0.22,0.73
+USA,TOP3000,4,SECTOR,1,"ts_rank(ts_rank(rank(ts_std_dev(returns, 20), 20)",1.5,1.9,0.45,0.39
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_mean(ts_rank(close, 5)",1.85,1.85,0.12,0.82
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_rank(ts_rank(close, 20)",2.14,1.34,0.07,0.96
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_mean(rank(ts_rank(close), 5)",1.68,1.88,0.31,0.34
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_rank(rank(ts_rank(close), 20)",2.58,1.18,0.26,0.51
+USA,TOP3000,8,SUBINDUSTRY,1,"decay_linear(rank(ts_rank(close), 4)",1.77,2.17,0.15,0.11
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_mean(zscore(ts_rank(close), 5)",1.9,2.1,0.47,0.77
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_mean(zscore(ts_rank(close), 10)",1.63,1.03,0.0,0.1
+USA,TOP3000,8,SUBINDUSTRY,1,"decay_linear(zscore(ts_rank(close), 8)",2.02,1.42,0.1,0.18
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_mean(ts_mean(ts_rank(close, 10), 5)",1.29,1.29,0.21,0.49
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_mean(ts_rank(ts_rank(close, 20), 10)",1.53,1.13,0.03,0.27
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_rank(ts_rank(ts_rank(close, 20), 10)",2.71,1.31,0.33,0.81
+USA,TOP3000,8,SUBINDUSTRY,1,"decay_linear(ts_rank(ts_rank(close, 20), 8)",2.06,1.06,0.06,0.83
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_rank(rank(rank(close-open)), 5)",1.96,1.76,0.3,0.36
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_mean(rank(rank(close-open)), 20)",2.35,1.15,0.1,0.26
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_rank(rank(rank(close-open)), 20)",2.03,1.43,0.53,0.6
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_rank(zscore(rank(close-open)), 20)",1.45,1.65,0.23,0.09
+USA,TOP3000,8,SUBINDUSTRY,1,"decay_linear(zscore(rank(close-open)), 4)",1.44,1.64,0.4,0.97
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_mean(ts_rank(rank(close-open), 20), 5)",1.96,1.56,0.05,0.89
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_rank(ts_rank(rank(close-open), 20), 5)",2.27,1.87,0.13,0.02
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_rank(ts_rank(rank(close-open), 20), 10)",2.28,1.88,0.26,0.26
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_rank(rank(-ts_corr(rank(volume)), 20)",2.2,1.2,0.21,0.61
+USA,TOP3000,8,SUBINDUSTRY,1,"decay_linear(rank(-ts_corr(rank(volume)), 4)",2.77,1.97,0.12,0.17
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_mean(zscore(-ts_corr(rank(volume)), 5)",2.28,2.08,0.31,0.2
+USA,TOP3000,8,SUBINDUSTRY,1,"decay_linear(zscore(-ts_corr(rank(volume)), 4)",2.51,2.11,0.17,0.86
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_rank(ts_mean(-ts_corr(rank(volume), 10), 5)",2.63,1.43,0.14,0.34
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_mean(ts_rank(-ts_corr(rank(volume), 20), 5)",2.16,2.16,0.03,0.66
+USA,TOP3000,8,SUBINDUSTRY,1,"decay_linear(ts_rank(-ts_corr(rank(volume), 20), 4)",1.65,1.85,0.52,0.16
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_rank(rank(rank(ts_std_dev(returns), 5)",2.64,2.04,0.19,0.63
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_rank(zscore(rank(ts_std_dev(returns), 20)",2.51,1.11,0.3,0.98
+USA,TOP3000,8,SUBINDUSTRY,1,"decay_linear(zscore(rank(ts_std_dev(returns), 2)",2.44,1.84,0.33,0.33
+USA,TOP3000,8,SUBINDUSTRY,1,"decay_linear(zscore(rank(ts_std_dev(returns), 8)",2.41,1.01,0.24,0.44
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_rank(ts_mean(rank(ts_std_dev(returns, 10), 10)",1.56,1.76,0.59,0.04
+USA,TOP3000,8,SUBINDUSTRY,1,"decay_linear(ts_mean(rank(ts_std_dev(returns, 10), 8)",1.26,1.46,0.46,0.96
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_rank(ts_rank(rank(ts_std_dev(returns, 20), 10)",2.1,1.3,0.07,0.31
+USA,TOP3000,8,SUBINDUSTRY,1,"ts_mean(ts_rank(rank(ts_std_dev(returns, 20), 20)",2.72,1.32,0.16,0.11
+USA,TOP3000,8,SECTOR,1,"ts_mean(ts_rank(close, 5)",2.72,2.12,0.41,0.34
+USA,TOP3000,8,SECTOR,1,"ts_rank(ts_rank(close, 20)",2.54,1.74,0.47,0.16
+USA,TOP3000,8,SECTOR,1,"decay_linear(ts_rank(close, 2)",1.67,1.07,0.18,0.69
+USA,TOP3000,8,SECTOR,1,"decay_linear(ts_rank(close, 8)",2.69,1.09,0.58,0.93
+USA,TOP3000,8,SECTOR,1,"ts_mean(rank(close-open), 10)",1.68,1.88,0.22,0.22
+USA,TOP3000,8,SECTOR,1,"ts_mean(rank(close-open), 20)",1.43,1.43,0.14,0.09
+USA,TOP3000,8,SECTOR,1,-ts_corr(rank(volume),2.48,1.08,0.12,0.15
+USA,TOP3000,8,SECTOR,1,"ts_mean(rank(ts_std_dev(returns, 5)",1.39,1.99,0.39,0.85
+USA,TOP3000,8,SECTOR,1,"decay_linear(rank(ts_std_dev(returns, 8)",1.86,1.06,0.55,0.35
+USA,TOP3000,8,SECTOR,1,"decay_linear(rank(ts_rank(close), 8)",2.38,1.58,0.45,0.85
+USA,TOP3000,8,SECTOR,1,"ts_rank(zscore(ts_rank(close), 10)",2.78,2.18,0.51,0.05
+USA,TOP3000,8,SECTOR,1,"ts_rank(ts_mean(ts_rank(close, 10), 10)",1.78,1.18,0.24,0.64
+USA,TOP3000,8,SECTOR,1,"decay_linear(ts_mean(ts_rank(close, 10), 4)",2.68,1.48,0.06,0.93
+USA,TOP3000,8,SECTOR,1,"ts_mean(rank(rank(close-open)), 5)",1.99,1.39,0.44,0.07
+USA,TOP3000,8,SECTOR,1,"ts_mean(rank(rank(close-open)), 20)",1.45,1.85,0.4,0.27
+USA,TOP3000,8,SECTOR,1,"decay_linear(rank(rank(close-open)), 8)",2.7,1.3,0.45,0.28
+USA,TOP3000,8,SECTOR,1,"ts_mean(zscore(rank(close-open)), 5)",2.21,1.21,0.51,0.02
+USA,TOP3000,8,SECTOR,1,"ts_rank(zscore(rank(close-open)), 5)",1.29,1.49,0.51,0.26
+USA,TOP3000,8,SECTOR,1,"decay_linear(ts_rank(rank(close-open), 20), 2)",1.75,2.15,0.45,0.7
+USA,TOP3000,8,SECTOR,1,"ts_rank(rank(-ts_corr(rank(volume)), 10)",1.95,1.35,0.05,0.24
+USA,TOP3000,8,SECTOR,1,"ts_mean(rank(-ts_corr(rank(volume)), 20)",1.47,2.07,0.11,0.68
+USA,TOP3000,8,SECTOR,1,"ts_rank(rank(-ts_corr(rank(volume)), 20)",2.1,1.1,0.54,0.13
+USA,TOP3000,8,SECTOR,1,"decay_linear(rank(-ts_corr(rank(volume)), 8)",1.72,2.12,0.44,0.81
+USA,TOP3000,8,SECTOR,1,"decay_linear(zscore(-ts_corr(rank(volume)), 4)",2.44,1.64,0.16,0.8
+USA,TOP3000,8,SECTOR,1,"decay_linear(zscore(-ts_corr(rank(volume)), 8)",2.24,1.84,0.56,0.32
+USA,TOP3000,8,SECTOR,1,"ts_rank(rank(rank(ts_std_dev(returns), 20)",1.82,1.42,0.24,0.82
+USA,TOP3000,8,SECTOR,1,"decay_linear(rank(rank(ts_std_dev(returns), 2)",1.83,2.03,0.37,0.35
+USA,TOP3000,8,SECTOR,1,"decay_linear(rank(rank(ts_std_dev(returns), 4)",1.82,1.02,0.46,0.64
+USA,TOP3000,8,SECTOR,1,"ts_mean(zscore(rank(ts_std_dev(returns), 5)",1.92,1.12,0.38,0.94
+USA,TOP3000,8,SECTOR,1,"ts_rank(zscore(rank(ts_std_dev(returns), 20)",1.37,1.37,0.26,0.26
+USA,TOP3000,8,SECTOR,1,"ts_mean(ts_mean(rank(ts_std_dev(returns, 10), 5)",1.31,1.11,0.0,0.2
+USA,TOP3000,8,SECTOR,1,"ts_rank(ts_mean(rank(ts_std_dev(returns, 10), 20)",2.56,1.36,0.56,0.33
+USA,TOP3000,8,SECTOR,1,"ts_mean(ts_rank(rank(ts_std_dev(returns, 20), 20)",2.39,1.19,0.15,0.68
+USA,TOP3000,8,SECTOR,1,"decay_linear(ts_rank(rank(ts_std_dev(returns, 20), 2)",2.22,1.62,0.56,0.14
+USA,TOP1000,4,SUBINDUSTRY,1,"decay_linear(rank(close-open), 2)",2.69,2.09,0.02,0.34
+USA,TOP1000,4,SUBINDUSTRY,1,"decay_linear(rank(close-open), 8)",2.55,1.15,0.13,0.86
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_mean(-ts_corr(rank(volume), 5)",2.09,1.29,0.58,0.01
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_rank(-ts_corr(rank(volume), 5)",2.74,1.34,0.07,0.82
+USA,TOP1000,4,SUBINDUSTRY,1,"decay_linear(-ts_corr(rank(volume), 4)",2.08,1.48,0.28,0.84
+USA,TOP1000,4,SUBINDUSTRY,1,rank(ts_std_dev(returns,2.57,1.77,0.48,0.51
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_rank(rank(ts_std_dev(returns, 5)",1.93,1.53,0.56,0.89
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_mean(rank(ts_std_dev(returns, 10)",1.2,1.8,0.11,0.9
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_mean(rank(ts_std_dev(returns, 20)",2.34,1.94,0.44,0.44
+USA,TOP1000,4,SUBINDUSTRY,1,rank(ts_rank(close),1.73,1.13,0.1,0.23
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_rank(rank(ts_rank(close), 5)",1.42,1.62,0.01,0.62
+USA,TOP1000,4,SUBINDUSTRY,1,"decay_linear(rank(ts_rank(close), 2)",1.46,2.06,0.1,0.15
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_mean(ts_rank(ts_rank(close, 20), 5)",1.29,1.89,0.34,0.55
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_rank(ts_rank(ts_rank(close, 20), 20)",1.99,1.79,0.18,0.65
+USA,TOP1000,4,SUBINDUSTRY,1,"decay_linear(ts_rank(ts_rank(close, 20), 4)",2.09,1.49,0.32,0.78
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_rank(rank(rank(close-open)), 5)",2.72,1.72,0.33,0.7
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_mean(rank(rank(close-open)), 10)",1.88,1.88,0.12,0.82
+USA,TOP1000,4,SUBINDUSTRY,1,zscore(rank(close-open)),1.54,2.14,0.59,0.27
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_mean(zscore(rank(close-open)), 20)",1.48,1.08,0.11,0.51
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_mean(ts_mean(rank(close-open), 10), 5)",2.44,1.64,0.12,0.03
+USA,TOP1000,4,SUBINDUSTRY,1,"decay_linear(ts_mean(rank(close-open), 10), 2)",1.88,1.68,0.42,0.47
+USA,TOP1000,4,SUBINDUSTRY,1,"decay_linear(ts_mean(rank(close-open), 10), 4)",1.82,1.42,0.46,0.06
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_mean(ts_rank(rank(close-open), 20), 5)",2.22,1.02,0.47,0.78
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_rank(ts_rank(rank(close-open), 20), 10)",2.22,1.22,0.47,0.67
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_rank(ts_rank(rank(close-open), 20), 20)",1.23,1.23,0.41,0.73
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_rank(rank(-ts_corr(rank(volume)), 10)",2.34,1.14,0.4,0.32
+USA,TOP1000,4,SUBINDUSTRY,1,"decay_linear(rank(-ts_corr(rank(volume)), 2)",2.68,1.08,0.24,0.81
+USA,TOP1000,4,SUBINDUSTRY,1,"decay_linear(rank(-ts_corr(rank(volume)), 8)",1.38,1.98,0.01,0.91
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_rank(zscore(-ts_corr(rank(volume)), 10)",1.49,1.29,0.07,0.04
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_rank(zscore(-ts_corr(rank(volume)), 20)",2.72,1.72,0.58,0.05
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_mean(ts_mean(-ts_corr(rank(volume), 10), 20)",2.46,1.46,0.42,0.45
+USA,TOP1000,4,SUBINDUSTRY,1,"decay_linear(ts_mean(-ts_corr(rank(volume), 10), 4)",1.7,2.1,0.1,0.52
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_rank(ts_rank(-ts_corr(rank(volume), 20), 10)",1.22,1.02,0.33,0.02
+USA,TOP1000,4,SUBINDUSTRY,1,"decay_linear(ts_rank(-ts_corr(rank(volume), 20), 2)",1.55,1.15,0.42,0.22
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_mean(rank(rank(ts_std_dev(returns), 10)",1.51,1.11,0.2,0.57
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_mean(zscore(rank(ts_std_dev(returns), 20)",2.51,2.11,0.25,0.92
+USA,TOP1000,4,SUBINDUSTRY,1,"decay_linear(zscore(rank(ts_std_dev(returns), 4)",1.61,2.01,0.25,0.1
+USA,TOP1000,4,SUBINDUSTRY,1,"decay_linear(zscore(rank(ts_std_dev(returns), 8)",2.52,2.12,0.38,0.04
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_mean(ts_mean(rank(ts_std_dev(returns, 10), 5)",1.54,1.34,0.54,0.8
+USA,TOP1000,4,SUBINDUSTRY,1,"ts_mean(ts_rank(rank(ts_std_dev(returns, 20), 5)",1.66,1.86,0.52,0.22
+USA,TOP1000,4,SECTOR,1,"ts_mean(ts_rank(close, 10)",2.33,1.33,0.53,0.91
+USA,TOP1000,4,SECTOR,1,"decay_linear(ts_rank(close, 2)",2.0,2.0,0.18,0.77
+USA,TOP1000,4,SECTOR,1,"ts_mean(rank(close-open), 10)",1.81,1.61,0.5,0.05
+USA,TOP1000,4,SECTOR,1,"decay_linear(rank(close-open), 4)",1.2,1.0,0.28,0.61
+USA,TOP1000,4,SECTOR,1,"ts_rank(-ts_corr(rank(volume), 5)",1.67,1.27,0.09,0.58
+USA,TOP1000,4,SECTOR,1,"ts_rank(-ts_corr(rank(volume), 10)",2.21,2.01,0.43,0.08
+USA,TOP1000,4,SECTOR,1,"ts_rank(rank(ts_std_dev(returns, 10)",2.16,1.76,0.08,0.19
+USA,TOP1000,4,SECTOR,1,"ts_rank(rank(ts_rank(close), 20)",2.72,1.32,0.41,0.52
+USA,TOP1000,4,SECTOR,1,"decay_linear(rank(ts_rank(close), 8)",2.52,1.72,0.17,0.21
+USA,TOP1000,4,SECTOR,1,"ts_mean(zscore(ts_rank(close), 5)",2.74,2.14,0.29,0.76
+USA,TOP1000,4,SECTOR,1,"ts_rank(zscore(ts_rank(close), 5)",1.69,1.49,0.44,0.93
+USA,TOP1000,4,SECTOR,1,"ts_mean(zscore(ts_rank(close), 20)",1.25,1.85,0.42,0.79
+USA,TOP1000,4,SECTOR,1,"decay_linear(zscore(ts_rank(close), 8)",2.49,1.89,0.25,0.27
+USA,TOP1000,4,SECTOR,1,"ts_mean(ts_rank(ts_rank(close, 20), 10)",1.9,1.7,0.51,0.0
+USA,TOP1000,4,SECTOR,1,"ts_mean(ts_rank(ts_rank(close, 20), 20)",2.02,2.02,0.57,0.42
+USA,TOP1000,4,SECTOR,1,"ts_mean(rank(rank(close-open)), 5)",2.24,1.24,0.22,0.37
+USA,TOP1000,4,SECTOR,1,"ts_mean(rank(rank(close-open)), 10)",1.46,1.66,0.53,0.8
+USA,TOP1000,4,SECTOR,1,"ts_rank(rank(rank(close-open)), 20)",1.45,1.45,0.45,0.92
+USA,TOP1000,4,SECTOR,1,"decay_linear(rank(rank(close-open)), 4)",2.47,1.87,0.42,0.15
+USA,TOP1000,4,SECTOR,1,"decay_linear(rank(rank(close-open)), 8)",1.66,2.06,0.0,0.46
+USA,TOP1000,4,SECTOR,1,zscore(rank(close-open)),1.88,1.28,0.25,0.53
+USA,TOP1000,4,SECTOR,1,"ts_rank(zscore(rank(close-open)), 5)",2.36,1.96,0.32,0.62
+USA,TOP1000,4,SECTOR,1,"ts_rank(zscore(rank(close-open)), 10)",1.7,1.7,0.44,0.17
+USA,TOP1000,4,SECTOR,1,"ts_rank(zscore(rank(close-open)), 20)",2.6,2.0,0.22,0.75
+USA,TOP1000,4,SECTOR,1,"ts_rank(ts_mean(rank(close-open), 10), 10)",2.48,1.68,0.12,0.62
+USA,TOP1000,4,SECTOR,1,"ts_rank(ts_mean(rank(close-open), 10), 20)",2.06,1.86,0.53,0.72
+USA,TOP1000,4,SECTOR,1,"ts_rank(ts_rank(rank(close-open), 20), 20)",2.44,1.84,0.03,0.68
+USA,TOP1000,4,SECTOR,1,"ts_rank(rank(-ts_corr(rank(volume)), 5)",1.53,1.93,0.03,0.45
+USA,TOP1000,4,SECTOR,1,"decay_linear(rank(-ts_corr(rank(volume)), 2)",2.35,1.55,0.57,0.73
+USA,TOP1000,4,SECTOR,1,"decay_linear(rank(-ts_corr(rank(volume)), 8)",1.5,1.7,0.24,0.74
+USA,TOP1000,4,SECTOR,1,"ts_mean(zscore(-ts_corr(rank(volume)), 20)",2.76,1.16,0.55,0.76
+USA,TOP1000,4,SECTOR,1,"ts_mean(ts_mean(-ts_corr(rank(volume), 10), 20)",2.65,2.05,0.49,0.69
+USA,TOP1000,4,SECTOR,1,"ts_mean(ts_rank(-ts_corr(rank(volume), 20), 10)",1.24,1.04,0.54,0.55
+USA,TOP1000,4,SECTOR,1,"ts_rank(ts_rank(-ts_corr(rank(volume), 20), 10)",2.7,1.7,0.32,0.58
+USA,TOP1000,4,SECTOR,1,"ts_mean(ts_rank(-ts_corr(rank(volume), 20), 20)",2.06,1.06,0.28,0.07
+USA,TOP1000,4,SECTOR,1,"ts_rank(rank(rank(ts_std_dev(returns), 5)",2.69,1.89,0.19,0.4
+USA,TOP1000,4,SECTOR,1,"decay_linear(rank(rank(ts_std_dev(returns), 2)",1.36,2.16,0.39,0.5
+USA,TOP1000,4,SECTOR,1,zscore(rank(ts_std_dev(returns),2.56,1.36,0.13,0.86
+USA,TOP1000,4,SECTOR,1,"ts_mean(ts_mean(rank(ts_std_dev(returns, 10), 10)",1.6,1.4,0.34,0.81
+USA,TOP1000,4,SECTOR,1,"decay_linear(ts_mean(rank(ts_std_dev(returns, 10), 2)",2.66,2.06,0.45,0.46
+USA,TOP1000,4,SECTOR,1,"ts_rank(ts_rank(rank(ts_std_dev(returns, 20), 10)",2.01,2.01,0.57,0.01
+USA,TOP1000,4,SECTOR,1,"decay_linear(ts_rank(rank(ts_std_dev(returns, 20), 4)",2.45,1.65,0.29,0.09
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_rank(ts_rank(close, 5)",1.88,1.48,0.59,0.06
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_mean(ts_rank(close, 20)",2.14,1.94,0.5,0.07
+USA,TOP1000,8,SUBINDUSTRY,1,"decay_linear(rank(close-open), 4)",2.35,1.95,0.19,0.5
+USA,TOP1000,8,SUBINDUSTRY,1,-ts_corr(rank(volume),2.74,2.14,0.29,0.99
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_rank(-ts_corr(rank(volume), 5)",2.69,1.09,0.58,0.81
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_mean(rank(ts_std_dev(returns, 10)",1.91,1.51,0.08,0.94
+USA,TOP1000,8,SUBINDUSTRY,1,"decay_linear(rank(ts_std_dev(returns, 2)",2.78,1.78,0.46,0.11
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_mean(rank(ts_rank(close), 10)",1.33,1.93,0.39,0.73
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_rank(rank(ts_rank(close), 10)",2.73,1.93,0.29,0.05
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_rank(zscore(ts_rank(close), 5)",2.65,1.05,0.57,0.63
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_mean(ts_mean(ts_rank(close, 10), 10)",1.88,1.48,0.34,0.65
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_rank(ts_mean(ts_rank(close, 10), 10)",1.44,1.64,0.32,0.5
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_mean(ts_mean(ts_rank(close, 10), 20)",1.68,1.08,0.22,0.46
+USA,TOP1000,8,SUBINDUSTRY,1,"decay_linear(ts_mean(ts_rank(close, 10), 4)",1.92,1.32,0.0,0.83
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_rank(ts_rank(ts_rank(close, 20), 10)",1.53,2.13,0.03,0.8
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_rank(zscore(rank(close-open)), 5)",2.28,1.68,0.52,0.38
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_rank(zscore(rank(close-open)), 10)",1.87,1.47,0.51,0.65
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_mean(ts_mean(rank(close-open), 10), 10)",1.56,1.96,0.33,0.1
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_rank(ts_mean(rank(close-open), 10), 10)",2.32,1.72,0.36,0.61
+USA,TOP1000,8,SUBINDUSTRY,1,"decay_linear(ts_mean(rank(close-open), 10), 8)",1.44,1.24,0.06,0.92
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_rank(ts_rank(rank(close-open), 20), 5)",2.62,1.82,0.27,0.69
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_mean(rank(-ts_corr(rank(volume)), 10)",1.73,1.33,0.57,0.17
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_rank(rank(-ts_corr(rank(volume)), 10)",2.57,2.17,0.22,0.16
+USA,TOP1000,8,SUBINDUSTRY,1,zscore(-ts_corr(rank(volume)),1.53,1.53,0.41,0.63
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_mean(zscore(-ts_corr(rank(volume)), 5)",1.32,2.12,0.34,0.61
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_rank(zscore(-ts_corr(rank(volume)), 5)",2.52,1.92,0.0,0.92
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_mean(zscore(-ts_corr(rank(volume)), 20)",2.05,1.25,0.49,0.77
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_mean(rank(rank(ts_std_dev(returns), 10)",1.33,1.33,0.39,0.91
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_rank(rank(rank(ts_std_dev(returns), 10)",2.5,1.5,0.25,0.51
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_rank(rank(rank(ts_std_dev(returns), 20)",2.39,1.99,0.49,0.74
+USA,TOP1000,8,SUBINDUSTRY,1,"decay_linear(rank(rank(ts_std_dev(returns), 2)",1.21,2.01,0.11,0.61
+USA,TOP1000,8,SUBINDUSTRY,1,"decay_linear(rank(rank(ts_std_dev(returns), 4)",2.64,2.04,0.23,0.1
+USA,TOP1000,8,SUBINDUSTRY,1,zscore(rank(ts_std_dev(returns),1.4,1.0,0.31,0.97
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_rank(ts_mean(rank(ts_std_dev(returns, 10), 10)",2.58,2.18,0.01,0.22
+USA,TOP1000,8,SUBINDUSTRY,1,"decay_linear(ts_mean(rank(ts_std_dev(returns, 10), 2)",2.67,1.27,0.36,0.52
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_rank(ts_rank(rank(ts_std_dev(returns, 20), 5)",1.57,2.17,0.55,0.63
+USA,TOP1000,8,SUBINDUSTRY,1,"ts_rank(ts_rank(rank(ts_std_dev(returns, 20), 10)",1.95,1.55,0.56,0.18
+USA,TOP1000,8,SUBINDUSTRY,1,"decay_linear(ts_rank(rank(ts_std_dev(returns, 20), 4)",1.96,1.96,0.52,0.42
+USA,TOP1000,8,SECTOR,1,"ts_rank(ts_rank(close, 10)",2.06,1.86,0.15,0.89
+USA,TOP1000,8,SECTOR,1,"ts_rank(ts_rank(close, 20)",2.08,1.08,0.11,0.66
+USA,TOP1000,8,SECTOR,1,"ts_mean(rank(close-open), 10)",1.9,1.1,0.0,0.06
+USA,TOP1000,8,SECTOR,1,"ts_rank(rank(close-open), 10)",2.06,1.06,0.02,0.19
+USA,TOP1000,8,SECTOR,1,"decay_linear(rank(close-open), 8)",1.21,1.61,0.2,0.02
+USA,TOP1000,8,SECTOR,1,"ts_rank(-ts_corr(rank(volume), 5)",1.23,1.03,0.24,0.67
+USA,TOP1000,8,SECTOR,1,"ts_rank(rank(ts_std_dev(returns, 5)",2.57,1.37,0.01,0.04
+USA,TOP1000,8,SECTOR,1,"ts_mean(rank(ts_std_dev(returns, 10)",1.35,1.15,0.0,0.62
+USA,TOP1000,8,SECTOR,1,"decay_linear(rank(ts_std_dev(returns, 4)",2.41,1.61,0.24,0.74
+USA,TOP1000,8,SECTOR,1,rank(ts_rank(close),2.65,2.05,0.57,0.57
+USA,TOP1000,8,SECTOR,1,"decay_linear(rank(ts_rank(close), 2)",2.03,1.23,0.19,0.54
+USA,TOP1000,8,SECTOR,1,"decay_linear(rank(ts_rank(close), 8)",1.45,1.85,0.23,0.27
+USA,TOP1000,8,SECTOR,1,"ts_rank(zscore(ts_rank(close), 5)",2.03,2.03,0.01,0.54
+USA,TOP1000,8,SECTOR,1,"ts_rank(zscore(ts_rank(close), 10)",2.31,1.71,0.27,0.2
+USA,TOP1000,8,SECTOR,1,"decay_linear(zscore(ts_rank(close), 2)",1.98,1.58,0.26,0.54
+USA,TOP1000,8,SECTOR,1,"ts_rank(ts_mean(ts_rank(close, 10), 5)",2.29,2.09,0.27,0.44
+USA,TOP1000,8,SECTOR,1,"ts_mean(ts_rank(ts_rank(close, 20), 10)",1.96,2.16,0.3,0.42
+USA,TOP1000,8,SECTOR,1,"ts_mean(ts_rank(ts_rank(close, 20), 20)",1.45,1.85,0.1,0.74
+USA,TOP1000,8,SECTOR,1,"decay_linear(ts_rank(ts_rank(close, 20), 8)",2.06,2.06,0.06,0.42
+USA,TOP1000,8,SECTOR,1,"ts_mean(rank(rank(close-open)), 10)",2.73,1.73,0.03,0.46
+USA,TOP1000,8,SECTOR,1,"ts_rank(zscore(rank(close-open)), 5)",2.05,1.05,0.32,0.13
+USA,TOP1000,8,SECTOR,1,"ts_mean(zscore(rank(close-open)), 10)",1.34,2.14,0.26,0.09
+USA,TOP1000,8,SECTOR,1,"ts_rank(ts_mean(rank(close-open), 10), 5)",2.17,1.57,0.16,0.55
+USA,TOP1000,8,SECTOR,1,"ts_mean(ts_mean(rank(close-open), 10), 10)",1.46,1.86,0.19,0.74
+USA,TOP1000,8,SECTOR,1,"decay_linear(ts_mean(rank(close-open), 10), 4)",2.04,1.04,0.23,0.6
+USA,TOP1000,8,SECTOR,1,"ts_mean(ts_rank(rank(close-open), 20), 5)",1.63,1.43,0.39,0.22
+USA,TOP1000,8,SECTOR,1,"ts_rank(ts_rank(rank(close-open), 20), 10)",1.62,1.82,0.21,0.28
+USA,TOP1000,8,SECTOR,1,zscore(-ts_corr(rank(volume)),1.53,1.33,0.59,0.69
+USA,TOP1000,8,SECTOR,1,"ts_mean(zscore(-ts_corr(rank(volume)), 5)",1.39,1.99,0.14,0.32
+USA,TOP1000,8,SECTOR,1,"ts_rank(zscore(-ts_corr(rank(volume)), 10)",1.22,1.42,0.41,0.61
+USA,TOP1000,8,SECTOR,1,"ts_rank(zscore(-ts_corr(rank(volume)), 20)",2.07,1.67,0.32,0.95
+USA,TOP1000,8,SECTOR,1,"decay_linear(zscore(-ts_corr(rank(volume)), 4)",1.39,1.99,0.18,0.09
+USA,TOP1000,8,SECTOR,1,"ts_rank(ts_mean(-ts_corr(rank(volume), 10), 10)",1.25,1.85,0.07,0.73
+USA,TOP1000,8,SECTOR,1,"ts_mean(ts_mean(-ts_corr(rank(volume), 10), 20)",2.68,1.68,0.19,0.81
+USA,TOP1000,8,SECTOR,1,"ts_mean(ts_rank(-ts_corr(rank(volume), 20), 5)",2.36,1.56,0.1,0.85
+USA,TOP1000,8,SECTOR,1,"ts_mean(ts_rank(-ts_corr(rank(volume), 20), 10)",1.22,2.02,0.24,0.08
+USA,TOP1000,8,SECTOR,1,"ts_rank(ts_rank(-ts_corr(rank(volume), 20), 20)",2.35,1.95,0.57,0.85
+USA,TOP1000,8,SECTOR,1,"decay_linear(ts_rank(-ts_corr(rank(volume), 20), 4)",1.34,1.74,0.47,0.14
+USA,TOP1000,8,SECTOR,1,rank(rank(ts_std_dev(returns),1.37,1.17,0.43,0.32
+USA,TOP1000,8,SECTOR,1,"ts_rank(rank(rank(ts_std_dev(returns), 5)",2.6,1.4,0.22,0.45
+USA,TOP1000,8,SECTOR,1,"ts_mean(rank(rank(ts_std_dev(returns), 20)",1.3,2.1,0.6,0.5
+USA,TOP1000,8,SECTOR,1,"ts_mean(zscore(rank(ts_std_dev(returns), 10)",1.38,1.78,0.22,0.56
+USA,TOP1000,8,SECTOR,1,"ts_mean(ts_mean(rank(ts_std_dev(returns, 10), 20)",2.04,1.64,0.14,0.83
+USA,TOP1000,8,SECTOR,1,"decay_linear(ts_mean(rank(ts_std_dev(returns, 10), 2)",2.71,1.31,0.2,0.58
+USA,TOP1000,8,SECTOR,1,"ts_rank(ts_rank(rank(ts_std_dev(returns, 20), 10)",1.27,2.07,0.51,0.08
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_mean(ts_rank(close, 20)",1.24,1.44,0.59,0.32
+CHN,TOP3000,4,SUBINDUSTRY,1,"decay_linear(ts_rank(close, 8)",1.74,1.54,0.57,0.17
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_rank(rank(close-open), 20)",2.16,1.36,0.12,0.66
+CHN,TOP3000,4,SUBINDUSTRY,1,"decay_linear(rank(close-open), 2)",1.63,2.03,0.6,0.46
+CHN,TOP3000,4,SUBINDUSTRY,1,"decay_linear(rank(close-open), 8)",1.52,1.52,0.11,0.8
+CHN,TOP3000,4,SUBINDUSTRY,1,-ts_corr(rank(volume),1.76,1.16,0.36,0.29
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_mean(-ts_corr(rank(volume), 5)",1.61,1.21,0.17,0.22
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_mean(-ts_corr(rank(volume), 20)",1.82,1.42,0.28,0.0
+CHN,TOP3000,4,SUBINDUSTRY,1,rank(ts_std_dev(returns,2.71,1.91,0.58,0.46
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_mean(rank(ts_std_dev(returns, 5)",2.14,1.14,0.59,0.78
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_mean(rank(ts_std_dev(returns, 20)",2.31,2.11,0.18,0.38
+CHN,TOP3000,4,SUBINDUSTRY,1,"decay_linear(rank(ts_std_dev(returns, 4)",1.36,1.56,0.18,0.44
+CHN,TOP3000,4,SUBINDUSTRY,1,"decay_linear(rank(ts_std_dev(returns, 8)",2.23,1.23,0.43,0.08
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_rank(rank(ts_rank(close), 10)",1.76,1.76,0.58,0.46
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_mean(rank(ts_rank(close), 20)",2.04,1.04,0.4,0.13
+CHN,TOP3000,4,SUBINDUSTRY,1,"decay_linear(rank(ts_rank(close), 2)",1.36,1.96,0.56,0.91
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_rank(zscore(ts_rank(close), 5)",2.56,1.96,0.39,0.57
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_rank(zscore(ts_rank(close), 20)",2.27,1.27,0.48,0.55
+CHN,TOP3000,4,SUBINDUSTRY,1,"decay_linear(zscore(ts_rank(close), 8)",2.22,1.02,0.04,0.61
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_mean(ts_rank(ts_rank(close, 20), 5)",1.88,1.08,0.29,0.06
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_mean(rank(rank(close-open)), 10)",1.64,1.44,0.0,0.63
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_rank(rank(rank(close-open)), 10)",1.3,1.1,0.17,0.38
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_mean(zscore(rank(close-open)), 10)",1.93,2.13,0.43,0.41
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_mean(ts_mean(rank(close-open), 10), 20)",1.66,1.66,0.22,0.16
+CHN,TOP3000,4,SUBINDUSTRY,1,"decay_linear(ts_mean(rank(close-open), 10), 2)",1.57,1.77,0.46,0.51
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_rank(ts_rank(rank(close-open), 20), 20)",1.72,2.12,0.14,0.64
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_mean(rank(-ts_corr(rank(volume)), 5)",2.35,1.75,0.49,0.56
+CHN,TOP3000,4,SUBINDUSTRY,1,"decay_linear(rank(-ts_corr(rank(volume)), 2)",1.4,1.0,0.57,0.85
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_mean(zscore(-ts_corr(rank(volume)), 5)",2.23,1.03,0.34,0.02
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_mean(zscore(-ts_corr(rank(volume)), 10)",2.6,2.0,0.14,0.87
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_rank(zscore(-ts_corr(rank(volume)), 20)",2.05,1.85,0.32,0.3
+CHN,TOP3000,4,SUBINDUSTRY,1,"decay_linear(zscore(-ts_corr(rank(volume)), 2)",2.19,2.19,0.38,0.72
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_rank(ts_mean(-ts_corr(rank(volume), 10), 20)",2.1,1.9,0.37,0.31
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_mean(ts_rank(-ts_corr(rank(volume), 20), 5)",2.13,1.73,0.54,0.96
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_mean(ts_rank(-ts_corr(rank(volume), 20), 10)",2.64,1.04,0.53,0.22
+CHN,TOP3000,4,SUBINDUSTRY,1,"decay_linear(ts_rank(-ts_corr(rank(volume), 20), 4)",2.0,1.8,0.44,0.18
+CHN,TOP3000,4,SUBINDUSTRY,1,zscore(rank(ts_std_dev(returns),1.26,1.06,0.2,0.32
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_rank(zscore(rank(ts_std_dev(returns), 10)",1.32,1.72,0.13,0.03
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_mean(zscore(rank(ts_std_dev(returns), 20)",2.41,1.41,0.45,0.44
+CHN,TOP3000,4,SUBINDUSTRY,1,"decay_linear(zscore(rank(ts_std_dev(returns), 2)",2.46,2.06,0.33,0.39
+CHN,TOP3000,4,SUBINDUSTRY,1,"decay_linear(zscore(rank(ts_std_dev(returns), 4)",2.57,1.37,0.18,0.04
+CHN,TOP3000,4,SUBINDUSTRY,1,"ts_rank(ts_rank(rank(ts_std_dev(returns, 20), 5)",2.6,1.2,0.44,0.16
+CHN,TOP3000,4,SUBINDUSTRY,1,"decay_linear(ts_rank(rank(ts_std_dev(returns, 20), 4)",2.47,1.67,0.08,0.33
+CHN,TOP3000,4,SECTOR,1,"ts_mean(ts_rank(close, 5)",2.72,1.12,0.24,0.05
+CHN,TOP3000,4,SECTOR,1,"ts_mean(ts_rank(close, 10)",2.43,2.03,0.16,0.91
+CHN,TOP3000,4,SECTOR,1,"ts_rank(ts_rank(close, 10)",2.45,1.85,0.5,0.62
+CHN,TOP3000,4,SECTOR,1,rank(close-open),2.79,1.39,0.08,0.35
+CHN,TOP3000,4,SECTOR,1,"ts_mean(rank(close-open), 20)",1.49,1.89,0.58,0.74
+CHN,TOP3000,4,SECTOR,1,"decay_linear(rank(close-open), 2)",1.94,1.34,0.6,0.59
+CHN,TOP3000,4,SECTOR,1,-ts_corr(rank(volume),2.06,1.66,0.02,0.89
+CHN,TOP3000,4,SECTOR,1,"ts_mean(-ts_corr(rank(volume), 5)",2.71,1.51,0.58,0.23
+CHN,TOP3000,4,SECTOR,1,"decay_linear(-ts_corr(rank(volume), 4)",2.35,1.15,0.32,0.44
+CHN,TOP3000,4,SECTOR,1,zscore(ts_rank(close),2.2,2.0,0.55,0.67
+CHN,TOP3000,4,SECTOR,1,"ts_mean(zscore(ts_rank(close), 10)",1.62,1.02,0.08,0.28
+CHN,TOP3000,4,SECTOR,1,"ts_rank(zscore(ts_rank(close), 10)",2.18,1.58,0.46,0.84
+CHN,TOP3000,4,SECTOR,1,"ts_rank(ts_mean(ts_rank(close, 10), 10)",1.66,1.86,0.52,0.1
+CHN,TOP3000,4,SECTOR,1,"ts_rank(ts_mean(ts_rank(close, 10), 20)",2.68,1.88,0.41,0.28
+CHN,TOP3000,4,SECTOR,1,"ts_mean(ts_rank(ts_rank(close, 20), 10)",2.32,1.32,0.57,0.44
+CHN,TOP3000,4,SECTOR,1,"ts_mean(ts_rank(ts_rank(close, 20), 20)",2.08,1.28,0.45,0.36
+CHN,TOP3000,4,SECTOR,1,"ts_mean(rank(rank(close-open)), 5)",2.43,2.03,0.54,0.62
+CHN,TOP3000,4,SECTOR,1,"ts_mean(rank(rank(close-open)), 10)",2.64,1.44,0.1,0.69
+CHN,TOP3000,4,SECTOR,1,"ts_mean(rank(rank(close-open)), 20)",1.32,1.12,0.56,0.38
+CHN,TOP3000,4,SECTOR,1,"ts_mean(ts_mean(rank(close-open), 10), 5)",2.22,1.22,0.6,0.67
+CHN,TOP3000,4,SECTOR,1,"ts_rank(ts_mean(rank(close-open), 10), 5)",1.79,1.39,0.32,0.17
+CHN,TOP3000,4,SECTOR,1,"ts_mean(ts_mean(rank(close-open), 10), 10)",1.22,1.62,0.33,0.84
+CHN,TOP3000,4,SECTOR,1,"ts_rank(ts_mean(rank(close-open), 10), 10)",1.24,1.24,0.37,0.73
+CHN,TOP3000,4,SECTOR,1,"ts_rank(ts_mean(rank(close-open), 10), 20)",1.64,1.64,0.3,0.46
+CHN,TOP3000,4,SECTOR,1,"ts_rank(ts_rank(rank(close-open), 20), 10)",1.69,1.69,0.48,0.28
+CHN,TOP3000,4,SECTOR,1,"ts_mean(rank(-ts_corr(rank(volume)), 10)",1.69,1.49,0.52,0.4
+CHN,TOP3000,4,SECTOR,1,"ts_rank(rank(-ts_corr(rank(volume)), 20)",2.41,1.01,0.24,0.56
+CHN,TOP3000,4,SECTOR,1,"decay_linear(rank(-ts_corr(rank(volume)), 4)",1.99,1.79,0.35,0.89
+CHN,TOP3000,4,SECTOR,1,zscore(-ts_corr(rank(volume)),2.67,1.07,0.11,0.4
+CHN,TOP3000,4,SECTOR,1,"ts_rank(zscore(-ts_corr(rank(volume)), 20)",1.82,1.22,0.2,0.53
+CHN,TOP3000,4,SECTOR,1,"decay_linear(ts_mean(-ts_corr(rank(volume), 10), 8)",1.2,1.0,0.24,0.72
+CHN,TOP3000,4,SECTOR,1,"decay_linear(ts_rank(-ts_corr(rank(volume), 20), 8)",1.65,1.25,0.13,0.16
+CHN,TOP3000,4,SECTOR,1,"ts_mean(rank(rank(ts_std_dev(returns), 20)",1.58,1.18,0.51,0.45
+CHN,TOP3000,4,SECTOR,1,"ts_rank(zscore(rank(ts_std_dev(returns), 10)",1.21,1.01,0.5,0.14
+CHN,TOP3000,4,SECTOR,1,"ts_mean(ts_mean(rank(ts_std_dev(returns, 10), 5)",2.02,1.22,0.36,0.42
+CHN,TOP3000,4,SECTOR,1,"ts_mean(ts_mean(rank(ts_std_dev(returns, 10), 20)",2.79,1.99,0.04,0.23
+CHN,TOP3000,4,SECTOR,1,"ts_rank(ts_rank(rank(ts_std_dev(returns, 20), 20)",1.76,1.56,0.45,0.05
+CHN,TOP3000,4,SECTOR,1,"decay_linear(ts_rank(rank(ts_std_dev(returns, 20), 4)",1.45,2.05,0.36,0.68
+CHN,TOP3000,8,SUBINDUSTRY,1,"ts_rank(ts_rank(close, 10)",1.3,2.1,0.55,0.79
+CHN,TOP3000,8,SUBINDUSTRY,1,"decay_linear(ts_rank(close, 2)",2.17,2.17,0.25,0.43
+CHN,TOP3000,8,SUBINDUSTRY,1,"ts_rank(rank(close-open), 5)",2.09,2.09,0.15,0.84
+CHN,TOP3000,8,SUBINDUSTRY,1,"ts_rank(-ts_corr(rank(volume), 5)",1.9,2.1,0.38,0.88
+CHN,TOP3000,8,SUBINDUSTRY,1,"ts_rank(-ts_corr(rank(volume), 10)",2.71,2.11,0.03,0.23
+CHN,TOP3000,8,SUBINDUSTRY,1,"decay_linear(-ts_corr(rank(volume), 8)",1.57,1.77,0.59,0.63
+CHN,TOP3000,8,SUBINDUSTRY,1,"ts_mean(rank(ts_std_dev(returns, 5)",2.15,1.75,0.29,0.13
+CHN,TOP3000,8,SUBINDUSTRY,1,"ts_rank(rank(ts_std_dev(returns, 10)",2.31,1.91,0.14,0.08
+CHN,TOP3000,8,SUBINDUSTRY,1,"ts_mean(rank(ts_std_dev(returns, 20)",2.65,1.65,0.45,0.1
+CHN,TOP3000,8,SUBINDUSTRY,1,"ts_mean(rank(ts_rank(close), 10)",1.97,2.17,0.48,0.24
+CHN,TOP3000,8,SUBINDUSTRY,1,"decay_linear(rank(ts_rank(close), 8)",1.58,1.18,0.04,0.57
+CHN,TOP3000,8,SUBINDUSTRY,1,"ts_rank(zscore(ts_rank(close), 5)",1.93,1.93,0.04,0.06
+CHN,TOP3000,8,SUBINDUSTRY,1,"ts_rank(ts_mean(ts_rank(close, 10), 10)",1.3,1.7,0.04,0.38
+CHN,TOP3000,8,SUBINDUSTRY,1,"ts_mean(ts_rank(ts_rank(close, 20), 5)",2.37,1.17,0.06,0.91
+CHN,TOP3000,8,SUBINDUSTRY,1,"ts_mean(zscore(rank(close-open)), 10)",1.21,1.21,0.45,0.67
+CHN,TOP3000,8,SUBINDUSTRY,1,"ts_rank(ts_mean(rank(close-open), 10), 10)",2.58,1.38,0.39,0.57
+CHN,TOP3000,8,SUBINDUSTRY,1,"ts_rank(ts_rank(rank(close-open), 20), 10)",2.5,1.5,0.47,0.98
+CHN,TOP3000,8,SUBINDUSTRY,1,"decay_linear(ts_rank(rank(close-open), 20), 8)",2.65,1.65,0.1,0.93
+CHN,TOP3000,8,SUBINDUSTRY,1,"decay_linear(rank(rank(ts_std_dev(returns), 8)",2.25,1.25,0.35,0.49
+CHN,TOP3000,8,SUBINDUSTRY,1,"ts_mean(zscore(rank(ts_std_dev(returns), 20)",2.72,2.12,0.24,0.93
+CHN,TOP3000,8,SUBINDUSTRY,1,"ts_rank(zscore(rank(ts_std_dev(returns), 20)",2.79,2.19,0.34,0.52
+CHN,TOP3000,8,SUBINDUSTRY,1,"decay_linear(zscore(rank(ts_std_dev(returns), 4)",1.94,1.94,0.6,0.89
+CHN,TOP3000,8,SUBINDUSTRY,1,"ts_mean(ts_mean(rank(ts_std_dev(returns, 10), 5)",1.42,1.02,0.44,0.97
+CHN,TOP3000,8,SUBINDUSTRY,1,"decay_linear(ts_mean(rank(ts_std_dev(returns, 10), 8)",2.55,1.95,0.6,0.92
+CHN,TOP3000,8,SUBINDUSTRY,1,"ts_mean(ts_rank(rank(ts_std_dev(returns, 20), 20)",1.37,1.77,0.01,0.73
+CHN,TOP3000,8,SUBINDUSTRY,1,"decay_linear(ts_rank(rank(ts_std_dev(returns, 20), 2)",1.27,1.87,0.25,0.61
+CHN,TOP3000,8,SECTOR,1,"ts_mean(ts_rank(close, 5)",1.58,1.98,0.21,0.16
+CHN,TOP3000,8,SECTOR,1,"ts_mean(rank(close-open), 5)",1.99,2.19,0.44,0.12
+CHN,TOP3000,8,SECTOR,1,"ts_mean(rank(close-open), 10)",1.96,1.56,0.26,0.3
+CHN,TOP3000,8,SECTOR,1,"ts_mean(rank(close-open), 20)",1.22,1.82,0.28,0.2
+CHN,TOP3000,8,SECTOR,1,"ts_rank(rank(close-open), 20)",2.23,2.03,0.17,0.79
+CHN,TOP3000,8,SECTOR,1,"decay_linear(rank(close-open), 8)",1.87,1.67,0.25,0.53
+CHN,TOP3000,8,SECTOR,1,"ts_rank(-ts_corr(rank(volume), 10)",2.2,1.8,0.34,0.72
+CHN,TOP3000,8,SECTOR,1,"decay_linear(-ts_corr(rank(volume), 4)",1.76,1.76,0.23,0.05
+CHN,TOP3000,8,SECTOR,1,"ts_rank(rank(ts_rank(close), 10)",1.3,1.7,0.3,0.73
+CHN,TOP3000,8,SECTOR,1,"ts_rank(zscore(ts_rank(close), 10)",2.65,1.85,0.32,0.99
+CHN,TOP3000,8,SECTOR,1,"ts_mean(zscore(ts_rank(close), 20)",2.12,1.12,0.46,0.25
+CHN,TOP3000,8,SECTOR,1,"decay_linear(zscore(ts_rank(close), 2)",1.74,1.14,0.02,0.46
+CHN,TOP3000,8,SECTOR,1,"ts_rank(ts_mean(ts_rank(close, 10), 5)",1.93,1.73,0.43,0.12
+CHN,TOP3000,8,SECTOR,1,"ts_rank(ts_rank(ts_rank(close, 20), 5)",2.02,1.62,0.53,0.13
+CHN,TOP3000,8,SECTOR,1,"decay_linear(ts_rank(ts_rank(close, 20), 8)",1.68,1.48,0.31,0.46
+CHN,TOP3000,8,SECTOR,1,"ts_rank(rank(rank(close-open)), 20)",1.83,1.63,0.54,0.82
+CHN,TOP3000,8,SECTOR,1,"ts_mean(zscore(rank(close-open)), 5)",1.29,1.29,0.59,0.67
+CHN,TOP3000,8,SECTOR,1,"ts_mean(zscore(rank(close-open)), 20)",2.43,1.63,0.16,0.03
+CHN,TOP3000,8,SECTOR,1,"decay_linear(zscore(rank(close-open)), 4)",1.52,1.52,0.07,0.63
+CHN,TOP3000,8,SECTOR,1,"ts_mean(ts_mean(rank(close-open), 10), 10)",1.31,2.11,0.25,0.08
+CHN,TOP3000,8,SECTOR,1,"ts_rank(ts_mean(rank(close-open), 10), 10)",1.32,1.72,0.26,0.85
+CHN,TOP3000,8,SECTOR,1,"ts_rank(ts_mean(rank(close-open), 10), 20)",1.69,1.49,0.05,0.34
+CHN,TOP3000,8,SECTOR,1,"ts_mean(ts_rank(rank(close-open), 20), 20)",1.81,1.41,0.54,0.94
+CHN,TOP3000,8,SECTOR,1,zscore(-ts_corr(rank(volume)),1.87,2.07,0.29,0.65
+CHN,TOP3000,8,SECTOR,1,"decay_linear(zscore(-ts_corr(rank(volume)), 8)",1.89,2.09,0.51,0.06
+CHN,TOP3000,8,SECTOR,1,"ts_mean(ts_mean(-ts_corr(rank(volume), 10), 5)",2.14,1.34,0.2,0.02
+CHN,TOP3000,8,SECTOR,1,"ts_rank(ts_mean(-ts_corr(rank(volume), 10), 5)",1.83,2.03,0.5,0.82
+CHN,TOP3000,8,SECTOR,1,"ts_rank(ts_mean(-ts_corr(rank(volume), 10), 10)",1.72,2.12,0.48,0.52
+CHN,TOP3000,8,SECTOR,1,"ts_mean(ts_mean(-ts_corr(rank(volume), 10), 20)",1.86,2.06,0.08,0.94
+CHN,TOP3000,8,SECTOR,1,"decay_linear(ts_mean(-ts_corr(rank(volume), 10), 2)",2.19,1.19,0.38,0.49
+CHN,TOP3000,8,SECTOR,1,"decay_linear(ts_mean(-ts_corr(rank(volume), 10), 4)",1.27,1.07,0.59,0.73
+CHN,TOP3000,8,SECTOR,1,"decay_linear(ts_mean(-ts_corr(rank(volume), 10), 8)",2.68,1.88,0.36,0.46
+CHN,TOP3000,8,SECTOR,1,"ts_rank(ts_rank(-ts_corr(rank(volume), 20), 10)",1.97,2.17,0.22,0.77
+CHN,TOP3000,8,SECTOR,1,rank(rank(ts_std_dev(returns),1.45,1.65,0.02,0.27
+CHN,TOP3000,8,SECTOR,1,"ts_mean(rank(rank(ts_std_dev(returns), 5)",2.7,2.1,0.32,0.05
+CHN,TOP3000,8,SECTOR,1,"ts_rank(rank(rank(ts_std_dev(returns), 5)",2.03,1.83,0.53,0.71
+CHN,TOP3000,8,SECTOR,1,"decay_linear(rank(rank(ts_std_dev(returns), 4)",2.43,1.83,0.07,0.68
+CHN,TOP3000,8,SECTOR,1,"ts_rank(zscore(rank(ts_std_dev(returns), 10)",1.6,2.0,0.04,0.87
+CHN,TOP3000,8,SECTOR,1,"ts_mean(ts_rank(rank(ts_std_dev(returns, 20), 5)",1.63,1.03,0.3,0.51
+CHN,TOP3000,8,SECTOR,1,"ts_mean(ts_rank(rank(ts_std_dev(returns, 20), 20)",2.08,1.08,0.58,0.13
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_mean(ts_rank(close, 10)",2.03,1.23,0.53,0.66
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_rank(ts_rank(close, 10)",1.36,1.76,0.48,0.2
+CHN,TOP1000,4,SUBINDUSTRY,1,"decay_linear(ts_rank(close, 2)",1.88,1.08,0.29,0.65
+CHN,TOP1000,4,SUBINDUSTRY,1,"decay_linear(rank(close-open), 2)",1.6,1.6,0.51,0.4
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_rank(-ts_corr(rank(volume), 10)",1.26,1.26,0.42,0.9
+CHN,TOP1000,4,SUBINDUSTRY,1,"decay_linear(-ts_corr(rank(volume), 2)",1.72,1.12,0.27,0.23
+CHN,TOP1000,4,SUBINDUSTRY,1,"decay_linear(-ts_corr(rank(volume), 4)",1.63,1.83,0.3,0.34
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_mean(rank(ts_std_dev(returns, 10)",2.63,1.43,0.31,0.16
+CHN,TOP1000,4,SUBINDUSTRY,1,rank(ts_rank(close),2.72,1.32,0.5,0.11
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_mean(rank(ts_rank(close), 5)",1.36,2.16,0.26,0.26
+CHN,TOP1000,4,SUBINDUSTRY,1,"decay_linear(rank(ts_rank(close), 4)",1.87,1.47,0.16,0.23
+CHN,TOP1000,4,SUBINDUSTRY,1,"decay_linear(rank(ts_rank(close), 8)",2.65,1.45,0.57,0.57
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_mean(zscore(ts_rank(close), 5)",2.6,1.2,0.35,0.34
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_rank(ts_mean(ts_rank(close, 10), 5)",2.62,1.82,0.1,0.87
+CHN,TOP1000,4,SUBINDUSTRY,1,"decay_linear(ts_mean(ts_rank(close, 10), 8)",2.61,1.21,0.23,0.69
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_rank(ts_rank(ts_rank(close, 20), 5)",1.34,1.14,0.04,0.91
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_rank(rank(rank(close-open)), 20)",2.58,1.18,0.09,0.39
+CHN,TOP1000,4,SUBINDUSTRY,1,"decay_linear(rank(rank(close-open)), 4)",2.18,1.38,0.34,0.14
+CHN,TOP1000,4,SUBINDUSTRY,1,"decay_linear(zscore(rank(close-open)), 4)",1.87,2.07,0.12,0.41
+CHN,TOP1000,4,SUBINDUSTRY,1,"decay_linear(ts_mean(rank(close-open), 10), 8)",1.53,1.93,0.16,0.8
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_mean(ts_rank(rank(close-open), 20), 5)",2.42,2.02,0.46,0.91
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_rank(ts_rank(rank(close-open), 20), 5)",2.77,1.77,0.16,0.05
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_mean(ts_rank(rank(close-open), 20), 10)",2.64,1.84,0.44,0.22
+CHN,TOP1000,4,SUBINDUSTRY,1,"decay_linear(ts_rank(rank(close-open), 20), 2)",1.44,1.24,0.14,0.27
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_mean(rank(-ts_corr(rank(volume)), 10)",1.84,1.84,0.54,0.88
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_rank(rank(-ts_corr(rank(volume)), 10)",1.97,1.37,0.09,0.89
+CHN,TOP1000,4,SUBINDUSTRY,1,"decay_linear(rank(-ts_corr(rank(volume)), 2)",1.49,1.69,0.54,0.74
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_mean(zscore(-ts_corr(rank(volume)), 5)",1.84,1.24,0.2,0.47
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_mean(zscore(-ts_corr(rank(volume)), 20)",2.25,1.65,0.22,0.67
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_rank(ts_mean(-ts_corr(rank(volume), 10), 10)",1.61,1.01,0.13,0.63
+CHN,TOP1000,4,SUBINDUSTRY,1,"decay_linear(ts_mean(-ts_corr(rank(volume), 10), 8)",1.35,1.35,0.52,0.38
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_rank(ts_rank(-ts_corr(rank(volume), 20), 5)",1.93,2.13,0.51,0.24
+CHN,TOP1000,4,SUBINDUSTRY,1,"decay_linear(ts_rank(-ts_corr(rank(volume), 20), 4)",1.74,1.14,0.14,0.82
+CHN,TOP1000,4,SUBINDUSTRY,1,rank(rank(ts_std_dev(returns),2.09,1.49,0.02,0.01
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_mean(rank(rank(ts_std_dev(returns), 20)",1.58,1.98,0.25,0.75
+CHN,TOP1000,4,SUBINDUSTRY,1,"decay_linear(rank(rank(ts_std_dev(returns), 2)",2.11,1.71,0.5,0.84
+CHN,TOP1000,4,SUBINDUSTRY,1,"decay_linear(zscore(rank(ts_std_dev(returns), 2)",1.28,1.28,0.08,0.08
+CHN,TOP1000,4,SUBINDUSTRY,1,"decay_linear(zscore(rank(ts_std_dev(returns), 4)",2.41,2.01,0.07,0.56
+CHN,TOP1000,4,SUBINDUSTRY,1,"decay_linear(zscore(rank(ts_std_dev(returns), 8)",2.53,2.13,0.26,0.69
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_mean(ts_mean(rank(ts_std_dev(returns, 10), 5)",1.24,1.24,0.03,0.55
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_rank(ts_mean(rank(ts_std_dev(returns, 10), 5)",1.55,1.15,0.29,0.92
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_mean(ts_mean(rank(ts_std_dev(returns, 10), 20)",2.65,1.85,0.23,0.69
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_mean(ts_rank(rank(ts_std_dev(returns, 20), 5)",2.44,1.24,0.54,0.44
+CHN,TOP1000,4,SUBINDUSTRY,1,"ts_rank(ts_rank(rank(ts_std_dev(returns, 20), 10)",1.75,1.55,0.15,0.46
+CHN,TOP1000,4,SUBINDUSTRY,1,"decay_linear(ts_rank(rank(ts_std_dev(returns, 20), 4)",1.53,1.73,0.46,0.45
+CHN,TOP1000,4,SECTOR,1,"ts_mean(ts_rank(close, 20)",1.72,1.52,0.44,0.28
+CHN,TOP1000,4,SECTOR,1,"decay_linear(ts_rank(close, 2)",2.53,1.73,0.39,0.16
+CHN,TOP1000,4,SECTOR,1,"decay_linear(ts_rank(close, 8)",2.29,1.29,0.05,0.79
+CHN,TOP1000,4,SECTOR,1,rank(close-open),2.79,1.79,0.25,0.47
+CHN,TOP1000,4,SECTOR,1,"decay_linear(rank(close-open), 2)",2.59,1.59,0.01,0.45
+CHN,TOP1000,4,SECTOR,1,"decay_linear(rank(close-open), 8)",1.65,1.65,0.3,0.28
+CHN,TOP1000,4,SECTOR,1,"ts_rank(-ts_corr(rank(volume), 5)",1.6,1.0,0.47,0.28
+CHN,TOP1000,4,SECTOR,1,"ts_rank(rank(ts_std_dev(returns, 5)",1.22,1.22,0.54,0.78
+CHN,TOP1000,4,SECTOR,1,"ts_rank(rank(ts_std_dev(returns, 10)",2.74,1.74,0.16,0.17
+CHN,TOP1000,4,SECTOR,1,"ts_rank(rank(ts_std_dev(returns, 20)",1.73,2.13,0.23,0.58
+CHN,TOP1000,4,SECTOR,1,"ts_mean(rank(ts_rank(close), 5)",1.27,1.67,0.29,0.55
+CHN,TOP1000,4,SECTOR,1,"ts_rank(rank(ts_rank(close), 5)",2.0,1.8,0.31,0.3
+CHN,TOP1000,4,SECTOR,1,"ts_mean(rank(ts_rank(close), 10)",1.93,1.93,0.04,0.24
+CHN,TOP1000,4,SECTOR,1,"ts_rank(rank(ts_rank(close), 10)",2.58,1.98,0.22,0.63
+CHN,TOP1000,4,SECTOR,1,"ts_mean(ts_mean(ts_rank(close, 10), 5)",2.08,1.28,0.24,0.42
+CHN,TOP1000,4,SECTOR,1,"ts_rank(ts_rank(ts_rank(close, 20), 20)",2.21,1.21,0.13,0.73
+CHN,TOP1000,4,SECTOR,1,"ts_rank(rank(rank(close-open)), 5)",2.17,2.17,0.55,0.31
+CHN,TOP1000,4,SECTOR,1,"decay_linear(rank(rank(close-open)), 2)",1.73,2.13,0.36,0.23
+CHN,TOP1000,4,SECTOR,1,"ts_mean(zscore(rank(close-open)), 20)",2.34,2.14,0.32,0.03
+CHN,TOP1000,4,SECTOR,1,"ts_rank(zscore(rank(close-open)), 20)",2.2,1.4,0.42,0.02
+CHN,TOP1000,4,SECTOR,1,"ts_mean(ts_mean(rank(close-open), 10), 20)",1.25,1.85,0.5,0.61
+CHN,TOP1000,4,SECTOR,1,"ts_mean(zscore(-ts_corr(rank(volume)), 5)",2.42,2.02,0.33,0.03
+CHN,TOP1000,4,SECTOR,1,"ts_rank(zscore(-ts_corr(rank(volume)), 5)",1.42,1.42,0.57,0.8
+CHN,TOP1000,4,SECTOR,1,"decay_linear(zscore(-ts_corr(rank(volume)), 2)",2.49,1.69,0.04,0.51
+CHN,TOP1000,4,SECTOR,1,"ts_mean(ts_mean(-ts_corr(rank(volume), 10), 10)",1.47,1.27,0.49,0.56
+CHN,TOP1000,4,SECTOR,1,"ts_rank(ts_mean(-ts_corr(rank(volume), 10), 10)",1.53,1.53,0.33,0.1
+CHN,TOP1000,4,SECTOR,1,"ts_mean(ts_mean(-ts_corr(rank(volume), 10), 20)",2.67,1.47,0.06,0.11
+CHN,TOP1000,4,SECTOR,1,"ts_mean(ts_rank(-ts_corr(rank(volume), 20), 10)",1.56,1.16,0.38,0.69
+CHN,TOP1000,4,SECTOR,1,"ts_rank(ts_rank(-ts_corr(rank(volume), 20), 20)",2.21,1.61,0.34,0.31
+CHN,TOP1000,4,SECTOR,1,"decay_linear(ts_rank(-ts_corr(rank(volume), 20), 4)",2.03,2.03,0.31,0.89
+CHN,TOP1000,4,SECTOR,1,"ts_rank(rank(rank(ts_std_dev(returns), 20)",2.33,2.13,0.19,0.85
+CHN,TOP1000,4,SECTOR,1,"decay_linear(rank(rank(ts_std_dev(returns), 2)",1.4,1.8,0.57,0.56
+CHN,TOP1000,4,SECTOR,1,"ts_rank(zscore(rank(ts_std_dev(returns), 10)",2.33,1.13,0.23,0.97
+CHN,TOP1000,4,SECTOR,1,"ts_rank(zscore(rank(ts_std_dev(returns), 20)",2.04,1.84,0.27,0.89
+CHN,TOP1000,4,SECTOR,1,"decay_linear(zscore(rank(ts_std_dev(returns), 8)",2.32,1.12,0.31,0.38
+CHN,TOP1000,4,SECTOR,1,"ts_rank(ts_mean(rank(ts_std_dev(returns, 10), 20)",2.0,2.0,0.22,0.01
+CHN,TOP1000,4,SECTOR,1,"decay_linear(ts_mean(rank(ts_std_dev(returns, 10), 8)",1.71,2.11,0.35,0.23
+CHN,TOP1000,4,SECTOR,1,"ts_mean(ts_rank(rank(ts_std_dev(returns, 20), 20)",1.32,1.12,0.0,0.91
+CHN,TOP1000,8,SUBINDUSTRY,1,"ts_rank(ts_rank(close, 20)",1.39,1.59,0.18,0.15
+CHN,TOP1000,8,SUBINDUSTRY,1,"decay_linear(ts_rank(close, 4)",2.74,2.14,0.16,0.64
+CHN,TOP1000,8,SUBINDUSTRY,1,"ts_rank(rank(close-open), 10)",1.21,1.01,0.33,0.9
+CHN,TOP1000,8,SUBINDUSTRY,1,-ts_corr(rank(volume),2.66,1.46,0.23,0.87
+CHN,TOP1000,8,SUBINDUSTRY,1,"decay_linear(-ts_corr(rank(volume), 2)",2.55,1.55,0.35,0.1
+CHN,TOP1000,8,SUBINDUSTRY,1,"decay_linear(-ts_corr(rank(volume), 4)",2.34,1.94,0.44,0.5
+CHN,TOP1000,8,SUBINDUSTRY,1,"decay_linear(rank(ts_std_dev(returns, 2)",1.2,1.2,0.15,0.84
+CHN,TOP1000,8,SUBINDUSTRY,1,"decay_linear(rank(ts_std_dev(returns, 8)",2.05,1.25,0.4,0.01
+CHN,TOP1000,8,SUBINDUSTRY,1,"ts_mean(rank(ts_rank(close), 5)",2.23,1.03,0.09,0.79
+CHN,TOP1000,8,SUBINDUSTRY,1,"ts_mean(zscore(ts_rank(close), 5)",2.78,1.78,0.38,0.7
+CHN,TOP1000,8,SUBINDUSTRY,1,"decay_linear(zscore(ts_rank(close), 2)",1.77,1.77,0.49,0.41
+CHN,TOP1000,8,SUBINDUSTRY,1,"decay_linear(zscore(ts_rank(close), 4)",2.15,1.95,0.29,0.66
+CHN,TOP1000,8,SUBINDUSTRY,1,"ts_mean(ts_mean(ts_rank(close, 10), 5)",2.68,1.08,0.54,0.99
+CHN,TOP1000,8,SUBINDUSTRY,1,"ts_rank(ts_rank(ts_rank(close, 20), 5)",1.81,1.21,0.07,0.11
+CHN,TOP1000,8,SUBINDUSTRY,1,"ts_rank(ts_rank(ts_rank(close, 20), 20)",2.77,1.77,0.29,0.88
+CHN,TOP1000,8,SUBINDUSTRY,1,"decay_linear(ts_rank(ts_rank(close, 20), 2)",1.38,1.58,0.39,0.5
+CHN,TOP1000,8,SUBINDUSTRY,1,"decay_linear(rank(rank(close-open)), 8)",1.83,1.63,0.03,0.76
+CHN,TOP1000,8,SUBINDUSTRY,1,"ts_rank(zscore(rank(close-open)), 5)",1.98,1.78,0.09,0.24
+CHN,TOP1000,8,SUBINDUSTRY,1,"decay_linear(zscore(rank(close-open)), 8)",1.85,1.25,0.16,0.17
+CHN,TOP1000,8,SUBINDUSTRY,1,"ts_mean(ts_rank(rank(close-open), 20), 5)",1.99,1.39,0.01,0.48
+CHN,TOP1000,8,SUBINDUSTRY,1,"ts_mean(ts_rank(rank(close-open), 20), 20)",1.64,1.44,0.52,0.87
+CHN,TOP1000,8,SUBINDUSTRY,1,"decay_linear(ts_rank(rank(close-open), 20), 8)",2.32,1.12,0.48,0.38
+CHN,TOP1000,8,SUBINDUSTRY,1,rank(-ts_corr(rank(volume)),1.24,1.64,0.24,0.9
+CHN,TOP1000,8,SUBINDUSTRY,1,"ts_mean(rank(-ts_corr(rank(volume)), 5)",2.24,1.44,0.3,0.61
+CHN,TOP1000,8,SUBINDUSTRY,1,"ts_rank(rank(-ts_corr(rank(volume)), 5)",2.55,1.55,0.3,0.57
+CHN,TOP1000,8,SUBINDUSTRY,1,"decay_linear(rank(-ts_corr(rank(volume)), 4)",2.02,1.02,0.57,0.83
+CHN,TOP1000,8,SUBINDUSTRY,1,"decay_linear(rank(-ts_corr(rank(volume)), 8)",1.24,1.64,0.24,0.9
+CHN,TOP1000,8,SUBINDUSTRY,1,"ts_rank(zscore(-ts_corr(rank(volume)), 10)",2.59,1.19,0.57,0.28
+CHN,TOP1000,8,SUBINDUSTRY,1,"ts_mean(ts_mean(-ts_corr(rank(volume), 10), 20)",2.18,1.38,0.12,0.25
+CHN,TOP1000,8,SUBINDUSTRY,1,"ts_rank(ts_mean(-ts_corr(rank(volume), 10), 20)",2.73,1.53,0.5,0.29
+CHN,TOP1000,8,SUBINDUSTRY,1,"decay_linear(ts_mean(-ts_corr(rank(volume), 10), 2)",2.33,1.13,0.4,0.38
+CHN,TOP1000,8,SUBINDUSTRY,1,"ts_mean(rank(rank(ts_std_dev(returns), 5)",2.11,1.71,0.15,0.48
+CHN,TOP1000,8,SUBINDUSTRY,1,"ts_rank(rank(rank(ts_std_dev(returns), 5)",2.31,1.31,0.31,0.32
+CHN,TOP1000,8,SUBINDUSTRY,1,"ts_rank(rank(rank(ts_std_dev(returns), 20)",1.6,1.6,0.08,0.1
+CHN,TOP1000,8,SUBINDUSTRY,1,"ts_rank(zscore(rank(ts_std_dev(returns), 20)",2.33,1.33,0.31,0.61
+CHN,TOP1000,8,SUBINDUSTRY,1,"decay_linear(zscore(rank(ts_std_dev(returns), 4)",2.49,1.49,0.38,0.92
+CHN,TOP1000,8,SUBINDUSTRY,1,"ts_mean(ts_rank(rank(ts_std_dev(returns, 20), 5)",1.84,1.04,0.33,0.23
+CHN,TOP1000,8,SUBINDUSTRY,1,"decay_linear(ts_rank(rank(ts_std_dev(returns, 20), 8)",1.91,1.91,0.51,0.35
+CHN,TOP1000,8,SECTOR,1,ts_rank(close,1.66,2.06,0.39,0.99
+CHN,TOP1000,8,SECTOR,1,"ts_rank(ts_rank(close, 20)",2.42,1.62,0.5,0.8
+CHN,TOP1000,8,SECTOR,1,"ts_mean(rank(close-open), 10)",1.6,1.6,0.3,0.4
+CHN,TOP1000,8,SECTOR,1,"decay_linear(rank(close-open), 4)",1.22,1.82,0.11,0.78
+CHN,TOP1000,8,SECTOR,1,"ts_mean(rank(ts_std_dev(returns, 5)",1.56,1.36,0.03,0.22
+CHN,TOP1000,8,SECTOR,1,"ts_rank(rank(ts_std_dev(returns, 5)",1.69,2.09,0.48,0.69
+CHN,TOP1000,8,SECTOR,1,"ts_rank(rank(ts_std_dev(returns, 10)",1.53,2.13,0.07,0.86
+CHN,TOP1000,8,SECTOR,1,"decay_linear(rank(ts_std_dev(returns, 2)",2.46,2.06,0.08,0.92
+CHN,TOP1000,8,SECTOR,1,"ts_mean(rank(ts_rank(close), 5)",1.53,1.13,0.41,0.1
+CHN,TOP1000,8,SECTOR,1,"ts_mean(rank(ts_rank(close), 10)",2.36,1.16,0.53,0.62
+CHN,TOP1000,8,SECTOR,1,"ts_rank(rank(ts_rank(close), 10)",2.43,1.43,0.5,0.15
+CHN,TOP1000,8,SECTOR,1,"ts_rank(zscore(ts_rank(close), 20)",1.69,1.89,0.14,0.93
+CHN,TOP1000,8,SECTOR,1,"decay_linear(zscore(ts_rank(close), 8)",1.5,1.9,0.28,0.51
+CHN,TOP1000,8,SECTOR,1,"ts_rank(ts_mean(ts_rank(close, 10), 20)",2.19,1.79,0.51,0.96
+CHN,TOP1000,8,SECTOR,1,"decay_linear(ts_mean(ts_rank(close, 10), 2)",1.27,1.27,0.38,0.32
+CHN,TOP1000,8,SECTOR,1,"ts_rank(ts_rank(ts_rank(close, 20), 10)",1.35,1.95,0.47,0.5
+CHN,TOP1000,8,SECTOR,1,"decay_linear(ts_rank(ts_rank(close, 20), 4)",2.08,1.08,0.58,0.13
+CHN,TOP1000,8,SECTOR,1,"decay_linear(rank(rank(close-open)), 2)",1.8,2.0,0.28,0.29
+CHN,TOP1000,8,SECTOR,1,"decay_linear(ts_mean(rank(close-open), 10), 2)",1.45,1.45,0.27,0.5
+CHN,TOP1000,8,SECTOR,1,"ts_mean(ts_rank(rank(close-open), 20), 5)",2.55,2.15,0.17,0.63
+CHN,TOP1000,8,SECTOR,1,"ts_mean(rank(-ts_corr(rank(volume)), 5)",1.75,1.35,0.45,0.29
+CHN,TOP1000,8,SECTOR,1,"ts_rank(rank(-ts_corr(rank(volume)), 10)",2.53,1.53,0.3,0.92
+CHN,TOP1000,8,SECTOR,1,"decay_linear(rank(-ts_corr(rank(volume)), 2)",1.79,1.19,0.49,0.99
+CHN,TOP1000,8,SECTOR,1,"ts_mean(ts_mean(-ts_corr(rank(volume), 10), 5)",2.19,1.79,0.42,0.61
+CHN,TOP1000,8,SECTOR,1,"ts_mean(ts_mean(-ts_corr(rank(volume), 10), 10)",1.75,1.55,0.19,0.76
+CHN,TOP1000,8,SECTOR,1,"ts_rank(ts_rank(-ts_corr(rank(volume), 20), 5)",1.5,1.9,0.41,0.68
+CHN,TOP1000,8,SECTOR,1,"decay_linear(ts_rank(-ts_corr(rank(volume), 20), 2)",2.15,1.95,0.55,0.07
+CHN,TOP1000,8,SECTOR,1,"ts_mean(rank(rank(ts_std_dev(returns), 5)",2.48,1.88,0.59,0.86
+CHN,TOP1000,8,SECTOR,1,"ts_rank(rank(rank(ts_std_dev(returns), 20)",2.15,1.95,0.16,0.9
+CHN,TOP1000,8,SECTOR,1,"ts_mean(zscore(rank(ts_std_dev(returns), 5)",2.65,1.05,0.23,0.46
+CHN,TOP1000,8,SECTOR,1,"ts_mean(zscore(rank(ts_std_dev(returns), 20)",1.84,1.84,0.54,0.06
+CHN,TOP1000,8,SECTOR,1,"decay_linear(zscore(rank(ts_std_dev(returns), 4)",2.76,1.16,0.25,0.52
+CHN,TOP1000,8,SECTOR,1,"ts_rank(ts_mean(rank(ts_std_dev(returns, 10), 20)",2.29,1.49,0.57,0.32
+CHN,TOP1000,8,SECTOR,1,"ts_rank(ts_rank(rank(ts_std_dev(returns, 20), 10)",1.41,2.01,0.05,0.15
