@@ -1,0 +1,5 @@
+alpha_expr
+ts_rank(close,20)-ts_rank(open,20)
+rank(close-open)
+-ts_corr(rank(volume),rank(vwap),10)
+rank(ts_std_dev(returns,20))
