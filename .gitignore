@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+wq_alpha_agent/experiments/*.csv
+!wq_alpha_agent/experiments/.gitkeep

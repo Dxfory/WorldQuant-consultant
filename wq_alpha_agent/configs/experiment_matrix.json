@@ -1,0 +1,26 @@
+{
+  "regions": [
+    "USA",
+    "CHN"
+  ],
+  "universes": [
+    "TOP3000",
+    "TOP1000"
+  ],
+  "decays": [
+    4,
+    8
+  ],
+  "neutralizations": [
+    "SUBINDUSTRY",
+    "SECTOR"
+  ],
+  "delays": [
+    1
+  ],
+  "min_sharpe": 1.2,
+  "min_fitness": 1.0,
+  "max_turnover": 0.6,
+  "llm_enabled": false,
+  "max_candidates": 100
+}
