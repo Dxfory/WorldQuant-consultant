@@ -1,0 +1,6234 @@
+[
+  {
+    "id": "mws76_classnum",
+    "description": "Numeric classification label for the specified newswire or story",
+    "dataset": {
+      "id": "news76",
+      "name": "Textual News Feed Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8217,
+    "coverage": 0.7504,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mws76_confidence",
+    "description": "Per-entity confidence values aligned with Score sentiment uses 0 to 100 MMN uses 0 to 1 probability of market move",
+    "dataset": {
+      "id": "news76",
+      "name": "Textual News Feed Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8217,
+    "coverage": 0.7504,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mws76_score",
+    "description": "Per-entity analytics score array: sentiment uses -1 negative 0 neutral 1 positive; MMN and MMN_1STPASS are 1 for tagged entities",
+    "dataset": {
+      "id": "news76",
+      "name": "Textual News Feed Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8217,
+    "coverage": 0.7504,
+    "userCount": 4,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mws76_timeofarrival",
+    "description": "UTC timestamp when the story was first created in Bloomberg systems",
+    "dataset": {
+      "id": "news76",
+      "name": "Textual News Feed Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8217,
+    "coverage": 0.7504,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mws76_version",
+    "description": "Version number of the underlying analytics model used to generate the record",
+    "dataset": {
+      "id": "news76",
+      "name": "Textual News Feed Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8217,
+    "coverage": 0.7504,
+    "userCount": 2,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "news_story_title",
+    "description": "Story headline text subject to entitlements",
+    "dataset": {
+      "id": "news76",
+      "name": "Textual News Feed Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8217,
+    "coverage": 0.7504,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws17_acb",
+    "description": "Earnings-focused sentiment classifier score: -1 negative, 0 neutral, 1 positive",
+    "dataset": {
+      "id": "news17",
+      "name": "PR Edition Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.4582,
+    "userCount": 13,
+    "alphaCount": 13,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws17_bam",
+    "description": "BCA classifier sentiment score for corporate action reports: -1 negative, 0 neutral, 1 positive",
+    "dataset": {
+      "id": "news17",
+      "name": "PR Edition Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.4582,
+    "userCount": 5,
+    "alphaCount": 6,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws17_bee",
+    "description": "Sentiment score from the earnings evaluations classifier, values -1 (negative), 0 (neutral), or 1 (positive)",
+    "dataset": {
+      "id": "news17",
+      "name": "PR Edition Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.4582,
+    "userCount": 4,
+    "alphaCount": 5,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws17_ber",
+    "description": "Analyst recommendation change score for the company mention when an ANL-CHG event is detected: -1 downgrade, 0 neutral, 1 upgrade",
+    "dataset": {
+      "id": "news17",
+      "name": "PR Edition Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.4582,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws17_country_code",
+    "description": "Two-letter ISO-3166 country code associated with the entity (XX for global entities)",
+    "dataset": {
+      "id": "news17",
+      "name": "PR Edition Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.497,
+    "userCount": 89,
+    "alphaCount": 229,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws17_event_end_time_utc",
+    "description": "The time when the event ends in UTC.",
+    "dataset": {
+      "id": "news17",
+      "name": "PR Edition Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.4335,
+    "userCount": 26,
+    "alphaCount": 73,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws17_event_relevance",
+    "description": "An integer between 0-100 that reflects the relevance of the event in the story",
+    "dataset": {
+      "id": "news17",
+      "name": "PR Edition Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.4335,
+    "userCount": 31,
+    "alphaCount": 54,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws17_event_start_time_utc",
+    "description": "The time when the event starts in UTC.",
+    "dataset": {
+      "id": "news17",
+      "name": "PR Edition Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.4335,
+    "userCount": 17,
+    "alphaCount": 23,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws17_event_text",
+    "description": "A short text summary of an event captured in a document",
+    "dataset": {
+      "id": "news17",
+      "name": "PR Edition Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "coverage": 0.4336,
+    "userCount": 44,
+    "alphaCount": 84,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws17_ghc_lna",
+    "description": "A sentiment score based on tone for the most relevant entities, derived from BMQ, BEE, BCA, and ANL-CHG classifiers",
+    "dataset": {
+      "id": "news17",
+      "name": "PR Edition Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.497,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws17_headline",
+    "description": "The headline or summary text for the document",
+    "dataset": {
+      "id": "news17",
+      "name": "PR Edition Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "coverage": 0.4336,
+    "userCount": 48,
+    "alphaCount": 120,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws17_nip",
+    "description": "-1.00 to 1.00 score estimating market impact over the next two hours after the news flash",
+    "dataset": {
+      "id": "news17",
+      "name": "PR Edition Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.497,
+    "userCount": 43,
+    "alphaCount": 99,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws17_qcm",
+    "description": "Composite tone-based sentiment score for the most relevant entities, derived from BMQ, BEE, BCA, and ANL-CHG",
+    "dataset": {
+      "id": "news17",
+      "name": "PR Edition Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.497,
+    "userCount": 1,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws17_qep",
+    "description": "Sentiment score from the PEQ classifier focused on equities-related positive/negative language",
+    "dataset": {
+      "id": "news17",
+      "name": "PR Edition Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.497,
+    "userCount": 39,
+    "alphaCount": 72,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws17_qmb",
+    "description": "M&A/takeover sentiment score: -1 negative, 0 neutral, 1 positive",
+    "dataset": {
+      "id": "news17",
+      "name": "PR Edition Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.497,
+    "userCount": 37,
+    "alphaCount": 65,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws17_relevance",
+    "description": "0–100 score indicating how central the entity is to the story; higher means more relevant",
+    "dataset": {
+      "id": "news17",
+      "name": "PR Edition Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.4582,
+    "userCount": 38,
+    "alphaCount": 54,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws17_reporting_end_time_utc",
+    "description": "UTC time marking the end of the reporting period referenced by the event",
+    "dataset": {
+      "id": "news17",
+      "name": "PR Edition Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.0868,
+    "userCount": 20,
+    "alphaCount": 34,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws17_reporting_start_time_utc",
+    "description": "UTC start time of the reporting period associated with the event",
+    "dataset": {
+      "id": "news17",
+      "name": "PR Edition Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.0725,
+    "userCount": 18,
+    "alphaCount": 23,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws17_rp_story_event_count",
+    "description": "Total number of entity records published by RavenPack for the news story",
+    "dataset": {
+      "id": "news17",
+      "name": "PR Edition Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.4336,
+    "userCount": 34,
+    "alphaCount": 74,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws17_rp_story_event_index",
+    "description": "Order index of the entity record within the vendor’s sequence for a news story",
+    "dataset": {
+      "id": "news17",
+      "name": "PR Edition Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.4336,
+    "userCount": 30,
+    "alphaCount": 82,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws17_ssc",
+    "description": "Continuous sentiment score from -1.00 to +1.00 (two decimals) combining multiple techniques",
+    "dataset": {
+      "id": "news17",
+      "name": "PR Edition Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.497,
+    "userCount": 55,
+    "alphaCount": 109,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws17_timestamp_utc_time",
+    "description": "UTC time the news arrived as received by WorldQuant",
+    "dataset": {
+      "id": "news17",
+      "name": "PR Edition Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.4582,
+    "userCount": 30,
+    "alphaCount": 59,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "actuals_reporting_currency",
+    "description": "Home currency of instrument",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9096,
+    "userCount": 5,
+    "alphaCount": 5,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_acbaafv4_item",
+    "description": "Financial item",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5934,
+    "userCount": 68,
+    "alphaCount": 151,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_actualafv4_item",
+    "description": "Financial item",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5547,
+    "userCount": 49,
+    "alphaCount": 66,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_actualbasicqfv4_item",
+    "description": "Financial item",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.4296,
+    "userCount": 59,
+    "alphaCount": 107,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_actualqfv4_item",
+    "description": "Financial item",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.417,
+    "userCount": 54,
+    "alphaCount": 73,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_adjusted_netincome_ft",
+    "description": "Adjusted net income - forecast type (revision/new/...)",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "coverage": 1.0,
+    "userCount": 333,
+    "alphaCount": 924,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_actual",
+    "description": "Announced financial data",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7746,
+    "userCount": 41,
+    "alphaCount": 51,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_cfps_high",
+    "description": "Cash Flow Per Share - The highest estimation for the annual forecast",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.7121,
+    "userCount": 366,
+    "alphaCount": 970,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_cfps_low",
+    "description": "Cash Flow Per Share - The lowest estimation for the upcoming fiscal year",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.7121,
+    "userCount": 245,
+    "alphaCount": 479,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_cfps_mean",
+    "description": "Cash Flow Per Share - average of estimations for the annual frequency",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.7121,
+    "userCount": 322,
+    "alphaCount": 817,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_cfps_median",
+    "description": "Cash Flow Per Share - Median value among forecasts for the annual frequency",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.7121,
+    "userCount": 255,
+    "alphaCount": 588,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_cfps_number",
+    "description": "Cash Flow Per Share - number of estimations for annual frequency",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.7121,
+    "userCount": 203,
+    "alphaCount": 450,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_div_high",
+    "description": "Dividend per share - The highest estimation for the annual forecast.",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9013,
+    "userCount": 576,
+    "alphaCount": 1705,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_div_low",
+    "description": "Dividend - The lowest estimation for the annual forecast",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9013,
+    "userCount": 286,
+    "alphaCount": 597,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_div_mean",
+    "description": "Dividend per share - average of estimations for annual frequency",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9013,
+    "userCount": 479,
+    "alphaCount": 1448,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_div_median",
+    "description": "Dividend per share - Median value among forecasts",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9013,
+    "userCount": 363,
+    "alphaCount": 839,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_div_number",
+    "description": "Number of estimations for Dividend per share - annually",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9013,
+    "userCount": 140,
+    "alphaCount": 235,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_div_std",
+    "description": "Dividend per share - standard deviation of estimations",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.511,
+    "userCount": 103,
+    "alphaCount": 212,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_dts_spe",
+    "description": "Earnings per share - standard deviation of estimations",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5554,
+    "userCount": 143,
+    "alphaCount": 312,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_dts_spfc",
+    "description": "Cash Flow Per Share - Standard deviation of estimations",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.2895,
+    "userCount": 99,
+    "alphaCount": 165,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_eps_high",
+    "description": "Earnings per share - The highest estimation",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9486,
+    "userCount": 708,
+    "alphaCount": 2580,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_eps_low",
+    "description": "Earnings per share - The lowest estimation for annual frequency",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9486,
+    "userCount": 446,
+    "alphaCount": 1480,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_eps_mean",
+    "description": "Earnings per share - mean of estimations for annual frequency",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9486,
+    "userCount": 950,
+    "alphaCount": 4450,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_eps_number",
+    "description": "Earnings per share - number of estimations for annual frequency",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9486,
+    "userCount": 149,
+    "alphaCount": 286,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_maxguidance",
+    "description": "Max guidance value",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.4189,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_median_eps",
+    "description": "Earnings per share - median of estimations",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9486,
+    "userCount": 674,
+    "alphaCount": 2667,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_minguidance",
+    "description": "Min guidance value",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.4189,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_basicafv4_actual",
+    "description": "Announced financial data for the annual period.",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7671,
+    "userCount": 25,
+    "alphaCount": 53,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_basicqfv4_actual",
+    "description": "Announced financial data",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6373,
+    "userCount": 25,
+    "alphaCount": 44,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_bvps_flag",
+    "description": "Book value per share - forecast type (revision/new/...)",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "coverage": 1.0,
+    "userCount": 144,
+    "alphaCount": 328,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_bvps_high",
+    "description": "Book value - the highest estimation, per share",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.3627,
+    "userCount": 50,
+    "alphaCount": 99,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_bvps_low",
+    "description": "Book value - the lowest estimation, per share",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.3627,
+    "userCount": 57,
+    "alphaCount": 84,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_bvps_median",
+    "description": "Book value per share - Median value among forecasts",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.3627,
+    "userCount": 50,
+    "alphaCount": 104,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_bvps_number",
+    "description": "Book value per share - number of estimations",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.3627,
+    "userCount": 77,
+    "alphaCount": 117,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_capex_flag",
+    "description": "Capital Expenditures - forecast type (revision/new/...)",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "coverage": 1.0,
+    "userCount": 208,
+    "alphaCount": 404,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_cff_flag",
+    "description": "Cash Flow From Financing Activities - forecast type (revision/new/...)",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "coverage": 1.0,
+    "userCount": 84,
+    "alphaCount": 232,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_cfi_flag",
+    "description": "Cash Flow From Investing - forecast type (revision/new/...)",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "coverage": 1.0,
+    "userCount": 95,
+    "alphaCount": 214,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_cfo_flag",
+    "description": "Cash Flow From Operations - forecast type (revision/new/...)",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "coverage": 1.0,
+    "userCount": 100,
+    "alphaCount": 183,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_detailrecv4_est",
+    "description": "Estimation value for recommendation detail",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.8582,
+    "userCount": 159,
+    "alphaCount": 419,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_detailrecv4_item",
+    "description": "Financial item",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.8433,
+    "userCount": 59,
+    "alphaCount": 79,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_dez1afv4_est",
+    "description": "Estimation value",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9557,
+    "userCount": 63,
+    "alphaCount": 135,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_dez1afv4_item",
+    "description": "Financial item",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.871,
+    "userCount": 78,
+    "alphaCount": 126,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_dez1afv4_preest",
+    "description": "The previous estimation of finanicial item",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.949,
+    "userCount": 40,
+    "alphaCount": 63,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_dez1basicafv4_est",
+    "description": "Estimation value",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.959,
+    "userCount": 69,
+    "alphaCount": 127,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_dez1basicafv4_item",
+    "description": "Financial item",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.884,
+    "userCount": 64,
+    "alphaCount": 132,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_dez1basicafv4_preest",
+    "description": "The previous estimation of finanicial item",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9515,
+    "userCount": 52,
+    "alphaCount": 134,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_dez1basicqfv4_est",
+    "description": "Estimation value",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7869,
+    "userCount": 36,
+    "alphaCount": 59,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_dez1basicqfv4_item",
+    "description": "Financial item",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5807,
+    "userCount": 51,
+    "alphaCount": 76,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_dez1basicqfv4_preest",
+    "description": "The previous estimation of finanicial item",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7759,
+    "userCount": 27,
+    "alphaCount": 41,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl4_dez1basicsafv4_est",
+    "description": "Estimation value",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6441,
+    "userCount": 17,
+    "alphaCount": 32,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "nws18_acb",
+    "description": "News sentiment specializing in corporate action announcements",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 153,
+    "alphaCount": 359,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws18_bam",
+    "description": "Mergers and acquisitions sentiment indicator (e.g., -1 negative, 0 neutral, +1 positive)",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 78,
+    "alphaCount": 101,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws18_bee",
+    "description": "Earnings evaluation score indicating positive, neutral, or negative assessment (-1, 0, +1)",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 75,
+    "alphaCount": 107,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws18_ber",
+    "description": "Earnings Release Indicator flag for earnings release events",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 61,
+    "alphaCount": 85,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws18_event_relevance",
+    "description": "Integer from 0 to 100 indicating the event’s relevance within the story",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 50,
+    "alphaCount": 81,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws18_event_similarity_days",
+    "description": "Number of days since a similar event was last detected within the past 365 days, up to 5 decimals",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 48,
+    "alphaCount": 65,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws18_ghc_lna",
+    "description": "Change in analyst recommendation",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 67,
+    "alphaCount": 102,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws18_nip",
+    "description": "Narrative impact score in [-1, 1] estimating the news item’s short-term market impact (e.g., next two hours)",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 61,
+    "alphaCount": 200,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws18_qcm",
+    "description": "News sentiment of relevant news with high confidence",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 70,
+    "alphaCount": 96,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws18_qep",
+    "description": "Equities sentiment polarity score derived from positive/negative words in news (typically -1, 0, +1)",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 72,
+    "alphaCount": 138,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws18_qmb",
+    "description": "Editorials and commentary score indicating stance or sentiment (-1, 0, +1)",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 79,
+    "alphaCount": 179,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws18_relevance",
+    "description": "Score from 0 to 100 indicating how strongly the entity is related to the story higher is more relevant",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 65,
+    "alphaCount": 118,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws18_ssc",
+    "description": "Granular sentiment score from -1.00 to +1.00 for the story, combining multiple sentiment analysis techniques",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 60,
+    "alphaCount": 99,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws18_sse",
+    "description": "Continuous sentiment score between -1.00 and +1.00 for the entity-event",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 146,
+    "alphaCount": 285,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_css_assets",
+    "description": "Composite sentiment score of assets news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 130,
+    "alphaCount": 262,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_css_business",
+    "description": "Composite sentiment score of business-related news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 318,
+    "alphaCount": 729,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_css_dividends",
+    "description": "Composite sentiment score of dividends news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 113,
+    "alphaCount": 155,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_css_earnings",
+    "description": "Composite sentiment score of earnings news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 195,
+    "alphaCount": 419,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_css_equity",
+    "description": "Composite sentiment score of equity action news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 103,
+    "alphaCount": 147,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_css_labor",
+    "description": "Composite sentiment score of labor issues news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 74,
+    "alphaCount": 99,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_css_mna",
+    "description": "Composite sentiment score of mergers and acquisitions-related news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 59,
+    "alphaCount": 92,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_css_partner",
+    "description": "Composite sentiment score of partnership news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 59,
+    "alphaCount": 87,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_css_price",
+    "description": "Composite sentiment score of stock price news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 78,
+    "alphaCount": 123,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_css_product",
+    "description": "Composite sentiment score of product and service-related news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 45,
+    "alphaCount": 59,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_css_ptg",
+    "description": "Composite sentiment score of price target news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 62,
+    "alphaCount": 136,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_css_ratings",
+    "description": "Composite sentiment score of analyst ratings-related news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 56,
+    "alphaCount": 77,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_css_revenue",
+    "description": "Composite sentiment score of revenue news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 121,
+    "alphaCount": 216,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_css_society",
+    "description": "Composite sentiment score of society-related news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 53,
+    "alphaCount": 82,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_css_technical",
+    "description": "Composite sentiment score based on technical analysis",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 30,
+    "alphaCount": 41,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_ess_assets",
+    "description": "Event sentiment score of assets news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 50,
+    "alphaCount": 89,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_ess_business",
+    "description": "Event sentiment score of business-related news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 262,
+    "alphaCount": 594,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_ess_dividends",
+    "description": "Event sentiment score of dividends news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 70,
+    "alphaCount": 92,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_ess_earnings",
+    "description": "Event sentiment score of earnings news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 512,
+    "alphaCount": 1294,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_ess_equity",
+    "description": "Event sentiment score of equity action news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 42,
+    "alphaCount": 59,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_ess_labor",
+    "description": "Event sentiment score of labor issues news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 27,
+    "alphaCount": 50,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_ess_mna",
+    "description": "Event sentiment score of mergers and acquisitions-related news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 29,
+    "alphaCount": 37,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_ess_partner",
+    "description": "Event sentiment score of partnership news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 40,
+    "alphaCount": 51,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_ess_price",
+    "description": "Event sentiment score of stock price news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 62,
+    "alphaCount": 98,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_ess_product",
+    "description": "Event sentiment score of product and service-related news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 37,
+    "alphaCount": 56,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_ess_ptg",
+    "description": "Event sentiment score of price target news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 26,
+    "alphaCount": 48,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_ess_ratings",
+    "description": "Event sentiment score of analyst ratings-related news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 30,
+    "alphaCount": 49,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_ess_revenue",
+    "description": "Event sentiment score of revenue news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 203,
+    "alphaCount": 358,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_ess_technical",
+    "description": "Event sentiment score based on technical analysis",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 21,
+    "alphaCount": 33,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_nip_assets",
+    "description": "News impact projection of assets news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 39,
+    "alphaCount": 67,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_nip_business",
+    "description": "News impact projection of business-related news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 113,
+    "alphaCount": 268,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_nip_dividends",
+    "description": "News impact projection of dividends news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 47,
+    "alphaCount": 64,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_nip_earnings",
+    "description": "News impact projection of earnings news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 90,
+    "alphaCount": 141,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_nip_equity",
+    "description": "News impact projection of equity action news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 39,
+    "alphaCount": 54,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_nip_inverstor",
+    "description": "News impact projection of investor relations news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 39,
+    "alphaCount": 62,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "rp_nip_labor",
+    "description": "News impact projection of labor issues news",
+    "dataset": {
+      "id": "news18",
+      "name": "Ravenpack News Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5,
+    "userCount": 22,
+    "alphaCount": 27,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "anl81_class",
+    "description": "Creditwrothiness class indices in integers: 9(AAA), 5(AA), 4(A), 1(BBB), 2(BB), 3(B), 7(CCC), 8(CC), 6(C), 10(D)",
+    "dataset": {
+      "id": "analyst81",
+      "name": "Creditworthiness model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-ratings",
+      "name": "Analyst Ratings"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.1948,
+    "userCount": 36,
+    "alphaCount": 46,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl81_confidence_level_percent",
+    "description": "Pecentaged Confidence Level of the Creditworthiness",
+    "dataset": {
+      "id": "analyst81",
+      "name": "Creditworthiness model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-ratings",
+      "name": "Analyst Ratings"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.1948,
+    "userCount": 25,
+    "alphaCount": 49,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl81_probability_of_default_percent",
+    "description": "Percentaged Default Probability",
+    "dataset": {
+      "id": "analyst81",
+      "name": "Creditworthiness model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-ratings",
+      "name": "Analyst Ratings"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.1948,
+    "userCount": 25,
+    "alphaCount": 36,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "actual_investment_round_total",
+    "description": "Total amount invested in a particular investment round",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8907,
+    "coverage": 0.4573,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "company_employee_count",
+    "description": "Number of employees at the company.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8907,
+    "coverage": 0.4573,
+    "userCount": 1,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "company_employee_count_2",
+    "description": "Number of employees at the company.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.1567,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "company_inception_year",
+    "description": "Year the company was founded or established",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.4059,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "company_industry_code",
+    "description": "Industry classification code for the company.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.4712,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "company_industry_sic_code",
+    "description": "Standard Industrial Classification code for the company.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.0477,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "company_offer_size_value",
+    "description": "Size of the offer made to the company, typically in monetary terms.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.0477,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "company_offer_total_size",
+    "description": "Total size of the offer for company shares or assets.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.0911,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "company_offer_unit_price",
+    "description": "Unit price offered for company shares or assets.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.0911,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "company_offered_price",
+    "description": "Price offered for the company's shares or assets.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.0476,
+    "userCount": 2,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "company_purchase_price",
+    "description": "Price paid to purchase the company.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.1515,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "company_purchase_price_2",
+    "description": "Purchase price paid for the company.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.2303,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "company_sales_amount",
+    "description": "Reported sales amount for the company.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8907,
+    "coverage": 0.4573,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "company_sales_amount_2",
+    "description": "Reported sales amount for the company.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.1831,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "company_sic_code",
+    "description": "Standard Industrial Classification code for the company.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.0912,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "company_veic6_category",
+    "description": "VEIC6 category classification for the company.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.735,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "estimated_investment_round_total",
+    "description": "Estimated total amount for the investment round.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8907,
+    "coverage": 0.4573,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "firm_capital_under_management",
+    "description": "Amount of capital managed by the private equity firm (AUM or similar metric)",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.329,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "firm_capital_under_management_2",
+    "description": "Total capital managed by the firm.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.4594,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "firm_establishment_year",
+    "description": "Year when the private equity firm was founded",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8907,
+    "coverage": 0.4573,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "firm_inception_year",
+    "description": "Date when the private equity firm was founded",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.4709,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "fund_establishment_year",
+    "description": "Year the fund was founded or established",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.4709,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "fund_inception_year",
+    "description": "Year the fund was established/founded",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8907,
+    "coverage": 0.4573,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "fund_raising_quarter_amount",
+    "description": "Amount raised in the fund raising quarter.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.2207,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "fund_raising_quarter_amount_2",
+    "description": "Total capital raised by the fund in a specific quarter",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.2644,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "fund_raising_year",
+    "description": "Year in which the fund raising occurred.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.2207,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "fund_total_size",
+    "description": "Size of the fund, typically measured in monetary terms such as total committed capital",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8907,
+    "coverage": 0.4573,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "fund_total_size_2",
+    "description": "Total committed or raised capital of a private equity/venture capital fund",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.6364,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "fund_total_target_amount",
+    "description": "Total capital target for fundraising for the fund (goal amount to be raised)",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8907,
+    "coverage": 0.4573,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "fund_total_target_amount_2",
+    "description": "Total target amount for the fund's capital raise.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.158,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "fundraising_commitment_amount",
+    "description": "Amount committed during the fundraising process for the fund.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.2206,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "fundraising_commitment_amount_2",
+    "description": "Total amount of committed capital raised for the venture capital fund in the fundraising round",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.2644,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "individual_job_title",
+    "description": "Job title of the individual (e.g., Managing Director, Partner, Analyst)",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8907,
+    "coverage": 0.4573,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "individual_job_title_2",
+    "description": "Professional title/role of the individual (e.g., Partner, CEO, Analyst)",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.6249,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "investment_age_months",
+    "description": "Age of the investment in months since inception.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8907,
+    "coverage": 0.4573,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "investment_deal_value",
+    "description": "The total monetary value of the investment/deal disclosed for this buyout transaction",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8907,
+    "coverage": 0.4573,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "investment_detail_age_months",
+    "description": "Age of the investment detail in months.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.6593,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "investment_detail_age_years",
+    "description": "Age (in years) of the company or asset involved, typically since founding or incorporation",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.3994,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "investment_detail_age_years_2",
+    "description": "Age of the investment detail in years.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.6593,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "investment_detail_deal_value",
+    "description": "Investment amount or deal value for the funding round",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.454,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "investment_detail_disclosed_valuation",
+    "description": "Disclosed valuation amount for the investee company at the time of the VC investment round",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.735,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "investment_detail_estimated_fund_total",
+    "description": "Estimated total funding amount involved in the investment deal details for the VC round",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.735,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "investment_detail_estimated_round_total",
+    "description": "Estimated total investment amount for the funding round",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.735,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "investment_detail_stage_one",
+    "description": "Primary investment stage (e.g., seed, early, growth) for the funding round",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.735,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "investment_detail_stage_three",
+    "description": "Stage three classification for the investment detail.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.735,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "investment_detail_stage_two",
+    "description": "Stage two classification for the investment detail.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.735,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "investment_disclosed_valuation",
+    "description": "Amount of the company's valuation disclosed at the time of the deal",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8907,
+    "coverage": 0.4573,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "investment_estimated_total_funding",
+    "description": "Estimated total funding amount for the investment.",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8907,
+    "coverage": 0.4573,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "investment_round_number",
+    "description": "The numeric sequence or designation of the investment round for a company or deal",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.4712,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "investment_round_total_amount",
+    "description": "Total amount invested in the round for the company/deal",
+    "dataset": {
+      "id": "news23",
+      "name": "MnA Deals Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.8656,
+    "coverage": 0.735,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "event_secondary_topic_code",
+    "description": "Code representing the second-tier subcategory of the event; must be decoded via overlay",
+    "dataset": {
+      "id": "news29",
+      "name": "Significant Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8961,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "event_tertiary_topic_code",
+    "description": "Third-level event topic/category code (integer), for further sub-classification, must decode",
+    "dataset": {
+      "id": "news29",
+      "name": "Significant Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8961,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws29_frontpage",
+    "description": "Flag indicating if the news item was featured on a Reuters front-page story (1 = yes, 0 = no)",
+    "dataset": {
+      "id": "news29",
+      "name": "Significant Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.3966,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws29_full_frontpage",
+    "description": "Binary indicator (1/0) for whether the event/news was featured on Reuters front page",
+    "dataset": {
+      "id": "news29",
+      "name": "Significant Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8961,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws29_full_significance",
+    "description": "Event importance level code: High, Medium, Low relevance to market (must decode)",
+    "dataset": {
+      "id": "news29",
+      "name": "Significant Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8961,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws29_full_topic1",
+    "description": "Code representing the main category of the event; must be decoded via overlay (e.g. M&A, regulatory, etc.)",
+    "dataset": {
+      "id": "news29",
+      "name": "Significant Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8961,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws29_significance",
+    "description": "Level of importance for the development (1 = High, 2 = Medium, 3 = Low)",
+    "dataset": {
+      "id": "news29",
+      "name": "Significant Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.3966,
+    "userCount": 31,
+    "alphaCount": 126,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws29_topic1",
+    "description": "Main topic code or parent category of the development",
+    "dataset": {
+      "id": "news29",
+      "name": "Significant Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.3966,
+    "userCount": 24,
+    "alphaCount": 46,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws29_topic2",
+    "description": "The news topic code. A news item can have several topics.",
+    "dataset": {
+      "id": "news29",
+      "name": "Significant Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.1128,
+    "userCount": 12,
+    "alphaCount": 18,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "nws29_topic3",
+    "description": "The news topic code. A news item can have several topics.",
+    "dataset": {
+      "id": "news29",
+      "name": "Significant Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.0372,
+    "userCount": 14,
+    "alphaCount": 19,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "oth452_accruals_d1_current_t",
+    "description": "Accruals d1 current t",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.3883,
+    "userCount": 21,
+    "alphaCount": 29,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_accruals_d1_dts",
+    "description": "Accruals d1 dts",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.4761,
+    "userCount": 8,
+    "alphaCount": 13,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_accruals_d1_length",
+    "description": "Accruals d1 length",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.4947,
+    "userCount": 8,
+    "alphaCount": 12,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_accruals_d1_max",
+    "description": "Accruals d1 max",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.4946,
+    "userCount": 4,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_accruals_d1_mean",
+    "description": "Accruals d1 mean",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.4946,
+    "userCount": 2,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_accruals_d1_min",
+    "description": "Accruals d1 min",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.4946,
+    "userCount": 6,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_accrualsratio_d1_asset_change",
+    "description": "Accruals ratio d1 asset change",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6877,
+    "userCount": 11,
+    "alphaCount": 18,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_deferred_tax_expense_11",
+    "description": "Deferred tax expense",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6778,
+    "userCount": 5,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_deferred_tax_expense_12",
+    "description": "Deferred tax expense",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6747,
+    "userCount": 2,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_deferred_tax_expense_21",
+    "description": "Deferred tax expense",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6037,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_deferred_tax_expense_22",
+    "description": "Deferred tax expense",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6006,
+    "userCount": 7,
+    "alphaCount": 12,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_deferred_tax_expense_31",
+    "description": "Deferred tax expense",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6779,
+    "userCount": 3,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_deferred_tax_expense_41",
+    "description": "Deferred tax expense",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6471,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_deferred_tax_expense_51",
+    "description": "Deferred tax expense",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6517,
+    "userCount": 4,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_deferred_tax_liability_11",
+    "description": "Deferred tax liability",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5961,
+    "userCount": 1,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_deferred_tax_liability_12",
+    "description": "Deferred tax liability",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5961,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_deferred_tax_liability_13",
+    "description": "Deferred tax liability",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5377,
+    "userCount": 3,
+    "alphaCount": 6,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_deferred_tax_liability_21",
+    "description": "Deferred tax liability",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5432,
+    "userCount": 8,
+    "alphaCount": 9,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_deferred_tax_liability_22",
+    "description": "Deferred tax liability",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5418,
+    "userCount": 2,
+    "alphaCount": 11,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_deferred_tax_liability_23",
+    "description": "Deferred tax liability",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.4458,
+    "userCount": 4,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_deferred_tax_liability_31",
+    "description": "Deferred tax liability",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.608,
+    "userCount": 4,
+    "alphaCount": 6,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_deferred_tax_liability_41",
+    "description": "Deferred tax liability",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5821,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_deferred_tax_liability_51",
+    "description": "Deferred tax liability",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5779,
+    "userCount": 2,
+    "alphaCount": 5,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_expense_d1_asset_change",
+    "description": "Expense d1 asset change",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6627,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_expense_d1_current_t",
+    "description": "Expense d1 current t",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.3231,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_expense_d1_dts",
+    "description": "Expense d1 dts",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.3556,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_expense_d1_length",
+    "description": "Expense d1 length",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.384,
+    "userCount": 2,
+    "alphaCount": 6,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_expense_d1_max",
+    "description": "Expense d1 max",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.3737,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_expense_d1_mean",
+    "description": "Expense d1 mean",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.3782,
+    "userCount": 2,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_expense_d1_min",
+    "description": "Expense d1 min",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.3747,
+    "userCount": 1,
+    "alphaCount": 9,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_liability_d1_asset_change",
+    "description": "Liability d1 asset change",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6869,
+    "userCount": 7,
+    "alphaCount": 11,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_liability_d1_current_t",
+    "description": "Liability d1 current t",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.4609,
+    "userCount": 2,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_liability_d1_dts",
+    "description": "Liability d1 distributions",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5607,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_liability_d1_length",
+    "description": "Liability d1 length",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5962,
+    "userCount": 3,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_liability_d1_max",
+    "description": "Liability d1 max",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5572,
+    "userCount": 3,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_liability_d1_mean",
+    "description": "Liability d1 mean",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5817,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_liability_d1_min",
+    "description": "Liability d1 min",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5724,
+    "userCount": 5,
+    "alphaCount": 12,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_tax_accruals_11",
+    "description": "Tax accruals",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.4795,
+    "userCount": 4,
+    "alphaCount": 11,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_tax_accruals_12",
+    "description": "Tax accruals",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.476,
+    "userCount": 3,
+    "alphaCount": 15,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_tax_accruals_13",
+    "description": "Tax accruals",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.4247,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_tax_accruals_21",
+    "description": "Tax accruals",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.4444,
+    "userCount": 7,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_tax_accruals_22",
+    "description": "Tax accruals",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.4404,
+    "userCount": 2,
+    "alphaCount": 5,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_tax_accruals_23",
+    "description": "Tax accruals",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.3608,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_tax_accruals_31",
+    "description": "Tax accruals",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.4792,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_tax_accruals_41",
+    "description": "Tax accruals",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.4501,
+    "userCount": 6,
+    "alphaCount": 16,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "oth452_tax_accruals_51",
+    "description": "Tax accruals",
+    "dataset": {
+      "id": "other452",
+      "name": "Earnings Tax Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.4552,
+    "userCount": 6,
+    "alphaCount": 13,
+    "pyramidMultiplier": 1.1,
+    "themes": []
+  },
+  {
+    "id": "cr_class",
+    "description": "Creditworthiness class indices in integers: 9 (AAA), 5 (AA), 4 (A), 1 (BBB), 2 (BB), 3 (B), 7 (CCC), 8 (CC), 6 (C), 10 (D)",
+    "dataset": {
+      "id": "model52",
+      "name": "Creditworthiness model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-ratings",
+      "name": "Analyst Ratings"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.213,
+    "userCount": 27,
+    "alphaCount": 49,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "cr_confidence_level_percent",
+    "description": "Percentaged Confidence Level of the Creditworthiness",
+    "dataset": {
+      "id": "model52",
+      "name": "Creditworthiness model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-ratings",
+      "name": "Analyst Ratings"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.213,
+    "userCount": 27,
+    "alphaCount": 44,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "cr_probability_of_default_percent",
+    "description": "Percentaged Default Probability",
+    "dataset": {
+      "id": "model52",
+      "name": "Creditworthiness model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-ratings",
+      "name": "Analyst Ratings"
+    },
+    "region": "ASI",
+    "delay": 1,
+    "universe": "MINVOL1M",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.213,
+    "userCount": 33,
+    "alphaCount": 133,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  }
+]

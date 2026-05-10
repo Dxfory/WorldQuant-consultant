@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+wqg2/
+**/wqg2/
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+.env.*
+kaggle.json
+*.pem
+*.key
+credentials*
+token*
+cookies*
+session*
+
+# Logs and outputs
+*.log
+logs/
+output/
+outputs/
+results/
+cache/
+
+# Large temporary files
+*.zip
+*.rar
+*.7z
+*.tmp
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

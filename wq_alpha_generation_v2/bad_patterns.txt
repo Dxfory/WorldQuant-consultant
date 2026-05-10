@@ -1,0 +1,13 @@
+DATA_FIELD
+OPERATOR
+daily_event
+event_
+announcement
+record_end_time
+timestamp
+news31_amertimestamp
+news31_apactimestamp
+add(event
+multiply(event
+subtract(event
+divide(event

@@ -1,0 +1,7490 @@
+[
+  {
+    "id": "daily_event_announcement_time",
+    "description": "Time of the announcement in the announcedDateTimeZoneId time zone",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9036,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "daily_event_announcement_time_utc",
+    "description": "Time the event was announced (UTC)",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9036,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "daily_event_earnings_release_time",
+    "description": "Time of the earnings release",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9036,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "daily_event_entry_time",
+    "description": "The time when the event was entered in the dataset.",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9036,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "daily_event_entry_time_utc",
+    "description": "Time the record was first entered into the system (UTC)",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9036,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "daily_event_last_update_time",
+    "description": "Time the event record was last modified",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9036,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "daily_event_last_update_time_utc",
+    "description": "Time the record was last modified (UTC)",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9036,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "daily_event_record_end_time",
+    "description": "The time when the current record for the daily event ceased to be active.",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9036,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "daily_event_record_start_time",
+    "description": "The time when the current record for the daily event became active.",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9036,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "daily_event_relevant_time_utc",
+    "description": "Time in UTC of the event’s key moment (often the event time; otherwise announcement time)",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9036,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "event_announcement_time",
+    "description": "The UTC time at which the event was announced",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "event_entry_time",
+    "description": "The time when the event record was entered into the system",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "event_last_update_time",
+    "description": "The time when the event record was last modified",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "event_relevant_time_utc",
+    "description": "UTC time of the key moment for the event (usually the announced time; for scheduled events, the event time)",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "future_event_announcement_time",
+    "description": "Time the announcement is scheduled to be made, in UTC",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "future_event_announcement_time_utc",
+    "description": "Time the announcement is scheduled/made in UTC",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "future_event_entry_time",
+    "description": "Time when this Future Event was entered",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "future_event_entry_time_utc",
+    "description": "Time the Future Event was entered, in UTC",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "future_event_last_update_time",
+    "description": "Time of the last modification to the Future Event",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "future_event_last_update_time_utc",
+    "description": "Time of the last modification in UTC",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "future_event_record_end_time",
+    "description": "End time of the S&P effective window during which this record is valid",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7236,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "future_event_record_start_time",
+    "description": "Start time of the S&P effective window for this record",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "future_event_relevant_time_utc",
+    "description": "Time the event occurs in UTC time zone",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws54_eventcallbasicinfo_cancelledflag",
+    "description": "Flag indicating whether the event call was cancelled, 0=no, 1=yes",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9036,
+    "userCount": 16,
+    "alphaCount": 27,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws54_eventcallbasicinfo_fiscalquarter",
+    "description": "Fiscal quarter associated with the event",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9036,
+    "userCount": 10,
+    "alphaCount": 12,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws54_eventcallbasicinfo_fiscalyear",
+    "description": "Fiscal year pertaining to the event call",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9036,
+    "userCount": 11,
+    "alphaCount": 24,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws54_eventcallbasicinfo_postponedflag",
+    "description": "Indicator whether the event call was postponed; 0=no, 1=yes",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9036,
+    "userCount": 8,
+    "alphaCount": 13,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws54_eventerinfo_calendarmonth",
+    "description": "Calendar month of the earnings release",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.7448,
+    "coverage": 0.9036,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws54_eventerinfo_calendaryear",
+    "description": "Calendar year of the earnings release",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.7448,
+    "coverage": 0.9036,
+    "userCount": 5,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws54_eventerinfo_cancelledflag",
+    "description": "Indicator that the earnings event was canceled",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.7448,
+    "coverage": 0.9036,
+    "userCount": 4,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws54_eventerinfo_fiscalquarter",
+    "description": "Fiscal quarter associated with the earnings release",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.7448,
+    "coverage": 0.9036,
+    "userCount": 7,
+    "alphaCount": 9,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws54_eventerinfo_fiscalyear",
+    "description": "Fiscal year of the earnings release",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.7448,
+    "coverage": 0.9036,
+    "userCount": 10,
+    "alphaCount": 29,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws54_eventerinfo_fullyearflag",
+    "description": "Flag indicating the earnings release covers a full fiscal year, 0=no, 1=yes",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.7448,
+    "coverage": 0.9036,
+    "userCount": 4,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws54_eventsdaily_headline",
+    "description": "Headline text for the event",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9036,
+    "userCount": 10,
+    "alphaCount": 34,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws54_eventsdaily_situation",
+    "description": "Additional descriptive text for the event",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9036,
+    "userCount": 17,
+    "alphaCount": 43,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws54_factor",
+    "description": "Numeric amount/factor associated with the event, e.g., dividend amount or stock split ratio",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.4738,
+    "userCount": 7,
+    "alphaCount": 20,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws54_futureeventmkt_headline",
+    "description": "Headline for the event",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 11,
+    "alphaCount": 15,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws54_futureeventmkt_situation",
+    "description": "Additional descriptive text/details for the event",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 11,
+    "alphaCount": 59,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws54_keydevelopments_headline",
+    "description": "Headline text describing the event",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 7,
+    "alphaCount": 11,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws54_keydevelopments_situation",
+    "description": "Additional descriptive narrative text about the event",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 10,
+    "alphaCount": 14,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "superevent_is_historical",
+    "description": "Boolean flag indicating if the record corresponds to a past (historical) event as opposed to a scheduled (future) event",
+    "dataset": {
+      "id": "news54",
+      "name": "Key Developments Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 11,
+    "alphaCount": 16,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl133_mktcap",
+    "description": "Market capitalization of the company, measured in millions of US dollars",
+    "dataset": {
+      "id": "model133",
+      "name": "Risk Parity Method Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-models",
+      "name": "Risk Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.3098,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl133_qes_avid_bm_dynmval",
+    "description": "Book-to-market factor exposure, dynamically constructed using adaptive or regime-aware models to capture book-to-market value characteristics that change over time",
+    "dataset": {
+      "id": "model133",
+      "name": "Risk Parity Method Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-models",
+      "name": "Risk Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.2604,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl133_qes_avid_bm_hedge",
+    "description": "Book-to-market factor exposure after applying risk factor hedging, which neutralizes unwanted risk exposures from the book-to-market measure",
+    "dataset": {
+      "id": "model133",
+      "name": "Risk Parity Method Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-models",
+      "name": "Risk Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.3096,
+    "userCount": 3,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl133_qes_avid_divyld_dynmval",
+    "description": "Stock’s exposure to the dividend yield value factor, dynamically constructed using regime-switching or market condition-adaptive models",
+    "dataset": {
+      "id": "model133",
+      "name": "Risk Parity Method Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-models",
+      "name": "Risk Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.2656,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl133_qes_avid_divyld_hedge",
+    "description": "Dividend yield factor exposure after explicit hedging against risk factors, indicating dividend yield sensitivity cleansed of unwanted risks",
+    "dataset": {
+      "id": "model133",
+      "name": "Risk Parity Method Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-models",
+      "name": "Risk Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.3096,
+    "userCount": 3,
+    "alphaCount": 6,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl133_qes_avid_fcf_dynmval",
+    "description": "Free cash flow yield factor exposure, dynamically constructed using regime-switching or adaptive models to better reflect value characteristics in different market contexts",
+    "dataset": {
+      "id": "model133",
+      "name": "Risk Parity Method Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-models",
+      "name": "Risk Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.2665,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl133_qes_avid_fcf_hedge",
+    "description": "Free cash flow yield factor exposure after applying risk factor hedging, which neutralizes unwanted risk exposures that could affect the free cash flow yield measure",
+    "dataset": {
+      "id": "model133",
+      "name": "Risk Parity Method Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-models",
+      "name": "Risk Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.3096,
+    "userCount": 1,
+    "alphaCount": 6,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl133_qes_avid_ocf_dynmval",
+    "description": "Dynamically constructed operating cash flow yield factor exposure using regime-switching or adaptive methods",
+    "dataset": {
+      "id": "model133",
+      "name": "Risk Parity Method Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-models",
+      "name": "Risk Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.2573,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl133_qes_avid_ocf_hedge",
+    "description": "Operating cash flow yield factor exposure after explicit risk factor hedging, meaning sensitivity to OCF yield with macro/style risk effects removed",
+    "dataset": {
+      "id": "model133",
+      "name": "Risk Parity Method Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-models",
+      "name": "Risk Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.3096,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl133_qes_avid_pe_dynmval",
+    "description": "Price-to-earnings factor exposure, dynamically constructed using regime-switching models to reflect changing market regimes and improve the representation of the P/E value signal",
+    "dataset": {
+      "id": "model133",
+      "name": "Risk Parity Method Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-models",
+      "name": "Risk Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.2905,
+    "userCount": 1,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl133_qes_avid_pe_hedge",
+    "description": "Price-to-earnings factor exposure after explicit hedging of risk factors, isolating PE-specific sensitivity",
+    "dataset": {
+      "id": "model133",
+      "name": "Risk Parity Method Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-models",
+      "name": "Risk Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.3096,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl133_qes_avid_score",
+    "description": "Composite score combining all refined AVID value factor exposures into a single, dynamically weighted value metric for the stock",
+    "dataset": {
+      "id": "model133",
+      "name": "Risk Parity Method Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-models",
+      "name": "Risk Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.3098,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "anl69_aeps_best_crncy_iso",
+    "description": "ISO currency code (e.g., USD, EUR) for the consensus estimate values",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 213,
+    "alphaCount": 615,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_aeps_best_cur_fiscal_qtr_period",
+    "description": "Identifier indicating the current fiscal quarter period for the company as of the point-in-time estimate",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 156,
+    "alphaCount": 649,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_aeps_best_cur_fiscal_year_period",
+    "description": "Current fiscal year period associated with the consensus or \"best\" estimate, likely denoting the fiscal year covered by consensus estimates",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 89,
+    "alphaCount": 169,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_aeps_best_eeps_cur_yr",
+    "description": "The current consensus estimate for Earnings Per Share (EPS) for the ongoing fiscal year",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 172,
+    "alphaCount": 490,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_aeps_best_eeps_nxt_yr",
+    "description": "The consensus estimate for Earnings Per Share (EPS) for the next fiscal year",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 144,
+    "alphaCount": 282,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_aeps_best_fiscal_period_dt",
+    "description": "Fiscal Period Date",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 33,
+    "alphaCount": 52,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_aeps_best_fperiod_override",
+    "description": "Fiscal Period Override",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 14,
+    "alphaCount": 31,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_aeps_expected_report_dt",
+    "description": "The scheduled date when the company's earnings report is expected to be released",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 100,
+    "alphaCount": 363,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_aeps_expected_report_period",
+    "description": "Expected Earnings Report Period",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 5,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_aeps_expected_report_time",
+    "description": "The expected specific time of day when the company's earnings report will be released",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 74,
+    "alphaCount": 341,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_aeps_latest_ann_dt_qtrly",
+    "description": "Latest Announcement Date Quarterly",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 8,
+    "alphaCount": 12,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_aeps_market_status",
+    "description": "Market Status",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 4,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_aeps_most_recent_period_end_dt",
+    "description": "Most Recent Period End Date",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 8,
+    "alphaCount": 18,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_analyst_best_crncy_iso",
+    "description": "ISO currency code for the currency in which the consensus estimate is reported",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 49,
+    "alphaCount": 94,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_analyst_best_cur_fiscal_qtr_period",
+    "description": "Date representing the current fiscal quarter period for the company according to analyst consensus estimates",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 59,
+    "alphaCount": 256,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_analyst_best_cur_fiscal_year_period",
+    "description": "Date representing the current fiscal year period for the company according to analyst consensus estimates",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 42,
+    "alphaCount": 85,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_analyst_best_eeps_cur_yr",
+    "description": "Consensus estimate of earnings per share (EPS) for the current fiscal year",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 54,
+    "alphaCount": 117,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_analyst_best_eeps_nxt_yr",
+    "description": "Consensus estimate of earnings per share (EPS) for the next fiscal year",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 110,
+    "alphaCount": 356,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_analyst_best_fiscal_period_dt",
+    "description": "Fiscal Period Date",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 6,
+    "alphaCount": 23,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_analyst_best_fperiod_override",
+    "description": "Fiscal Period Override",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 6,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_analyst_expected_report_dt",
+    "description": "The expected date the company will release its earnings report",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 40,
+    "alphaCount": 95,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_analyst_expected_report_period",
+    "description": "Expected Earnings Report Period",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 2,
+    "alphaCount": 5,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_analyst_expected_report_time",
+    "description": "The expected time of day at which the earnings report will be released",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 40,
+    "alphaCount": 90,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_analyst_latest_ann_dt_qtrly",
+    "description": "Latest Announcement Date Quarterly",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_analyst_market_status",
+    "description": "Market Status",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 3,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_analyst_most_recent_period_end_dt",
+    "description": "Most Recent Period End Date",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_analyst_tot_analyst_rec",
+    "description": "Total Analyst Recommendations",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 8,
+    "alphaCount": 9,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_bbg_dividend_information_m21_hs_dvd_yqe",
+    "description": "Dividend Per Share 12 Month (Net)",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5009,
+    "userCount": 37,
+    "alphaCount": 107,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_bbg_equity_m21_hs_dvd_yqe",
+    "description": "The total gross dividend paid per share over the past 12 months",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5513,
+    "userCount": 6,
+    "alphaCount": 6,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_best_aeps_lst_qtr",
+    "description": "Actual Earnings per share Last Quarter",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9678,
+    "userCount": 17,
+    "alphaCount": 18,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_best_analyst_rating",
+    "description": "Analyst Rating",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 33,
+    "alphaCount": 43,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_best_bps_4wk_chg",
+    "description": "Book value per share 4 wk Chg",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.791,
+    "userCount": 4,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_best_bps_4wk_up",
+    "description": "Book value per share 4 wk Up",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 7,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_best_bps_chg_pct",
+    "description": "Book value per share % Chg",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7894,
+    "userCount": 3,
+    "alphaCount": 6,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_best_bps_hi",
+    "description": "Book value per share High",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.8003,
+    "userCount": 9,
+    "alphaCount": 17,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_best_bps_lo",
+    "description": "Book value per share Low",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.8003,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_best_bps_median",
+    "description": "Book value per share Median",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.8218,
+    "userCount": 5,
+    "alphaCount": 5,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_best_bps_numest",
+    "description": "Book value per share # Ests",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9995,
+    "userCount": 2,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_best_bps_stddev",
+    "description": "Book value per share Std Dev",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5967,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_best_cps",
+    "description": "Cash flow per share",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6785,
+    "userCount": 5,
+    "alphaCount": 5,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_best_cps_4wk_chg",
+    "description": "Cash flow per share 4 wk Chg",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6689,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_best_cps_4wk_dn",
+    "description": "Cash flow per share 4 wk Down",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 4,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_best_cps_4wk_up",
+    "description": "Cash flow per share 4 wk Up",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 8,
+    "alphaCount": 9,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_best_cps_chg_pct",
+    "description": "Cash flow per share % Chg",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6471,
+    "userCount": 9,
+    "alphaCount": 9,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_best_cps_hi",
+    "description": "Cash flow per share High",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6785,
+    "userCount": 2,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_best_cps_lo",
+    "description": "Cash flow per share Low",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6785,
+    "userCount": 2,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_best_cps_median",
+    "description": "Cash flow per share Median",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6758,
+    "userCount": 8,
+    "alphaCount": 11,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_best_cps_numest",
+    "description": "Cash flow per share # Ests",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_best_cps_stddev",
+    "description": "Cash flow per share Std Dev",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.4485,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "anl69_best_crncy_iso",
+    "description": "ISO currency code representing the currency of the reported or estimated financial metrics",
+    "dataset": {
+      "id": "analyst69",
+      "name": "Fundamental Analyst Estimates"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 35,
+    "alphaCount": 65,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_acct_pay_to_tot_liab_and_eqy",
+    "description": "Ratio of accounts payable to total liabilities and equity, expressed in percentage",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7464,
+    "userCount": 4,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_accum_depr_to_gross_fa",
+    "description": "Measures the percentage of accumulated depreciation to gross fixed assets",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6891,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_accum_depr_to_tot_asset",
+    "description": "Ratio to measure the percentage of accumulated depreciation over total assets",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7131,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_assets_cur_liab",
+    "description": "Assets less Current Liabilities",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6993,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_besion_fonds_de_roulement",
+    "description": "Company's non-cash working capital",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6936,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_bs_tot_invest_asset",
+    "description": "Total assets that a company invests in securities or loans to other parties",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5404,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_cap_expend_ratio",
+    "description": "Measures how much of the cash generated from operations will be left after payment of capital expenditures to service the company's debt",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.8518,
+    "userCount": 9,
+    "alphaCount": 9,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_cap_expend_to_gross_fa",
+    "description": "Measures the percentage of trailing 12-month capital expenditures to gross fixed assets",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6745,
+    "userCount": 3,
+    "alphaCount": 6,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_cap_expend_to_sales",
+    "description": "Measures the percentage of capital expenditures to sales",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.741,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_cap_expend_to_tot_asset",
+    "description": "Measures the percentage of trailing 12-month capital expenditures to total assets",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7379,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_cash_and_equiv_per_tot_liab",
+    "description": "Cash and cash equivalents as a percentage of total liabilities",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.8748,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_cash_dvd_coverage",
+    "description": "Ratio which shows whether the company generates enough earnings for dividend payout, in actual units",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.4152,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_cash_flow_to_net_inc",
+    "description": "Ratio which indicates a company's total net income that is available as cash for investing and financing ongoing business",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7215,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_cf_free_cash_flow",
+    "description": "Measure of financial performance calculated as operating cash flow minus capital expenditures",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.8753,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_cfo_bef_non_cash_wc",
+    "description": "Cash Flow from Operating Activities less Net Changes in Non-Cash Working Capital",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7444,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_cfo_to_sales",
+    "description": "Measures the percentage of Cash from Operations to Sales",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.8673,
+    "userCount": 2,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_chng_work_cap",
+    "description": "The change of current assets minus current liabilities during the period",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7056,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_cogs_to_net_sales",
+    "description": "Percentage of revenue   used to pay costs of goods sold",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6618,
+    "userCount": 2,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_cogs_yr_growth",
+    "description": "Percentage growth in cost of goods sold from last year to the current year",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.646,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_com_eqy_to_tot_cap",
+    "description": "Percentage of a company's total equity capital attributable to common shareholders",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.8761,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_cont_inc_growth",
+    "description": "A percentage increase or decrease of income before extraordinary items by comparing current period with the same period prior year",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.8205,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_cur_asset_to_tot_asset",
+    "description": "Ratio to measure the percentage of total current assets over total assets",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7164,
+    "userCount": 2,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_cur_liab_to_tot_liab_and_eqy",
+    "description": "Ratio of current liabilities to total liabilities and equity, expressed in percentage",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7163,
+    "userCount": 5,
+    "alphaCount": 6,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_depr_exp_to_net_sales",
+    "description": "Depreciation expense as a percentage of revenue",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6437,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_depr_exp_yr_growth",
+    "description": "Percentage increase or decrease of depreciation expenses by comparing current period with same period prior year",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5647,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_earn_for_com_growth",
+    "description": "Percentage growth in earnings to common shareholders from the prior to the current year",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.8203,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_earn_for_com_to_tot_rev",
+    "description": "Net income minus preferred dividends as a percentage of total revenue",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.2558,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_earn_yld",
+    "description": "This field returns the Earnings Yield, calculated as the reciprocal of the P/E ratio",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7913,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_ebit_to_net_sales",
+    "description": "Earnings before interest and taxes as a percentage of net sales",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7508,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_ebit_yr_growth",
+    "description": "Percentage change in earnings before interest and taxes from last year to the current year",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7158,
+    "userCount": 13,
+    "alphaCount": 15,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_ebitda_margin",
+    "description": "Percentage margin of trailing 12-month Earnings Before Interest Taxes Depreciation and Amortization divided by the trailing 12-month Sales",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7806,
+    "userCount": 5,
+    "alphaCount": 5,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_ebitda_per_dil_sh",
+    "description": "EBITDA per diluted share",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7806,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_ebitda_return",
+    "description": "Measures the amount of earnings before interest, taxes, depreciation, and amortization profit generated with common equity",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7765,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_ebitda_to_net_interest",
+    "description": "Measure which assesses a company's financial durability by examining its profitability to pay off interest expense net with received interest income",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6707,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_ebitda_to_revenue",
+    "description": "Measure, in percentage, calculates the relation of Earnings Before Interest, Taxes, Depreciation and Amortization to Revenue",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7805,
+    "userCount": 1,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_eps_annualized",
+    "description": "EPS Annualized is calculated using Basic EPS Before XO multiplied by 4 for quarters and by 2 for semi-annual",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.8683,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_excess_cash_flow",
+    "description": "Available cash left after expenditures and dividends are paid",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6558,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_fonds_de_roulement",
+    "description": "Company's long-term working capital",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6938,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_geo_grow_book_val",
+    "description": "Compound 5-year growth rate in book value per share",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6669,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_geo_grow_cash_flow_per_sh",
+    "description": "Compound 5-year growth rate in cash flow per share",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5828,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_geo_grow_cash_oper_act",
+    "description": "Compound 5-year growth rate in cash from operating activities",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6056,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_geo_grow_cogs_to_net_sales",
+    "description": "Compound 5-year growth rate in cost of goods sold as a percentage of revenue",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5513,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_geo_grow_com_eqy_to_asset",
+    "description": "Compound 5-year growth rate in common equity to total assets",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6855,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_geo_grow_cur_asset",
+    "description": "Compound 5-year growth rate in current assets",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5979,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_geo_grow_cur_ratio",
+    "description": "Compound 5-year growth rate in current ratio",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.5972,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_geo_grow_debt_to_com_eqy",
+    "description": "Compound 5-year growth rate in debt to common equity",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6024,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_geo_grow_dvd_per_sh",
+    "description": "Compound 5-year growth rate in dividend per share",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.3328,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_geo_grow_ebit_to_tot_int_exp",
+    "description": "Compound 5-year growth rate in earnings before interest and taxes to total interest expense",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.3494,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_geo_grow_ebitda_cap_exp_to_int",
+    "description": "Compound 5-year growth rate in earnings before interest, taxes, depreciation, and amortization less capital expenditures to total interest expense",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.3213,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd72_a1_geo_grow_ebitda_to_int_exp",
+    "description": "Compound 5-year growth rate in earnings before interest, taxes, depreciation, and amortization   over interest expense",
+    "dataset": {
+      "id": "fundamental72",
+      "name": "Comprehensive Fundamental Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-data",
+      "name": "Fundamental Data"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.3948,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_ebtq_q1_mada",
+    "description": "Mean of absolute deviation of scaled actual values for Q1 EBITDA",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5563,
+    "userCount": 61,
+    "alphaCount": 128,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_ebtq_q1_madp",
+    "description": "Mean of absolute deviation of predicted values for Q1 EBITDA",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 72,
+    "alphaCount": 149,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_ebtq_q1_mae",
+    "description": "Mean of absolute error of the model of a particular stock for Q1 EBITDA",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5759,
+    "userCount": 16,
+    "alphaCount": 31,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_ebtq_q1_predict",
+    "description": "Predicted value of Q1 EBITDA",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 131,
+    "alphaCount": 541,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_ebtq_q2_mada",
+    "description": "Mean of absolute deviation of scaled actual values for Q2 EBITDA",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5557,
+    "userCount": 17,
+    "alphaCount": 54,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_ebtq_q2_madp",
+    "description": "Mean of absolute deviation of predicted values for Q2 EBITDA",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 32,
+    "alphaCount": 58,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_ebtq_q2_mae",
+    "description": "Mean of absolute error of the model of a particular stock for Q2 EBITDA",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5759,
+    "userCount": 17,
+    "alphaCount": 28,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_ebtq_q2_predict",
+    "description": "Predicted value of Q2 EBITDA",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 40,
+    "alphaCount": 115,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_ebtq_q3_mada",
+    "description": "Mean of absolute deviation of scaled actual values for Q3 EBITDA",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5558,
+    "userCount": 16,
+    "alphaCount": 55,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_ebtq_q3_madp",
+    "description": "Mean of absolute deviation of predicted values for Q3 EBITDA",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 41,
+    "alphaCount": 89,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_ebtq_q3_mae",
+    "description": "Mean of absolute error of the model of a particular stock for Q3 EBITDA",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5759,
+    "userCount": 17,
+    "alphaCount": 29,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_ebtq_q3_predict",
+    "description": "Predicted value of Q3 EBITDA",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 43,
+    "alphaCount": 102,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_ebtq_q4_mada",
+    "description": "Mean of absolute deviation of scaled actual values for Q4 EBITDA",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5557,
+    "userCount": 23,
+    "alphaCount": 55,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_ebtq_q4_madp",
+    "description": "Mean of absolute deviation of predicted values for Q4 EBITDA",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 21,
+    "alphaCount": 33,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_ebtq_q4_mae",
+    "description": "Mean of absolute error of the model of a particular stock for Q4 EBITDA",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5759,
+    "userCount": 12,
+    "alphaCount": 15,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_ebtq_q4_predict",
+    "description": "Predicted value of Q4 EBITDA",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 34,
+    "alphaCount": 69,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_ebty_y1_mada",
+    "description": "Mean of absolute deviation of scaled actual values for annual EBITDA",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.4879,
+    "userCount": 10,
+    "alphaCount": 15,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_ebty_y1_madp",
+    "description": "Mean of Absolute Deviation of Predicted Values for Annual EBITDA (Delay 0)",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 26,
+    "alphaCount": 54,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_ebty_y1_mae",
+    "description": "Mean of absolute error of the model of a particular stock for annual ebitda",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5147,
+    "userCount": 5,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_ebty_y1_predict",
+    "description": "Predicted value of annual ebitda",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 55,
+    "alphaCount": 140,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_epsq_q1_mada",
+    "description": "Mean of absolute deviation of scaled actual values for Q1 eps",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.72,
+    "userCount": 13,
+    "alphaCount": 33,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_epsq_q1_madp",
+    "description": "Mean of absolute deviation of predicted values for Q1 eps",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 23,
+    "alphaCount": 120,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_epsq_q1_mae",
+    "description": "Mean of absolute error of the model of a particular stock for Q1 eps",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.7393,
+    "userCount": 20,
+    "alphaCount": 49,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_epsq_q1_predict",
+    "description": "Predicted value of Q1 eps",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 64,
+    "alphaCount": 234,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_epsq_q2_mada",
+    "description": "Mean of absolute deviation of scaled actual values for Q2 eps",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.7195,
+    "userCount": 12,
+    "alphaCount": 41,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_epsq_q2_madp",
+    "description": "Mean of absolute deviation of predicted values for Q2 eps",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 14,
+    "alphaCount": 45,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_epsq_q2_mae",
+    "description": "Mean of absolute error of the model of a particular stock for Q2 eps",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.7393,
+    "userCount": 17,
+    "alphaCount": 27,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_epsq_q2_predict",
+    "description": "Predicted value of Q2 eps",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 30,
+    "alphaCount": 68,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_epsq_q3_mada",
+    "description": "Mean of absolute deviation of scaled actual values for Q3 eps",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.7198,
+    "userCount": 15,
+    "alphaCount": 43,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_epsq_q3_madp",
+    "description": "Mean of absolute deviation of predicted values for Q3 eps",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 16,
+    "alphaCount": 40,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_epsq_q3_mae",
+    "description": "Mean of absolute error of the model of a particular stock for Q3 eps",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.7393,
+    "userCount": 8,
+    "alphaCount": 11,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_epsq_q3_predict",
+    "description": "Predicted value of Q3 eps",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 35,
+    "alphaCount": 78,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_epsq_q4_mada",
+    "description": "Mean of absolute deviation of scaled actual values for Q4 eps",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.7194,
+    "userCount": 16,
+    "alphaCount": 70,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_epsq_q4_madp",
+    "description": "Mean of absolute deviation of predicted values for Q4 eps",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 15,
+    "alphaCount": 26,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_epsq_q4_mae",
+    "description": "Mean of absolute error of the model of a particular stock for Q4 eps",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.7393,
+    "userCount": 13,
+    "alphaCount": 16,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_epsq_q4_predict",
+    "description": "Predicted value of Q4 eps",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 24,
+    "alphaCount": 64,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_epsy_y1_mada",
+    "description": "Mean of absolute deviation of scaled actual values for annual eps",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.525,
+    "userCount": 9,
+    "alphaCount": 12,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_epsy_y1_madp",
+    "description": "Mean of absolute deviation of predicted values for annual eps",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 16,
+    "alphaCount": 50,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_epsy_y1_mae",
+    "description": "Mean of absolute error of the model of a particular stock for annual EPS",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5564,
+    "userCount": 13,
+    "alphaCount": 14,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_epsy_y1_predict",
+    "description": "Predicted value of annual EPS",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 71,
+    "alphaCount": 248,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_gpsq_q1_mada",
+    "description": "Mean of absolute deviation of scaled actual values for Q1 EPS (GAAP)",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6478,
+    "userCount": 11,
+    "alphaCount": 30,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_gpsq_q1_madp",
+    "description": "Mean of absolute deviation of predicted values for Q1 EPS (GAAP)",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 22,
+    "alphaCount": 72,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_gpsq_q1_mae",
+    "description": "Mean of absolute error of the model of a particular stock for Q1 EPS (GAAP)",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6701,
+    "userCount": 15,
+    "alphaCount": 19,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_gpsq_q1_predict",
+    "description": "Predicted value of Q1 EPS (GAAP)",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 92,
+    "alphaCount": 357,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_gpsq_q2_mada",
+    "description": "Mean of absolute deviation of scaled actual values for Q2 EPS (GAAP)",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6473,
+    "userCount": 12,
+    "alphaCount": 36,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_gpsq_q2_madp",
+    "description": "Mean of absolute deviation of predicted values for Q2 EPS (GAAP)",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 25,
+    "alphaCount": 56,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_gpsq_q2_mae",
+    "description": "Mean of absolute error of the model of a particular stock for Q2 EPS (GAAP)",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6701,
+    "userCount": 21,
+    "alphaCount": 27,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_gpsq_q2_predict",
+    "description": "Predicted value of Q2 EPS (GAAP)",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 32,
+    "alphaCount": 82,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_gpsq_q3_mada",
+    "description": "Mean of absolute deviation of scaled actual values for Q3 EPS (GAAP)",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6471,
+    "userCount": 24,
+    "alphaCount": 68,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mdl211_delta_gpsq_q3_madp",
+    "description": "Mean of absolute deviation of predicted values for Q3 EPS (GAAP)",
+    "dataset": {
+      "id": "model211",
+      "name": "Analyst estimate prediction data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 1.0,
+    "userCount": 17,
+    "alphaCount": 39,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_chars_in_presentation",
+    "description": "Number of characters in presentation",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6539,
+    "userCount": 3,
+    "alphaCount": 11,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_chars_in_qa",
+    "description": "Number of characters in Q&A",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6402,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_conference_call_participants",
+    "description": "Number of conference call participants",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.645,
+    "userCount": 3,
+    "alphaCount": 10,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_corporate_participants",
+    "description": "Number of corporate participants",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6538,
+    "userCount": 2,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_eventtype",
+    "description": "Type of conference call event",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.697,
+    "userCount": 1,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_expirationtime",
+    "description": "Expiration time of the event",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.697,
+    "userCount": 1,
+    "alphaCount": 6,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_lastuptime",
+    "description": "Last update time",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.697,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_occurence",
+    "description": "Occurrence of keywords in presentation and Q&A",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6545,
+    "userCount": 11,
+    "alphaCount": 18,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_occurence_presentation",
+    "description": "Occurrence of keywords in presentation",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6538,
+    "userCount": 15,
+    "alphaCount": 95,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_occurence_qa",
+    "description": "Occurrence of keywords in Q&A",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6402,
+    "userCount": 15,
+    "alphaCount": 23,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_paragraphs_in_presentation",
+    "description": "Number of paragraphs in presentation",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6539,
+    "userCount": 22,
+    "alphaCount": 42,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_position",
+    "description": "Position of keywords in presentation and Q&A",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6545,
+    "userCount": 13,
+    "alphaCount": 19,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_position_presentation",
+    "description": "Position of keywords in presentation",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6545,
+    "userCount": 19,
+    "alphaCount": 34,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_position_qa",
+    "description": "Position of keywords in Q&A",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.6545,
+    "userCount": 12,
+    "alphaCount": 18,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_pparagraphs_in_qa",
+    "description": "Number of paragraphs in Q&A",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6402,
+    "userCount": 1,
+    "alphaCount": 11,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_questions_in_presentation",
+    "description": "Number of questions in presentation",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.4307,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_questions_in_qa",
+    "description": "Number of questions in Q&A",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6382,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_sentences_in_presentation",
+    "description": "Number of sentences in presentation",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6538,
+    "userCount": 1,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_sentences_in_qa",
+    "description": "Number of sentences in Q&A",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6402,
+    "userCount": 1,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_starttime",
+    "description": "Start time of the event",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.697,
+    "userCount": 42,
+    "alphaCount": 78,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_talks_in_presentation",
+    "description": "Number of talks in presentation",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6539,
+    "userCount": 2,
+    "alphaCount": 10,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_talks_in_qa",
+    "description": "Number of talks in Q&A",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6402,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_v2_chars_in_presentation",
+    "description": "Number of characters spoken during the presentation section",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7963,
+    "userCount": 80,
+    "alphaCount": 145,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_v2_chars_in_qa",
+    "description": "Number of characters spoken during the Q&A section",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7963,
+    "userCount": 60,
+    "alphaCount": 91,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_v2_conference_call_participants",
+    "description": "Number of analyst or third-party participants in the call",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7963,
+    "userCount": 54,
+    "alphaCount": 132,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_v2_corporate_participants",
+    "description": "Number of corporate (issuer) participants in the call",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7963,
+    "userCount": 45,
+    "alphaCount": 93,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_v2_eventtype",
+    "description": "Type of conference call event",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7963,
+    "userCount": 45,
+    "alphaCount": 80,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_v2_expirationtime",
+    "description": "Expiration time of the event",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7963,
+    "userCount": 42,
+    "alphaCount": 145,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_v2_lastuptime",
+    "description": "Last update time of the event record",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7963,
+    "userCount": 45,
+    "alphaCount": 194,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_v2_paragraphs_in_presentation",
+    "description": "Number of paragraphs spoken during the presentation section",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7963,
+    "userCount": 23,
+    "alphaCount": 43,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_v2_pparagraphs_in_qa",
+    "description": "Number of paragraphs spoken during the Q&A section",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7963,
+    "userCount": 29,
+    "alphaCount": 73,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_v2_questions_in_presentation",
+    "description": "Number of questions asked during the presentation section",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7963,
+    "userCount": 21,
+    "alphaCount": 44,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_v2_questions_in_qa",
+    "description": "Number of questions asked during the Q&A section",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7963,
+    "userCount": 37,
+    "alphaCount": 65,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_v2_sentences_in_presentation",
+    "description": "Number of sentences spoken during the presentation section",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7963,
+    "userCount": 34,
+    "alphaCount": 56,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_v2_sentences_in_qa",
+    "description": "Number of sentences spoken during the Q&A section",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7963,
+    "userCount": 36,
+    "alphaCount": 58,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_v2_starttime",
+    "description": "Start time of the conference call event",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7963,
+    "userCount": 42,
+    "alphaCount": 78,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_v2_talks_in_presentation",
+    "description": "Number of individual talks or speeches during the presentation section",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7963,
+    "userCount": 34,
+    "alphaCount": 93,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_v2_talks_in_qa",
+    "description": "Number of individual talks or speeches during the Q&A section",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7963,
+    "userCount": 34,
+    "alphaCount": 48,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_v2_words_in_presentation",
+    "description": "Number of words spoken during the presentation section",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7963,
+    "userCount": 45,
+    "alphaCount": 87,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_v2_words_in_qa",
+    "description": "Number of words spoken during the Q&A section",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7963,
+    "userCount": 45,
+    "alphaCount": 141,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_words_in_presentation",
+    "description": "Number of words in presentation",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6539,
+    "userCount": 1,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws52_words_in_qa",
+    "description": "Number of words in Q&A",
+    "dataset": {
+      "id": "news52",
+      "name": "Conference call data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6402,
+    "userCount": 1,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd22_a0_value",
+    "description": "Value of the field",
+    "dataset": {
+      "id": "fundamental22",
+      "name": "Environmental and Social Governance Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-models",
+      "name": "Fundamental Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7229,
+    "userCount": 3,
+    "alphaCount": 5,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd22_a1_value",
+    "description": "Numerical value(s) of one or more ESG KPIs, index mapped by position to codebook item for the given module and vintage",
+    "dataset": {
+      "id": "fundamental22",
+      "name": "Environmental and Social Governance Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-models",
+      "name": "Fundamental Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7234,
+    "userCount": 3,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd22_a2_value",
+    "description": "Numerical value representing the ESG feature or metric relevant to this module, semantics depend on mapping",
+    "dataset": {
+      "id": "fundamental22",
+      "name": "Environmental and Social Governance Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-models",
+      "name": "Fundamental Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7234,
+    "userCount": 2,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd22_a3_value",
+    "description": "Numerical value of the ESG KPI or metric represented by the record; actual metric depends on mapping for the module",
+    "dataset": {
+      "id": "fundamental22",
+      "name": "Environmental and Social Governance Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-models",
+      "name": "Fundamental Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7234,
+    "userCount": 6,
+    "alphaCount": 6,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd22_a4_value",
+    "description": "Numerical value or score for the given ESG KPI in the Social (A4) theme for a specific company and date",
+    "dataset": {
+      "id": "fundamental22",
+      "name": "Environmental and Social Governance Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-models",
+      "name": "Fundamental Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7231,
+    "userCount": 3,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd22_a5_value",
+    "description": "Value of the field",
+    "dataset": {
+      "id": "fundamental22",
+      "name": "Environmental and Social Governance Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-models",
+      "name": "Fundamental Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7234,
+    "userCount": 4,
+    "alphaCount": 5,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd22_a6_value",
+    "description": "Value of the field",
+    "dataset": {
+      "id": "fundamental22",
+      "name": "Environmental and Social Governance Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-models",
+      "name": "Fundamental Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7234,
+    "userCount": 9,
+    "alphaCount": 12,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd22_a7_value",
+    "description": "Value of the field",
+    "dataset": {
+      "id": "fundamental22",
+      "name": "Environmental and Social Governance Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-models",
+      "name": "Fundamental Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7234,
+    "userCount": 8,
+    "alphaCount": 11,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd22_a8_value",
+    "description": "Value of the field",
+    "dataset": {
+      "id": "fundamental22",
+      "name": "Environmental and Social Governance Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-models",
+      "name": "Fundamental Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7233,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd22_a9_value",
+    "description": "Value of the field",
+    "dataset": {
+      "id": "fundamental22",
+      "name": "Environmental and Social Governance Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-models",
+      "name": "Fundamental Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7234,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd22_as_value",
+    "description": "Value of the field",
+    "dataset": {
+      "id": "fundamental22",
+      "name": "Environmental and Social Governance Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-models",
+      "name": "Fundamental Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7234,
+    "userCount": 5,
+    "alphaCount": 5,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd22_s1_value",
+    "description": "Numerical value for the ESG metric/KPI represented in this record",
+    "dataset": {
+      "id": "fundamental22",
+      "name": "Environmental and Social Governance Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-models",
+      "name": "Fundamental Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7233,
+    "userCount": 6,
+    "alphaCount": 10,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd22_s2_value",
+    "description": "Value of the field",
+    "dataset": {
+      "id": "fundamental22",
+      "name": "Environmental and Social Governance Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-models",
+      "name": "Fundamental Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7234,
+    "userCount": 2,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "fnd22_value",
+    "description": "Numerical value of the specific ESG KPI for the given entity and date",
+    "dataset": {
+      "id": "fundamental22",
+      "name": "Environmental and Social Governance Data"
+    },
+    "category": {
+      "id": "fundamental",
+      "name": "Fundamental"
+    },
+    "subcategory": {
+      "id": "fundamental-fundamental-models",
+      "name": "Fundamental Models"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7234,
+    "userCount": 2,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "event_effect_magnitude",
+    "description": "Future feature: This is not yet populated. Impact magnitude on entities affected by the event. < 0.1 = minor impact, 0.1 - 0.9 = moderate impact, > 0.9 high impact.",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.0,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_key_event_confidence",
+    "description": "Confidence score of the key event classification for this story",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 17,
+    "alphaCount": 33,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_key_event_confidence_fast_d1",
+    "description": "Confidence score of the key event classification for this story",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_novelty",
+    "description": "Novelty score within subscribed content sets (100 novel, 50 partially novel, 0 not novel)",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 7,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_novelty_fast_d1",
+    "description": "Novelty score within subscribed content sets (100 novel, 50 partially novel, 0 not novel)",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_novelty_newest_span",
+    "description": "Milliseconds between this story and the most recent older similar story; empty if first",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.9297,
+    "userCount": 7,
+    "alphaCount": 14,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_novelty_newest_span_fast_d1",
+    "description": "Milliseconds between this story and the most recent older similar story; empty if first",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.93,
+    "userCount": 4,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_novelty_oldest_span",
+    "description": "Milliseconds between this story and the oldest known similar story starting the novelty sequence; empty if first",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.9297,
+    "userCount": 6,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_novelty_oldest_span_fast_d1",
+    "description": "Milliseconds between this story and the oldest known similar story starting the novelty sequence; empty if first",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.93,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_relevance",
+    "description": "Overall relevance score of the news story to the referenced entity/entities, on a 0–100 scale where higher means more relevant (e.g., ~100 highly relevant, ~10 marginal)",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 5,
+    "alphaCount": 9,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_relevance_fast_d1",
+    "description": "Overall relevance score of the news story to the referenced entity/entities, on a 0–100 scale where higher means more relevant (e.g., ~100 highly relevant, ~10 marginal)",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_sentiment_negative_confidence",
+    "description": "Confidence score that the story is negative; higher means more confident negative classification",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 17,
+    "alphaCount": 55,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_sentiment_negative_confidence_fast_d1",
+    "description": "Confidence score that the story is negative; higher means more confident negative classification",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_sentiment_phrase_negative",
+    "description": "Count of negative sentiment phrases detected by the bigram classifier",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 6,
+    "alphaCount": 23,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_sentiment_phrase_negative_fast_d1",
+    "description": "Count of negative sentiment phrases detected by the bigram classifier",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_sentiment_phrase_positive",
+    "description": "Count of positive sentiment phrases detected by the bigram classifier",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 4,
+    "alphaCount": 12,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_sentiment_phrase_positive_fast_d1",
+    "description": "Count of positive sentiment phrases detected by the bigram classifier",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_sentiment_positive_confidence",
+    "description": "Confidence score that the story is positive; higher means more confident positive classification",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 9,
+    "alphaCount": 22,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_sentiment_positive_confidence_fast_d1",
+    "description": "Confidence score that the story is positive; higher means more confident positive classification",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 2,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_sentiment_words_negative",
+    "description": "Count of negative sentiment tokens detected by the unigram classifier",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 8,
+    "alphaCount": 26,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_sentiment_words_negative_fast_d1",
+    "description": "Count of negative sentiment tokens detected by the unigram classifier",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 5,
+    "alphaCount": 5,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_sentiment_words_positive",
+    "description": "Count of positive sentiment tokens detected by the unigram classifier",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 6,
+    "alphaCount": 16,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_sentiment_words_positive_fast_d1",
+    "description": "Count of positive sentiment tokens detected by the unigram classifier",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_timestamp_time",
+    "description": "Time component of the story’s publication timestamp as an integer (e.g., HHMMSS or milliseconds)",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 13,
+    "alphaCount": 24,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_timestamp_time_fast_d1",
+    "description": "Time component of the story’s publication timestamp as an integer (e.g., HHMMSS or milliseconds)",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 4,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_title",
+    "description": "The article title text",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 6,
+    "alphaCount": 25,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_title_fast_d1",
+    "description": "The article title text",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_total_words",
+    "description": "Total tokens examined by the unigram classifier",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 6,
+    "alphaCount": 16,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  },
+  {
+    "id": "mws36_total_words_fast_d1",
+    "description": "Total tokens examined by the unigram classifier",
+    "dataset": {
+      "id": "news36",
+      "name": "News Analytics Data"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news-sentiment",
+      "name": "News Sentiment"
+    },
+    "region": "USA",
+    "delay": 1,
+    "universe": "TOP3000",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.2,
+    "themes": []
+  }
+]

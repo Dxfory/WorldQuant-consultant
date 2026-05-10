@@ -1,0 +1,4795 @@
+[
+  {
+    "id": "highest_trade_unit_price",
+    "description": "Maximum price paid per unit in transactions executed by tranches (multiple executions)",
+    "dataset": {
+      "id": "model244",
+      "name": "Insider Transaction Analytics"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6216,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl244_company_sentiment",
+    "description": "Average event sentiment score over the prior 91 days for the company, scaled between -1 and 1",
+    "dataset": {
+      "id": "model244",
+      "name": "Insider Transaction Analytics"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6216,
+    "userCount": 6,
+    "alphaCount": 11,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl244_insider_holdings",
+    "description": "The total equity holdings of the insider after the transaction is completed",
+    "dataset": {
+      "id": "model244",
+      "name": "Insider Transaction Analytics"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6216,
+    "userCount": 4,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl244_insider_level",
+    "description": "Ranking of the insider within the company",
+    "dataset": {
+      "id": "model244",
+      "name": "Insider Transaction Analytics"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6216,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl244_market_cap",
+    "description": "Total market value of a company's outstanding shares of stock in the local currency",
+    "dataset": {
+      "id": "model244",
+      "name": "Insider Transaction Analytics"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6216,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl244_market_cap_eur",
+    "description": "Total market value of a company's outstanding shares of stock denominated in EUR",
+    "dataset": {
+      "id": "model244",
+      "name": "Insider Transaction Analytics"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6216,
+    "userCount": 3,
+    "alphaCount": 28,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl244_market_cap_usd",
+    "description": "Total market value of a company's outstanding shares of stock denominated in USD",
+    "dataset": {
+      "id": "model244",
+      "name": "Insider Transaction Analytics"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6216,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl244_revision",
+    "description": "Sequential revision number tracking updates to the event record",
+    "dataset": {
+      "id": "model244",
+      "name": "Insider Transaction Analytics"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6216,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl244_share_count",
+    "description": "Number of shares involved in the insider transaction",
+    "dataset": {
+      "id": "model244",
+      "name": "Insider Transaction Analytics"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6216,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl244_shares_outstanding",
+    "description": "Total shares of the company currently held by all shareholders",
+    "dataset": {
+      "id": "model244",
+      "name": "Insider Transaction Analytics"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6216,
+    "userCount": 4,
+    "alphaCount": 5,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl244_timestamp_utc",
+    "description": "Date and time when the data was received by the vendor in Coordinated Universal Time",
+    "dataset": {
+      "id": "model244",
+      "name": "Insider Transaction Analytics"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6216,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl244_transaction_significance",
+    "description": "The importance ranking of a deal, where 3 is highest and 1 is lowest significance",
+    "dataset": {
+      "id": "model244",
+      "name": "Insider Transaction Analytics"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6216,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl244_transaction_unit_price",
+    "description": "The price at which the transaction was executed, per unit of measurement",
+    "dataset": {
+      "id": "model244",
+      "name": "Insider Transaction Analytics"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6216,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl244_transaction_value",
+    "description": "Total value of the transaction in the respective/local currency",
+    "dataset": {
+      "id": "model244",
+      "name": "Insider Transaction Analytics"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6216,
+    "userCount": 2,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl244_transaction_value_eur",
+    "description": "Monetary value of the transaction in euros",
+    "dataset": {
+      "id": "model244",
+      "name": "Insider Transaction Analytics"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6216,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl244_transaction_value_usd",
+    "description": "Monetary value of the transaction in US dollars",
+    "dataset": {
+      "id": "model244",
+      "name": "Insider Transaction Analytics"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6216,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl139_mktcap",
+    "description": "Market capitalization of the company/security, typically in USD for this module",
+    "dataset": {
+      "id": "model139",
+      "name": "Inflation based stock selection model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.5529,
+    "userCount": 10,
+    "alphaCount": 13,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl139_score",
+    "description": "Composite RISE alpha score ranging from 0 to 1, indicating expected outperformance in rising inflation environments",
+    "dataset": {
+      "id": "model139",
+      "name": "Inflation based stock selection model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.5529,
+    "userCount": 209,
+    "alphaCount": 766,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "explicit_company_mention_count",
+    "description": "Number of companies specifically listed or scored in the subjects field of the news item",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7417,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "first_appearance_sentence_number",
+    "description": "Index of the first sentence (starting with headline as 1) in which the scored asset is mentioned in the news item",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7417,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "negative_sentiment_probability_2",
+    "description": "Probability (0-1) that the sentiment expressed in the news item is negative towards the asset",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7417,
+    "userCount": 12,
+    "alphaCount": 12,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "neutral_sentiment_probability_2",
+    "description": "Probability (0-1) that the sentiment expressed is neutral towards the asset",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7417,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "news_relevance_score",
+    "description": "A value between 0 and 1 quantifying how relevant the news item is to the asset",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7417,
+    "userCount": 5,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "news_urgency_level",
+    "description": "Integer indicating news urgency (1 = alert/breaking, 3 = full article)",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7417,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_amertimestamp_time",
+    "description": "The time when the news arrived(American time)",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.5999,
+    "coverage": 0.7504,
+    "userCount": 50,
+    "alphaCount": 64,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_apactimestamp_time",
+    "description": "The time when the news arrived(Asian time)",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.5999,
+    "coverage": 0.7504,
+    "userCount": 84,
+    "alphaCount": 142,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_audiences",
+    "description": "Audience code",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7504,
+    "userCount": 17,
+    "alphaCount": 22,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_bodysize",
+    "description": "The size of the current version of the story body in characters",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7504,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_companycount",
+    "description": "The number of companies explicitly listed in the news item in the subjects field",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7504,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_d1_bodysize",
+    "description": "The size of the current version of the story body in characters",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "coverage": 0.9074,
+    "userCount": 28,
+    "alphaCount": 38,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_d1_companycount",
+    "description": "The number of companies explicitly listed in the news item in the subjects field",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "coverage": 0.9095,
+    "userCount": 9,
+    "alphaCount": 17,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_d1_feedtimestamp_time",
+    "description": "The time when the data was available on the feed",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "coverage": 0.9095,
+    "userCount": 17,
+    "alphaCount": 19,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_d1_firstcreated_time",
+    "description": "UTC timestamp for the first version of the story (time)",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "coverage": 0.9095,
+    "userCount": 11,
+    "alphaCount": 17,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_d1_firstmentionsentence",
+    "description": "The first sentence, starting with the headline, in which the scored asset is mentioned. Thus, a value of 1 denotes the headline, 2 the first sentence of the story body, 3 the second sentence, etc.",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "coverage": 0.9019,
+    "userCount": 13,
+    "alphaCount": 15,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_d1_noveltycounts",
+    "description": "The number of similar items on a particular asset within 5 time windows. The periods are 12 hours, 24 hours, 3 days, 5 days and 7 days prior to the news item's timestamp.",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "coverage": 0.9095,
+    "userCount": 15,
+    "alphaCount": 32,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_d1_relevance",
+    "description": "The number indicating the relevance of the news item to the asset. It ranges from 0 to 1.",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "coverage": 0.9095,
+    "userCount": 13,
+    "alphaCount": 17,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_d1_sentencecount",
+    "description": "The total number of sentences in the news item",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "coverage": 0.9095,
+    "userCount": 24,
+    "alphaCount": 33,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_d1_sentimentclass",
+    "description": "This field indicates the predominant sentiment class for this news item with respect to this asset",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "coverage": 0.8987,
+    "userCount": 31,
+    "alphaCount": 43,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_d1_sentimentnegative",
+    "description": "The probability that the sentiment of the news item was negative for the asset",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "coverage": 0.9095,
+    "userCount": 76,
+    "alphaCount": 213,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_d1_sentimentneutral",
+    "description": "The probability that the sentiment of the news item was neutral for the asset",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "coverage": 0.9095,
+    "userCount": 17,
+    "alphaCount": 22,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_d1_sentimentpositive",
+    "description": "The probability that the sentiment of the news item was positive for the asset",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "coverage": 0.9095,
+    "userCount": 21,
+    "alphaCount": 26,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_d1_sentimentwordcount",
+    "description": "The number of lexical tokens (words and punctuation) in the sections of the item text that are deemed relevant to the asset",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "coverage": 0.9095,
+    "userCount": 23,
+    "alphaCount": 38,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_d1_sourcetimestamp_time",
+    "description": "UTC timestamp of this news item (time)",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "coverage": 0.9095,
+    "userCount": 21,
+    "alphaCount": 74,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_d1_urgency",
+    "description": "Differentiates story types: 1: alert, 3: article",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "coverage": 0.9095,
+    "userCount": 14,
+    "alphaCount": 17,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_d1_volumecounts",
+    "description": "The number of items on a particular asset within 5 time windows. The periods are 12 hours, 24 hours, 3 days, 5 days, and 7 days prior to the news item's timestamp",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "coverage": 0.9095,
+    "userCount": 20,
+    "alphaCount": 28,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_d1_wordcount",
+    "description": "The total number of lexical tokens (words and punctuation) in the news item. Can be used in conjunction with sentimentWordCount to determine the proportion of the news item discussing an asset",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "coverage": 0.9095,
+    "userCount": 24,
+    "alphaCount": 25,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_emeatimestamp_time",
+    "description": "The time when the news arrived(European time)",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.8007,
+    "coverage": 0.7504,
+    "userCount": 20,
+    "alphaCount": 23,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_feedtimestamp_time",
+    "description": "The time when the data was available on the feed",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7504,
+    "userCount": 4,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_firstcreated_time",
+    "description": "UTC timestamp for the first version of the story(time)",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7504,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_firstmentionsentence",
+    "description": "The first sentence, starting with the headline, in which the scored asset is mentioned Thus, a value of 1 denotes the headline, 2 the first sentence of the story body, 3 the second sentence, etc",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7504,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_linkedidpositions",
+    "description": "Position of the linkedId in the complete list of linked Ids 0 is the first/oldest, and the largest/most recent is the 7-day itemCount minus 1",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7504,
+    "userCount": 17,
+    "alphaCount": 20,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_linkedidvalues",
+    "description": "id of the item",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7504,
+    "userCount": 30,
+    "alphaCount": 65,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_noveltycounts",
+    "description": "The number of similar items on a particular asset within 5 time windows The periods are 12 hours, 24 hours, 3 days, 5 days and 7 days prior to the news item’s timestamp",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7504,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_relevance",
+    "description": "The number indicating the relevance of the news item to the asset It ranges from 0 to 1",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7504,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_sentencecount",
+    "description": "The total number of sentences in the news item",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7504,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_sentimentnegative",
+    "description": "The probability that the sentiment of the news item was negative for the asset",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7504,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_sentimentneutral",
+    "description": "The probability that the sentiment of the news item was neutral for the asset",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7504,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_sentimentpositive",
+    "description": "The probability that the sentiment of the news item was positive for the asset",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7504,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_sentimentwordcount",
+    "description": "The number of lexical tokens (words and punctuation) in the sections of the item text that are deemed relevant to the asset",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7504,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_sourcetimestamp_time",
+    "description": "UTC timestamp of this news item(time)",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7504,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_subjects",
+    "description": "Topic codes and company identifiers that relate to this news item",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7504,
+    "userCount": 16,
+    "alphaCount": 17,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_urgency",
+    "description": "Differentiates story types1: alert, 3: article",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7504,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_volumecounts",
+    "description": "The number of items on a particular asset within 5 time windows The periods are 12 hours, 24 hours, 3 days, 5 days and 7 days prior to the news item’s timestamp",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7504,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_windows",
+    "description": "The windowed count group is used to associate a count with the window of time it relates to It is used for the noveltyCounts and volumeCountsLength of time the count covers nH (for hours) or nD (for days) Default values are “12H”, “24H”, “3D”, “5D”, and “7D”",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7504,
+    "userCount": 12,
+    "alphaCount": 12,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "nws31_wordcount",
+    "description": "The total number of lexical tokens (words and punctuation) in the news itemCan be used in conjunction with sentimentWordCount to determine the proportion of the news item discussing an asset",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7504,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "positive_sentiment_probability_2",
+    "description": "Probability (0-1) that the sentiment expressed is positive towards the asset",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7417,
+    "userCount": 5,
+    "alphaCount": 5,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "predominant_sentiment_class",
+    "description": "Primary sentiment classification for the news item regarding the asset (-1: negative, 0: neutral, 1: positive)",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7417,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "sentiment_analysis_word_count",
+    "description": "Number of words and punctuation in text deemed relevant for sentiment scoring for the asset",
+    "dataset": {
+      "id": "news31",
+      "name": "News Analytics on Equities"
+    },
+    "category": {
+      "id": "news",
+      "name": "News"
+    },
+    "subcategory": {
+      "id": "news-news",
+      "name": "News"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7417,
+    "userCount": 2,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_ad_rel_ret_per",
+    "description": "Average daily index relative return percentage",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 5,
+    "alphaCount": 5,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_ad_ret_per",
+    "description": "Average daily percent return over the idea’s lifetime",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_ang_inv",
+    "description": "Time-weighted average investment",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 7,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_avg_dur",
+    "description": "Average age of the idea limited to the selected period",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 6,
+    "alphaCount": 10,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_avg_initial_prc",
+    "description": "Average share price weighted by volume of each share purchase",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_avg_initial_prc_wfee",
+    "description": "The avg initial price adjusted to include fee payment when fees are applied",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_beta",
+    "description": "A measure of the volatility or systematic risk of a security compared to the market, updated monthly based on last 20 months",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 4,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_bias_weighted_ret",
+    "description": "Non-Functional",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_bm_exchange_rate",
+    "description": "Exchange rate by which the benchmark will be measured",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_bm_fx_ret",
+    "description": "FX return made by the benchmark due to currency movements",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 3,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_bm_ret",
+    "description": "Return of the benchmark index",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_bm_ret_wo_fx",
+    "description": "Benchmark’s return excluding foreign exchange effects (raw benchmark return)",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 2,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_closed_prc",
+    "description": "Price at which the idea was closed",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_current_inv",
+    "description": "Current investment amount, including increases and partial closures",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 17,
+    "alphaCount": 21,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_days_since_inception",
+    "description": "Number of trading days since the idea was submitted",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 9,
+    "alphaCount": 14,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_idea_count",
+    "description": "Number of ideas in a group, useful when grouping ideas",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_index_period_end_prc",
+    "description": "Benchmark or index end price for the selected performance period",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_index_period_start_prc",
+    "description": "Benchmark or index start price for the selected performance period",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 2,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_index_ret_per",
+    "description": "Return percentage had the investment been made in the selected index",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_initial_inv",
+    "description": "Initial investment amount allocated to the idea",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 4,
+    "alphaCount": 5,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_inv_exchange_rate",
+    "description": "Exchange rate between stock and investment currencies, typically the FX rate on the period end date",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_jensensalpha",
+    "description": "Risk-adjusted performance measure representing return over market",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 7,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_latest_prc",
+    "description": "The current price of the stock in the idea",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 4,
+    "alphaCount": 5,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_net_market_exposure",
+    "description": "Difference in fractional total value between long and short ideas (net market exposure)",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 29,
+    "alphaCount": 36,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_new_value",
+    "description": "New value set for the stop-loss percent, target price, or capital allocation",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_old_value",
+    "description": "Previous value of the stop-loss percent, target price, or capital allocation before the latest change",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 4,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_period_end_prc",
+    "description": "Close price on day at end of selected period",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 4,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_period_start_prc",
+    "description": "Close price on day before start of selected period",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_prc",
+    "description": "The price given to the investment change",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_prc_change_per_today",
+    "description": "Percent change in stock price since previous close of day price",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_prc_change_today",
+    "description": "Change in stock price since previous day close",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_prev_close_prc",
+    "description": "Last available close price for the stock",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 4,
+    "alphaCount": 5,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_probability",
+    "description": "Tag giving a quantitative measure of conviction",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_real_ret",
+    "description": "Realized return from closed portions of the idea since inception",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_real_ret_today",
+    "description": "Increase in realized return since the previous market close",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_real_value",
+    "description": "Monetary value of the realized (closed) portion of the idea",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_rel_index_ret",
+    "description": "Difference in return percentage between the idea and the comparative index",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_rel_index_ret_per",
+    "description": "Difference in return percentage between the idea and the comparative index",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_rel_ret_per_today",
+    "description": "Relative return percentage today",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_rel_ret_today",
+    "description": "Increase in realised return since last market close",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_ret_per_today",
+    "description": "Percentage return since last market close",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_ret_today",
+    "description": "Increase in realised return since last market close",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 2,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_risk_free_rate",
+    "description": "The unrealised return on an open idea",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 3,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_stock_ret_per",
+    "description": "Net total return from all ideas since the previous market close",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_stock_ret_per_relative",
+    "description": "Average daily return percentage had the investment been made in the relative benchmark index",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_target_prc",
+    "description": "Author’s stated likely exit price for the idea",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_time",
+    "description": "Approximate time horizon for the idea",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_tot_ret",
+    "description": "Sum of realised and unrealised returns",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_tot_ret_per",
+    "description": "Total return as a percentage of average investment",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl45_tot_ret_wo_fx",
+    "description": "Total return excluding any foreign exchange effects",
+    "dataset": {
+      "id": "analyst45",
+      "name": "Analyst Trade Ideas"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 0,
+    "alphaCount": 0,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl94_b_mtl_dlyspe",
+    "description": "Earnings yield for the last twelve months, calculated as earnings over price, using Bloomberg-sourced trailing data",
+    "dataset": {
+      "id": "analyst94",
+      "name": "Fundamental Income and Dividend Model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.5009,
+    "userCount": 17,
+    "alphaCount": 39,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl94_cfrnoa",
+    "description": "Cash flow return on net operating assets, a quality/profitability metric indicating how efficiently a company generates cash flow from its operational assets",
+    "dataset": {
+      "id": "analyst94",
+      "name": "Fundamental Income and Dividend Model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.4968,
+    "userCount": 21,
+    "alphaCount": 25,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl94_div_payout",
+    "description": "Dividend payout ratio, calculated as Dividends divided by Earnings (factor is descending, so higher value = worse for sorting)",
+    "dataset": {
+      "id": "analyst94",
+      "name": "Fundamental Income and Dividend Model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.4957,
+    "userCount": 12,
+    "alphaCount": 31,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl94_divyld",
+    "description": "Trailing (historical) dividend yield expressed as a percentage, calculated as dividends paid over market price",
+    "dataset": {
+      "id": "analyst94",
+      "name": "Fundamental Income and Dividend Model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.5011,
+    "userCount": 10,
+    "alphaCount": 10,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl94_divyld_exp",
+    "description": "Expected, forward-looking dividend yield percentage based on analyst or vendor estimates",
+    "dataset": {
+      "id": "analyst94",
+      "name": "Fundamental Income and Dividend Model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.501,
+    "userCount": 15,
+    "alphaCount": 32,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl94_find",
+    "description": "Composite model score from the Fundamental INcome and Dividend (FIND) framework, summarizing value, dividend, quality, and sentiment characteristics",
+    "dataset": {
+      "id": "analyst94",
+      "name": "Fundamental Income and Dividend Model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.5011,
+    "userCount": 83,
+    "alphaCount": 240,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl94_gva_mmocer_se",
+    "description": "Normalized average score of sell side analyst recommendations for the stock within the relevant regional universe",
+    "dataset": {
+      "id": "analyst94",
+      "name": "Fundamental Income and Dividend Model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.4926,
+    "userCount": 20,
+    "alphaCount": 39,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl94_m1m21_ntr",
+    "description": "Momentum factor calculated as the 12-month (trailing) price return minus the most recent 1-month return, then normalized regionally",
+    "dataset": {
+      "id": "analyst94",
+      "name": "Fundamental Income and Dividend Model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.5011,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl94_m3r_mtn_spd_se",
+    "description": "3-month momentum in analyst consensus estimate revisions for next twelve months’ dividend per share",
+    "dataset": {
+      "id": "analyst94",
+      "name": "Fundamental Income and Dividend Model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.4942,
+    "userCount": 6,
+    "alphaCount": 6,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl94_m3r_mtn_spe_se",
+    "description": "Three-month momentum of analyst consensus revisions to next-twelve-months earnings per share (EPS) estimates",
+    "dataset": {
+      "id": "analyst94",
+      "name": "Fundamental Income and Dividend Model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.4936,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl94_mktcap",
+    "description": "Market capitalization, the total market value of a company's outstanding shares",
+    "dataset": {
+      "id": "analyst94",
+      "name": "Fundamental Income and Dividend Model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.5011,
+    "userCount": 6,
+    "alphaCount": 27,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl94_news_sent_3m",
+    "description": "Change in news sentiment score for the stock over the last three months, derived from vendor NLP analysis",
+    "dataset": {
+      "id": "analyst94",
+      "name": "Fundamental Income and Dividend Model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.4801,
+    "userCount": 8,
+    "alphaCount": 10,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl94_ntr_pt",
+    "description": "Sell-side analyst target price return: (Target Price minus Current Price) divided by Current Price; normalized within the regional universe",
+    "dataset": {
+      "id": "analyst94",
+      "name": "Fundamental Income and Dividend Model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.4951,
+    "userCount": 34,
+    "alphaCount": 45,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl94_roe",
+    "description": "Return on equity, calculated as net income divided by shareholder equity, usually z-score normalized within the region",
+    "dataset": {
+      "id": "analyst94",
+      "name": "Fundamental Income and Dividend Model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.4998,
+    "userCount": 9,
+    "alphaCount": 11,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl94_spd_rtni_rg",
+    "description": "Smoothed/interpolated annualized growth rate of dividend per share for the company",
+    "dataset": {
+      "id": "analyst94",
+      "name": "Fundamental Income and Dividend Model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.4504,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl94_spe_rtni_rg",
+    "description": "Smoothed/interpolated annualized growth rate of earnings per share for the company",
+    "dataset": {
+      "id": "analyst94",
+      "name": "Fundamental Income and Dividend Model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.5002,
+    "userCount": 5,
+    "alphaCount": 16,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl94_ve_fcf",
+    "description": "Free cash flow divided by enterprise value, a valuation ratio showing profitability relative to company valuation",
+    "dataset": {
+      "id": "analyst94",
+      "name": "Fundamental Income and Dividend Model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.4968,
+    "userCount": 45,
+    "alphaCount": 112,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "mdl109_1yf_dlyspe",
+    "description": "Earnings yield (inverse of P/E) based on analyst consensus forecast EPS for the next fiscal year (FY1), using the median estimate",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8043,
+    "userCount": 161,
+    "alphaCount": 373,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_1yf_ep",
+    "description": "Price-to-Earnings ratio calculated as current stock price divided by analyst consensus forecast EPS for the next fiscal year (FY1), using the median estimate",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7907,
+    "userCount": 92,
+    "alphaCount": 232,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_2yf_dlyspe",
+    "description": "Earnings yield (inverse of P/E) based on analyst consensus forecast EPS for the second next fiscal year (FY2), using the median estimate",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8029,
+    "userCount": 163,
+    "alphaCount": 507,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_2yf_ep",
+    "description": "Price-to-Earnings ratio calculated as current stock price divided by analyst consensus forecast EPS for the second next fiscal year (FY2), using the median estimate",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7961,
+    "userCount": 73,
+    "alphaCount": 228,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_57_03_am",
+    "description": "Signal for moving average crossover: difference or indicator of when 30-week moving average crosses 75-week moving average of price; identifies longer-term trend shifts",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7984,
+    "userCount": 6,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_63_51_am",
+    "description": "Signal for moving average crossover: difference between 15-week and 36-week moving averages of price; often used to detect medium-term trend reversals",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8086,
+    "userCount": 5,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_abn_volm",
+    "description": "Abnormal trading volume indicator, most likely measuring how the most recent trading volume deviates from typical levels (such as relative to a moving average), highlighting spikes in activity",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8146,
+    "userCount": 9,
+    "alphaCount": 15,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_ac_5y_sale",
+    "description": "Acceleration in revenue (sales) growth rate measured over the previous five years, quantifying the change in the growth trajectory of company revenues",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7983,
+    "userCount": 6,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_accruals",
+    "description": "Sloan (1996) accruals metric: measures the portion of earnings due to accrual accounting versus cash flow, often used as a quality or earnings manipulation risk indicator",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8129,
+    "userCount": 17,
+    "alphaCount": 51,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_altman1968",
+    "description": "Altman's z-score for bankruptcy prediction as defined in the original 1968 model (composite score using several financial ratios)",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8115,
+    "userCount": 10,
+    "alphaCount": 24,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_altman1983",
+    "description": "Altman's Z-score using the 1983 revised formula, an updated bankruptcy risk and financial distress indicator",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8128,
+    "userCount": 9,
+    "alphaCount": 12,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_amihud",
+    "description": "Amihud illiquidity ratio, measuring price impact per unit of trading volume",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8144,
+    "userCount": 10,
+    "alphaCount": 11,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_aor",
+    "description": "Return on assets based on trailing twelve months",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8113,
+    "userCount": 10,
+    "alphaCount": 14,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_asset_gr",
+    "description": "Asset growth anomaly factor as defined by Cooper, Gulen, and Schill (2008); generally the year-over-year growth rate of total assets, used as a predictive factor for stock returns",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8131,
+    "userCount": 5,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_asset_ps_gr",
+    "description": "Year-over-year growth rate in total assets on a per share basis (total assets divided by shares outstanding)",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8107,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_b_mtl_dlyspe",
+    "description": "Earnings yield based on last twelve months (LTM) reported earnings per share, using the basic (not diluted) calculation; measured as EPS divided by price",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8147,
+    "userCount": 29,
+    "alphaCount": 48,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_b_mtl_ep",
+    "description": "Price-to-earnings ratio, based on trailing twelve months (LTM) basic EPS (not diluted), calculated as current price divided by basic EPS over the last year",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7745,
+    "userCount": 27,
+    "alphaCount": 38,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_bb",
+    "description": "Bollinger Bands, a technical analysis indicator constructed from a moving average and standard deviation bands to measure price volatility and possible trading ranges",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8156,
+    "userCount": 10,
+    "alphaCount": 15,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_berry",
+    "description": "Berry ratio, defined as gross profits divided by operating expenses",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7392,
+    "userCount": 4,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_bookp",
+    "description": "Book-to-market ratio, calculated as book value divided by market price; a value factor commonly used for valuation comparisons",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.815,
+    "userCount": 19,
+    "alphaCount": 42,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_bookp_fy1",
+    "description": "Book-to-market ratio (the inverse of price-to-book) using forecasted book value for the next fiscal year (FY1)",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7971,
+    "userCount": 16,
+    "alphaCount": 39,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_cfo_curr_liab",
+    "description": "Ratio of cash flow from operations to current liabilities (measures a firm's ability to cover its short-term obligations with operational cash generation)",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8039,
+    "userCount": 20,
+    "alphaCount": 23,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_cfoyld",
+    "description": "Operating cash flow yield, calculated as operating cash flow divided by market capitalization (price), indicating the cash generation efficiency relative to stock price",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8043,
+    "userCount": 95,
+    "alphaCount": 180,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_cfoyld_fy1",
+    "description": "Operating cash flow yield (i.e. operating cash flow divided by market capitalization or enterprise value) projected or estimated for the next fiscal year (FY1)",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7718,
+    "userCount": 20,
+    "alphaCount": 36,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_cfps_sur",
+    "description": "Normalized cash flow per share (CFPS) surprise: standardized difference between actual reported CFPS and consensus analyst estimate, showing the degree to which actual results deviate from expectations",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.713,
+    "userCount": 59,
+    "alphaCount": 97,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_cfrnoa",
+    "description": "Cash flow return on net operating assets: cash flow from operations divided by net operating assets",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7618,
+    "userCount": 19,
+    "alphaCount": 25,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_cfroa",
+    "description": "Cash flow return on assets, measuring operating cash flow generated as a percentage of total assets",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7955,
+    "userCount": 55,
+    "alphaCount": 108,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_cfroe",
+    "description": "Cash flow return on equity, measuring operating cash flow generated as a percentage of shareholders’ equity",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8037,
+    "userCount": 26,
+    "alphaCount": 31,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_cfroe_fy1",
+    "description": "Forecasted Cash Flow Return on Equity for the next fiscal year (FY1)",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7674,
+    "userCount": 8,
+    "alphaCount": 15,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_current_r",
+    "description": "Current ratio, a liquidity metric defined as current assets divided by current liabilities",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8149,
+    "userCount": 4,
+    "alphaCount": 13,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_d0252ntr",
+    "description": "Total return of the stock over the past 2520 days (approximately 120 months, or 10 years)",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.5985,
+    "userCount": 17,
+    "alphaCount": 33,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_d0621ntr",
+    "description": "Total return over the past 1260 trading days (approximately 60 months or 5 years), including price appreciation and any dividends",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7108,
+    "userCount": 3,
+    "alphaCount": 6,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_d12ntr",
+    "description": "Total return of the security over the past 21 trading days (approximately 1 month)",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8143,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_d252_ntr",
+    "description": "Stock price momentum as total return over the past 252 trading days, commonly representing one full year (12 months) of trading days",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8008,
+    "userCount": 3,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_d36ntr",
+    "description": "Cumulative total return over the past 63 trading days (approximately 3 months), including price appreciation and dividends if applicable",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8129,
+    "userCount": 1,
+    "alphaCount": 5,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_d621_ntr",
+    "description": "Stock return (momentum) over past 126 trading days, roughly 6 months",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8091,
+    "userCount": 1,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_d981_ntr",
+    "description": "Stock price momentum as total return over the past 189 trading days, approximately equivalent to the last nine months",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8052,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_d_mtl_dlyspe",
+    "description": "Diluted earnings yield for the last twelve months—LTM net income per diluted share divided by price, the inverse of the diluted P/E ratio",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8044,
+    "userCount": 20,
+    "alphaCount": 22,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_d_mtl_ep",
+    "description": "Price-to-Earnings ratio calculated on trailing twelve months (LTM) earnings per share, using diluted earnings to account for potential share dilution",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7641,
+    "userCount": 25,
+    "alphaCount": 96,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_debt_capital",
+    "description": "Ratio of total debt to total capital (i.e., total debt divided by the sum of total debt and equity, gauges overall leverage)",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7377,
+    "userCount": 7,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_debt_chg",
+    "description": "Year-over-year change in total debt outstanding for the company",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7576,
+    "userCount": 7,
+    "alphaCount": 9,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_debt_equity",
+    "description": "Ratio of total debt to total equity, measuring financial leverage",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7402,
+    "userCount": 5,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_debt_mktcapital",
+    "description": "Ratio of total debt to the market value of total capital (i.e., total debt divided by market capitalization plus debt, reflecting market-based leverage)",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8156,
+    "userCount": 4,
+    "alphaCount": 6,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_div_payout",
+    "description": "Dividend payout ratio, trailing; proportion of earnings paid out as dividends over the trailing period",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7959,
+    "userCount": 9,
+    "alphaCount": 18,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_divyld_bb",
+    "description": "Total yield combining dividend yield and yield from share buybacks or share count reduction; represents shareholder return from both dividends and buyback activity",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.804,
+    "userCount": 6,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_divyld_exp",
+    "description": "Expected future dividend yield based on analyst or company forecasts",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8156,
+    "userCount": 15,
+    "alphaCount": 28,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_divyld_fy1",
+    "description": "Forecasted dividend yield for the next fiscal year (FY1)",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8049,
+    "userCount": 41,
+    "alphaCount": 77,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_divyld_sh",
+    "description": "Shareholder total yield: combines dividend yield with net share buybacks minus share issuances, representing the total cash return to shareholders as a percent of price",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8156,
+    "userCount": 6,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_divyld_trl",
+    "description": "Trailing dividend yield, calculated as sum of dividends over past year divided by current price",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8156,
+    "userCount": 7,
+    "alphaCount": 11,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  },
+  {
+    "id": "mdl109_dly_lf_org",
+    "description": "Growth flow yield",
+    "dataset": {
+      "id": "model109",
+      "name": "Fundamentals and Technical Indicators Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "EUR",
+    "delay": 1,
+    "universe": "TOP2500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8059,
+    "userCount": 42,
+    "alphaCount": 82,
+    "pyramidMultiplier": 1.4,
+    "themes": []
+  }
+]

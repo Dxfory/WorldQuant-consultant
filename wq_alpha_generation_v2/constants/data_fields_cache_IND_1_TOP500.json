@@ -1,0 +1,5696 @@
+[
+  {
+    "id": "actuals_reporting_currency",
+    "description": "Home currency of instrument",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.8904,
+    "userCount": 29,
+    "alphaCount": 37,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_actual",
+    "description": "Announced financial data",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.8904,
+    "userCount": 59,
+    "alphaCount": 74,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_cfps_high",
+    "description": "Cash Flow Per Share - The highest estimation for the annual forecast",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5056,
+    "userCount": 153,
+    "alphaCount": 312,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_cfps_low",
+    "description": "Cash Flow Per Share - The lowest estimation for the upcoming fiscal year",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5056,
+    "userCount": 76,
+    "alphaCount": 105,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_cfps_mean",
+    "description": "Cash Flow Per Share - average of estimations for the annual frequency",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5056,
+    "userCount": 82,
+    "alphaCount": 110,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_cfps_median",
+    "description": "Cash Flow Per Share - Median value among forecasts for the annual frequency",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5056,
+    "userCount": 73,
+    "alphaCount": 112,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_cfps_number",
+    "description": "Cash Flow Per Share - number of estimations for annual frequency",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.5056,
+    "userCount": 80,
+    "alphaCount": 109,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_div_high",
+    "description": "Dividend per share - The highest estimation for the annual forecast.",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9249,
+    "userCount": 360,
+    "alphaCount": 2386,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_div_low",
+    "description": "Dividend - The lowest estimation for the annual forecast",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9249,
+    "userCount": 277,
+    "alphaCount": 1104,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_div_mean",
+    "description": "Dividend per share - average of estimations for annual frequency",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9249,
+    "userCount": 355,
+    "alphaCount": 1551,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_div_median",
+    "description": "Dividend per share - Median value among forecasts",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9249,
+    "userCount": 336,
+    "alphaCount": 3830,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_div_number",
+    "description": "Number of estimations for Dividend per share - annually",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9249,
+    "userCount": 156,
+    "alphaCount": 417,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_div_std",
+    "description": "Dividend per share - standard deviation of estimations",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6713,
+    "userCount": 140,
+    "alphaCount": 226,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_dts_spe",
+    "description": "Earnings per share - standard deviation of estimations",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.6542,
+    "userCount": 152,
+    "alphaCount": 503,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_eps_high",
+    "description": "Earnings per share - The highest estimation",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9687,
+    "userCount": 772,
+    "alphaCount": 6843,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_eps_low",
+    "description": "Earnings per share - The lowest estimation for annual frequency",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9687,
+    "userCount": 291,
+    "alphaCount": 1364,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_eps_mean",
+    "description": "Earnings per share - mean of estimations for annual frequency",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9687,
+    "userCount": 911,
+    "alphaCount": 7692,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_eps_number",
+    "description": "Earnings per share - number of estimations for annual frequency",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9687,
+    "userCount": 334,
+    "alphaCount": 2499,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_afv4_median_eps",
+    "description": "Earnings per share - median of estimations",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9687,
+    "userCount": 555,
+    "alphaCount": 5375,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_basicafv4_actual",
+    "description": "Announced financial data for the annual period.",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.8923,
+    "userCount": 41,
+    "alphaCount": 43,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_basicqfv4_actual",
+    "description": "Announced financial data",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9366,
+    "userCount": 22,
+    "alphaCount": 24,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_bvps_high",
+    "description": "Book value - the highest estimation, per share",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.4719,
+    "userCount": 55,
+    "alphaCount": 86,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_bvps_low",
+    "description": "Book value - the lowest estimation, per share",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.4719,
+    "userCount": 52,
+    "alphaCount": 84,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_bvps_median",
+    "description": "Book value per share - Median value among forecasts",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.4719,
+    "userCount": 57,
+    "alphaCount": 72,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_bvps_number",
+    "description": "Book value per share - number of estimations",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.4719,
+    "userCount": 53,
+    "alphaCount": 72,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_detailrecv4_est",
+    "description": "Estimation value for recommendation detail",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9755,
+    "userCount": 322,
+    "alphaCount": 821,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_dez1afv4_est",
+    "description": "Estimation value",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9749,
+    "userCount": 49,
+    "alphaCount": 72,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_dez1afv4_preest",
+    "description": "The previous estimation of finanicial item",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9749,
+    "userCount": 27,
+    "alphaCount": 34,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_dez1basicafv4_est",
+    "description": "Estimation value",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9769,
+    "userCount": 43,
+    "alphaCount": 57,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_dez1basicafv4_preest",
+    "description": "The previous estimation of finanicial item",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9769,
+    "userCount": 40,
+    "alphaCount": 49,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_dez1basicqfv4_est",
+    "description": "Estimation value",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9649,
+    "userCount": 31,
+    "alphaCount": 44,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_dez1basicqfv4_preest",
+    "description": "The previous estimation of finanicial item",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9649,
+    "userCount": 29,
+    "alphaCount": 34,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_dez1basicsafv4_est",
+    "description": "Estimation value",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7186,
+    "userCount": 24,
+    "alphaCount": 28,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_dez1basicsafv4_preest",
+    "description": "The previous estimation of finanicial item",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7186,
+    "userCount": 29,
+    "alphaCount": 30,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_dez1qfv4_est",
+    "description": "Estimation value",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9655,
+    "userCount": 81,
+    "alphaCount": 144,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_dez1qfv4_preest",
+    "description": "The previous estimation of finanicial item",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9655,
+    "userCount": 30,
+    "alphaCount": 45,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_dez1safv4_est",
+    "description": "Estimation value",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7393,
+    "userCount": 19,
+    "alphaCount": 26,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_dez1safv4_preest",
+    "description": "The previous estimation of finanicial item",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.7393,
+    "userCount": 20,
+    "alphaCount": 25,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_dts_ptp",
+    "description": "Pretax income- std of estimations",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.527,
+    "userCount": 72,
+    "alphaCount": 108,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_ebit_high",
+    "description": "Earnings before interest and taxes - The highest estimation",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9106,
+    "userCount": 319,
+    "alphaCount": 2137,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_ebit_low",
+    "description": "Earnings before interest and taxes - The lowest estimation",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9106,
+    "userCount": 327,
+    "alphaCount": 2397,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_ebit_median",
+    "description": "Earnings before interest and taxes - median of estimations",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9106,
+    "userCount": 353,
+    "alphaCount": 2283,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_ebit_number",
+    "description": "Earnings before interest and taxes - number of estimations",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.9106,
+    "userCount": 112,
+    "alphaCount": 180,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_ebit_std",
+    "description": "Earnings before interest and taxes - std of estimations",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.4586,
+    "userCount": 70,
+    "alphaCount": 87,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_ebitda_high",
+    "description": "Earnings before interest, taxes, depreciation and amortization - The highest estimation",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.8721,
+    "userCount": 163,
+    "alphaCount": 578,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_ebitda_low",
+    "description": "Earnings before interest, taxes, depreciation and amortization - The lowest estimation",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.8721,
+    "userCount": 207,
+    "alphaCount": 903,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_ebitda_number",
+    "description": "Earnings before interest, taxes, depreciation and amortization - number of estimations",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.8721,
+    "userCount": 88,
+    "alphaCount": 145,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_ebitda_std",
+    "description": "Earnings before interest, taxes, depreciation and amortization - std of estimations",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.4949,
+    "userCount": 60,
+    "alphaCount": 91,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_epsa_high",
+    "description": "Earnings per share adjusted by excluding extraordinary items and stock option expenses - The highest estimation",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.7992,
+    "userCount": 72,
+    "alphaCount": 108,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl4_epsa_low",
+    "description": "Earnings per share adjusted by excluding extraordinary items and stock option expenses - The lowest estimation",
+    "dataset": {
+      "id": "analyst4",
+      "name": "Analyst Estimate Data for Equity"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.7992,
+    "userCount": 86,
+    "alphaCount": 156,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "mdl243_country_rank",
+    "description": "Combined Alpha Model percentile rank 1–100 relative to peers in the same country, higher is more bullish",
+    "dataset": {
+      "id": "model243",
+      "name": "Combined Alpha Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9335,
+    "userCount": 445,
+    "alphaCount": 2278,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl243_industry_rank",
+    "description": "Combined Alpha Model percentile rank 1–100 relative to peers in the same TRBC industry group within the region, higher is more bullish",
+    "dataset": {
+      "id": "model243",
+      "name": "Combined Alpha Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9335,
+    "userCount": 318,
+    "alphaCount": 1602,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl243_region_rank",
+    "description": "Combined Alpha Model percentile rank 1–100 relative to peers in the same region, higher is more bullish",
+    "dataset": {
+      "id": "model243",
+      "name": "Combined Alpha Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9335,
+    "userCount": 288,
+    "alphaCount": 931,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl243_sector_rank",
+    "description": "Combined Alpha Model percentile rank 1–100 relative to peers in the same TRBC economic sector within the region, higher is more bullish",
+    "dataset": {
+      "id": "model243",
+      "name": "Combined Alpha Model"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 1.0,
+    "coverage": 0.9335,
+    "userCount": 271,
+    "alphaCount": 1019,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "anl46_alphadecay",
+    "description": "A component value measuring the impact of idea age (i.e., how recent or stale the contributing ideas are) on the signal",
+    "dataset": {
+      "id": "analyst46",
+      "name": "Analyst Investment insight Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-crowdsourced-estimates",
+      "name": "Crowdsourced Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.5775,
+    "userCount": 223,
+    "alphaCount": 512,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl46_experts",
+    "description": "A component showing the contribution from the historical performance of analysts who submitted ideas for the stock; higher values indicate more credible input",
+    "dataset": {
+      "id": "analyst46",
+      "name": "Analyst Investment insight Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-crowdsourced-estimates",
+      "name": "Crowdsourced Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.5775,
+    "userCount": 182,
+    "alphaCount": 295,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl46_indicator",
+    "description": "Cross-sectional ranking score from 1 to 10 for the stock within the region on a given day, with 10 being most bullish and 1 most bearish",
+    "dataset": {
+      "id": "analyst46",
+      "name": "Analyst Investment insight Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-crowdsourced-estimates",
+      "name": "Crowdsourced Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.5775,
+    "userCount": 447,
+    "alphaCount": 1099,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl46_performancepercentile",
+    "description": "A percentile rank (1–100) showing how well the Indicator signal has historically predicted price movement for the stock over the past 12 months in backtesting",
+    "dataset": {
+      "id": "analyst46",
+      "name": "Analyst Investment insight Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-crowdsourced-estimates",
+      "name": "Crowdsourced Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.6958,
+    "coverage": 0.6225,
+    "userCount": 128,
+    "alphaCount": 262,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl46_sentiment",
+    "description": "A composite score representing aggregated sell-side idea sentiment for the stock, combining decay, contributor skill, proximity to earnings, and idea volume/direction information",
+    "dataset": {
+      "id": "analyst46",
+      "name": "Analyst Investment insight Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-crowdsourced-estimates",
+      "name": "Crowdsourced Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.5775,
+    "userCount": 453,
+    "alphaCount": 1173,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "profit_report_component",
+    "description": "A component reflecting how close the stock is to an earnings event, adjusting the signal according to proximity to earnings",
+    "dataset": {
+      "id": "analyst46",
+      "name": "Analyst Investment insight Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-crowdsourced-estimates",
+      "name": "Crowdsourced Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.5775,
+    "userCount": 119,
+    "alphaCount": 206,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "analyst_revision_rank_derivative",
+    "description": "Daily-indicator variant of momentum capturing recent price moves and analyst estimate revisions",
+    "dataset": {
+      "id": "model16",
+      "name": "Fundamental Scores"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 40,
+    "alphaCount": 57,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "cashflow_efficiency_rank_derivative",
+    "description": "Ranks stocks by their ability to generate cash flows and operational profitability",
+    "dataset": {
+      "id": "model16",
+      "name": "Fundamental Scores"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 25,
+    "alphaCount": 44,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "composite_factor_score_derivative",
+    "description": "Momentum score based on analyst revisions; intraday variant",
+    "dataset": {
+      "id": "model16",
+      "name": "Fundamental Scores"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 28,
+    "alphaCount": 94,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "earnings_certainty_rank_derivative",
+    "description": "Measures the sustainability and certainty of earnings quality",
+    "dataset": {
+      "id": "model16",
+      "name": "Fundamental Scores"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 34,
+    "alphaCount": 40,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "growth_potential_rank_derivative",
+    "description": "Composite growth score qualifying the stock’s expected medium‑term growth potential",
+    "dataset": {
+      "id": "model16",
+      "name": "Fundamental Scores"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 69,
+    "alphaCount": 355,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "multi_factor_acceleration_score_derivative",
+    "description": "Change in the acceleration of multi-factor score compared to previous period.",
+    "dataset": {
+      "id": "model16",
+      "name": "Fundamental Scores"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 27,
+    "alphaCount": 52,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "multi_factor_static_score_derivative",
+    "description": "Change in static multi-factor score compared to previous period.",
+    "dataset": {
+      "id": "model16",
+      "name": "Fundamental Scores"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 21,
+    "alphaCount": 30,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "relative_valuation_rank_derivative",
+    "description": "Assesses whether the stock is under or overpriced based on standard valuation multiples indicator variant",
+    "dataset": {
+      "id": "model16",
+      "name": "Fundamental Scores"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-valuation-models",
+      "name": "Valuation Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 28,
+    "alphaCount": 44,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "analyst_recommendation_score_2",
+    "description": "ARM component score derived from analyst recommendation revisions (coverage-normalized and combined with estimate revisions)",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7256,
+    "coverage": 0.8223,
+    "userCount": 38,
+    "alphaCount": 50,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "country_score_five_scale",
+    "description": "Country-relative ARM score mapped to a 1–5 scale from percentile (1 best, 5 worst)",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7256,
+    "coverage": 0.8223,
+    "userCount": 18,
+    "alphaCount": 41,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "country_score_normalized",
+    "description": "Country-relative ARM rank expressed on a 0–1 scale (percentile) for greater precision",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7256,
+    "coverage": 0.8223,
+    "userCount": 17,
+    "alphaCount": 23,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "country_score_percentile",
+    "description": "Percentile score within the country based on the ARM; 100 indicates highest rated and 1 lowest",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7256,
+    "coverage": 0.8223,
+    "userCount": 12,
+    "alphaCount": 37,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "estimate_revision_combined_score",
+    "description": "Combined estimate revisions rank from preferred, secondary, and revenue components with profitability-based weights",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7256,
+    "coverage": 0.8223,
+    "userCount": 11,
+    "alphaCount": 11,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "global_combined_score",
+    "description": "Combined ARM score blending estimate revisions and recommendations globally; if no recommendations component, equals the estimates component",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7256,
+    "coverage": 0.8223,
+    "userCount": 31,
+    "alphaCount": 133,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "global_score_five_scale",
+    "description": "Global ARM score mapped to a 1–5 scale from percentile (1 best, 5 worst)",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7256,
+    "coverage": 0.8223,
+    "userCount": 13,
+    "alphaCount": 15,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "global_score_normalized",
+    "description": "Global ARM percentile rank with greater precision on a 0–1 scale",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7256,
+    "coverage": 0.8223,
+    "userCount": 15,
+    "alphaCount": 20,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "global_score_percentile",
+    "description": "Percentile rank (1–100) versus the global universe based on the ARM algorithm; 100 is highest",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7256,
+    "coverage": 0.8223,
+    "userCount": 7,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "industry_score_five_scale",
+    "description": "Industry-relative ARM score mapped to a 1–5 scale from percentile (1 best, 5 worst)",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7256,
+    "coverage": 0.8223,
+    "userCount": 5,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "industry_score_normalized",
+    "description": "Industry-relative ARM rank on a 0–1 scale (percentile precision)",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7256,
+    "coverage": 0.8223,
+    "userCount": 6,
+    "alphaCount": 11,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "industry_score_percentile",
+    "description": "Percentile score within the industry based on the ARM; 100 indicates highest rated and 1 lowest",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7256,
+    "coverage": 0.8223,
+    "userCount": 16,
+    "alphaCount": 21,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armcountry100score",
+    "description": "Percentile rank 1–100 within the country based on the Analyst Revisions Model; 100 best, 1 worst",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 73,
+    "alphaCount": 214,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armcountry1rank",
+    "description": "0–1 scaled country-relative ARM rank, with higher values indicating stronger signals versus country peers",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 28,
+    "alphaCount": 60,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armcountry5score",
+    "description": "1–5 mapped score of the country ARM percentile (bell-shaped bins); 1 best, 5 worst",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 33,
+    "alphaCount": 56,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armestimaterevisioncombinationrank",
+    "description": "Combined estimate revisions rank that weights preferred, secondary, and revenue revisions, with weights varying by profitability",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 12,
+    "alphaCount": 14,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armglobal100score",
+    "description": "Global 1–100 percentile score from the ARM model, where 100 indicates highest rated globally",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 39,
+    "alphaCount": 87,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armglobal1rank",
+    "description": "0–1 precision version of the global ARM percentile rank",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 33,
+    "alphaCount": 53,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armglobal5score",
+    "description": "Global ARM score mapped from the 1–100 percentile to a 1–5 scale, where 1 indicates highest rated and 5 indicates lowest, using the specified percentile buckets",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 30,
+    "alphaCount": 69,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armglobalcombinationscore",
+    "description": "Combined global ARM score that blends the Estimates Revisions component with the Recommendations component; if recommendations are unavailable, it equals the Estimates Revisions component",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 38,
+    "alphaCount": 57,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armindustry100score",
+    "description": "Percentile rank (1–100) within the industry based on the ARM algorithm; 100 is highest and 1 is lowest",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 34,
+    "alphaCount": 127,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armindustry1rank",
+    "description": "0–1 precision version of the industry ARM percentile rank",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 29,
+    "alphaCount": 65,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armindustry5score",
+    "description": "Industry score mapped from the 1–100 ARM percentile to a 1–5 scale (bell-shaped distribution), where 1 is highest and 5 is lowest",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 29,
+    "alphaCount": 37,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armpreferredrevision1rank",
+    "description": "0–1 scaled rank for the preferred revisions component, providing higher precision than 1–100; higher values indicate stronger signals",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 7,
+    "alphaCount": 10,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armpreferredrevisioncomponent100rank",
+    "description": "1–100 rank of the preferred (primary) revisions component based on the ARM algorithm, where 100 is strongest",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 10,
+    "alphaCount": 13,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armpreferredrevisioncomponent5rank",
+    "description": "Analyst Revisions rank for the Preferred measure mapped from the 1–100 percentile to a 1–5 scale, where 1 is highest and 5 is lowest",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 2,
+    "alphaCount": 2,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armpreferredrevisionscore",
+    "description": "Component score of the ARM derived from revisions and predicted surprises in the preferred earnings measure",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 11,
+    "alphaCount": 12,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armrecommendation100rank",
+    "description": "1–100 percentile rank based solely on recommendations-based factors; 100 best, 1 worst",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 12,
+    "alphaCount": 13,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armrecommendation1rank",
+    "description": "ARM recommendation rank expressed on a 0–1 scale providing greater precision than the 1–100 ranking",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 20,
+    "alphaCount": 31,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armrecommendation5rank",
+    "description": "1–5 mapped rank of the recommendations-based ARM percentile; 1 best, 5 worst (bell-shaped bins)",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 11,
+    "alphaCount": 13,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armrecommendationscore",
+    "description": "ARM component score derived from analyst recommendations with coverage normalization and combined ranking approach",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 25,
+    "alphaCount": 34,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armregion100score",
+    "description": "Percentile rank 1–100 within the region based on the Analyst Revisions Model; 100 best, 1 worst",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 22,
+    "alphaCount": 23,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armregion1rank",
+    "description": "0–1 scaled regional rank for the ARM model, with higher values indicating stronger signals relative to regional peers",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 23,
+    "alphaCount": 37,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armregion5score",
+    "description": "Region score mapped from the 1–100 ARM percentile to a 1–5 scale (bell-shaped distribution), where 1 is highest and 5 is lowest",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 16,
+    "alphaCount": 22,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armrevenuerevision1rank",
+    "description": "0–1 precision rank of the revenue-related component in the Analyst Revisions Model",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 7,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armrevenuerevisioncomponent100rank",
+    "description": "1–100 rank of the revenue revisions component based on the ARM algorithm, where 100 is strongest and 1 is weakest",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 7,
+    "alphaCount": 10,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armrevenuerevisioncomponent5rank",
+    "description": "Rank of the revenue revisions component mapped to a 1–5 scale, where 1 is highest and 5 is lowest",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 7,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armrevenuerevisionscore",
+    "description": "Component score of the ARM based on revenue revisions and predicted surprises",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 14,
+    "alphaCount": 15,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armsecondaryrevision1rank",
+    "description": "0–1 scaled rank for the secondary revisions component, with higher values indicating stronger signals",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 9,
+    "alphaCount": 13,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armsecondaryrevisioncomponent100rank",
+    "description": "Analyst Revisions 1–100 rank for the Secondary measure based on the ARM algorithm, where 100 is highest and 1 is lowest",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 7,
+    "alphaCount": 9,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armsecondaryrevisioncomponent5rank",
+    "description": "Analyst Revisions rank for the Secondary measure mapped from the 1–100 percentile to a 1–5 scale, where 1 is highest and 5 is lowest",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 12,
+    "alphaCount": 18,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armsecondaryrevisionscore",
+    "description": "Component score of the Analyst Revisions Model derived from secondary earnings revisions and predicted surprises",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 17,
+    "alphaCount": 28,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armsector100score",
+    "description": "Percentile rank 1–100 within the sector based on the Analyst Revisions Model; 100 best, 1 worst",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 15,
+    "alphaCount": 29,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armsector1rank",
+    "description": "0–1 precision version of the sector ARM percentile rank",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 19,
+    "alphaCount": 39,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_armsector5score",
+    "description": "1–5 mapped score of the sector ARM percentile (bell-shaped bins); 1 best, 5 worst",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 34,
+    "alphaCount": 57,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_industryclassification",
+    "description": "TRBC Industry Group code as of the as-of date (point-in-time)",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 8,
+    "alphaCount": 9,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_preferredblendedrevisionfq1percent",
+    "description": "Even-weighted blended revision percent for the Preferred measure in FQ1 across 7, 14, 30, 60, and 90-day lookbacks",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 1,
+    "alphaCount": 1,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_preferredblendedrevisionfy1percent",
+    "description": "Even-weighted blend of Preferred FY1 revision measures over 7, 14, 30, 60, and 90 days, expressed as a percent change",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 11,
+    "alphaCount": 12,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_preferredblendedrevisionfy2percent",
+    "description": "Even-weighted blend of Preferred FY2 revision measures over 7, 14, 30, 60, and 90 days, expressed as a percent change",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 12,
+    "alphaCount": 13,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl216_recommendationblendedrevisionpercent",
+    "description": "Even-weighted blend of recommendation revisions over 7, 14, 30, 60, and 90 days, expressed as a percent change",
+    "dataset": {
+      "id": "model216",
+      "name": "Analyst Revisions Model Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-mlai-models",
+      "name": "ML/AI Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.7259,
+    "coverage": 0.8223,
+    "userCount": 11,
+    "alphaCount": 12,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "anl81_class",
+    "description": "Creditwrothiness class indices in integers: 9(AAA), 5(AA), 4(A), 1(BBB), 2(BB), 3(B), 7(CCC), 8(CC), 6(C), 10(D)",
+    "dataset": {
+      "id": "analyst81",
+      "name": "Creditworthiness model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-ratings",
+      "name": "Analyst Ratings"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 1.0,
+    "coverage": 0.2609,
+    "userCount": 83,
+    "alphaCount": 137,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl81_confidence_level_percent",
+    "description": "Confidence level of the assessment, measuring data completeness and reliability as a percentage from 0 to 100",
+    "dataset": {
+      "id": "analyst81",
+      "name": "Creditworthiness model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-ratings",
+      "name": "Analyst Ratings"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.2609,
+    "userCount": 59,
+    "alphaCount": 79,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl81_probability_of_default_percent",
+    "description": "Estimated probability of default over the rating horizon, expressed as a percentage from 0 to 100",
+    "dataset": {
+      "id": "analyst81",
+      "name": "Creditworthiness model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-ratings",
+      "name": "Analyst Ratings"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.2609,
+    "userCount": 32,
+    "alphaCount": 42,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "default_likelihood_percent",
+    "description": "Previous-period probability of default estimated by mode_finance, expressed as a percentage from 0 to 100",
+    "dataset": {
+      "id": "analyst81",
+      "name": "Creditworthiness model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-ratings",
+      "name": "Analyst Ratings"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.2711,
+    "userCount": 24,
+    "alphaCount": 27,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "financial_data_completeness_percent",
+    "description": "Confidence level for the lagged assessment, 0–100%, indicating completeness/reliability of available data",
+    "dataset": {
+      "id": "analyst81",
+      "name": "Creditworthiness model"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-ratings",
+      "name": "Analyst Ratings"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.2711,
+    "userCount": 32,
+    "alphaCount": 47,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_confirmtime",
+    "description": "Intraday time of the most recent confirmation of the current estimate",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6945,
+    "userCount": 85,
+    "alphaCount": 167,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_consensusanalysis_dataitemvalue",
+    "description": "Numeric consensus estimate value for the specified data item",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7373,
+    "userCount": 99,
+    "alphaCount": 156,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_consensusanalysis_effectivetime",
+    "description": "Intra-day time when the consensus estimate calculation became effective",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7373,
+    "userCount": 9,
+    "alphaCount": 10,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_consensusv2span_incomeeps_dataitemvalue",
+    "description": "Numeric consensus estimate value for the specified data item",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7348,
+    "userCount": 43,
+    "alphaCount": 53,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_consensusv2span_incomeeps_effectivetime",
+    "description": "Intra-day time when the estimate becomes effective or is calculated",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7348,
+    "userCount": 14,
+    "alphaCount": 14,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_consensusv2span_incomeeps_splitfactor",
+    "description": "Ratio used to unadjust per-share EPS estimates for stock splits that occur after the estimate’s EffectiveDate",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7348,
+    "userCount": 13,
+    "alphaCount": 16,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_consensusv2span_incomeeps_totime",
+    "description": "End time when the estimate’s validity window ends",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7348,
+    "userCount": 13,
+    "alphaCount": 17,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_consensusv2span_incomeothers_dataitemvalue",
+    "description": "Numeric consensus estimate value for the specified data item",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7415,
+    "userCount": 15,
+    "alphaCount": 20,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_consensusv2span_incomeothers_effectivetime",
+    "description": "Intra-day time when the consensus estimate became effective (time of calculation)",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7415,
+    "userCount": 13,
+    "alphaCount": 22,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_consensusv2span_incomeothers_splitfactor",
+    "description": "Adjustment factor for corporate actions (e.g., stock splits) applied to maintain comparability of estimates",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7415,
+    "userCount": 13,
+    "alphaCount": 17,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_consensusv2span_incomeothers_totime",
+    "description": "Intra-day time when the estimate’s validity period ends",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7415,
+    "userCount": 20,
+    "alphaCount": 23,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_daily_numanalystall",
+    "description": "Total number of analysts contributing estimates for the company, including those excluded from the consensus",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.664,
+    "userCount": 29,
+    "alphaCount": 36,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_daily_numanalysts",
+    "description": "Number of analysts whose estimates are included in the consensus for the revision period",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.664,
+    "userCount": 35,
+    "alphaCount": 51,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_daily_numdn",
+    "description": "Count of downward revisions among analysts included in the consensus",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.664,
+    "userCount": 51,
+    "alphaCount": 72,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_daily_numdownunfiltered",
+    "description": "Total number of analysts whose estimates were revised downward, including those excluded from the consensus",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.664,
+    "userCount": 29,
+    "alphaCount": 35,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_daily_numnochangeunfiltered",
+    "description": "Total number of analysts that did not change their estimates, including those excluded from the consensus",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.664,
+    "userCount": 22,
+    "alphaCount": 23,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_daily_numnochg",
+    "description": "Count of revisions with no change among analysts included in the consensus",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.664,
+    "userCount": 18,
+    "alphaCount": 23,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_daily_numup",
+    "description": "Count of upward revisions among analysts included in the consensus",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.664,
+    "userCount": 66,
+    "alphaCount": 99,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_daily_numupunfiltered",
+    "description": "Total number of analysts whose estimates were revised upward, including those excluded from the consensus",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.664,
+    "userCount": 33,
+    "alphaCount": 39,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_detail_dataitemvalue",
+    "description": "Numeric value of the estimated metric",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6945,
+    "userCount": 31,
+    "alphaCount": 41,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_detail_effectivetime",
+    "description": "Time of day when the estimate became effective (start time of validity)",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6945,
+    "userCount": 10,
+    "alphaCount": 11,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_detail_totime",
+    "description": "End time of the estimate’s validity period (intraday)",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6945,
+    "userCount": 13,
+    "alphaCount": 13,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_estanalystmap",
+    "description": "Human-readable name/description of the analyst corresponding to estimateAnalystIx",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 0.8467,
+    "userCount": 97,
+    "alphaCount": 166,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_estimatetime",
+    "description": "Intra-day time at which the estimate was recorded/issued",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6945,
+    "userCount": 10,
+    "alphaCount": 11,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_isexcluded",
+    "description": "Flag indicating the estimate is excluded from consensus/analysis due to data quality rules",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6945,
+    "userCount": 21,
+    "alphaCount": 21,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_isnmflag",
+    "description": "Flag indicating the estimate is not meaningful (NM)",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7373,
+    "userCount": 23,
+    "alphaCount": 25,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_parentflag",
+    "description": "Entity consolidation flag: 0=consolidated entity estimate, 1=parent-only entity estimate",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6945,
+    "userCount": 14,
+    "alphaCount": 14,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_revisiondaily_effectivetime",
+    "description": "Time when the revision metrics were calculated or became effective",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.664,
+    "userCount": 8,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_revisions_effectivetime",
+    "description": "Time when the revision snapshot/estimate was calculated",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7685,
+    "userCount": 4,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_s_numanalystall",
+    "description": "Total number of contributing analysts, including those excluded from the consensus",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7685,
+    "userCount": 6,
+    "alphaCount": 6,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_s_numanalysts",
+    "description": "Number of analysts whose estimates are included in the consensus for the revision period",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7685,
+    "userCount": 20,
+    "alphaCount": 25,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_s_numdn",
+    "description": "Count of downward revisions included in the consensus during the specified revision period",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7685,
+    "userCount": 22,
+    "alphaCount": 34,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_s_numdownunfiltered",
+    "description": "Total analysts with downward revisions, including those excluded from the consensus",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7685,
+    "userCount": 14,
+    "alphaCount": 14,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_s_numnochangeunfiltered",
+    "description": "Total number of no-change revisions, without exclusions",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7685,
+    "userCount": 6,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_s_numnochg",
+    "description": "Number of revisions with no change in the consensus (included analysts) over the period",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7685,
+    "userCount": 12,
+    "alphaCount": 15,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_s_numup",
+    "description": "Count of upward revisions included in the consensus during the specified revision period",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7685,
+    "userCount": 83,
+    "alphaCount": 103,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "anl9_s_numupunfiltered",
+    "description": "Total analysts with upward revisions, including those excluded from the consensus",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7685,
+    "userCount": 62,
+    "alphaCount": 68,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "consensus_analysis_value",
+    "description": "<baseModule>.ConsensusIdIx idx",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7373,
+    "userCount": 6,
+    "alphaCount": 6,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "consensus_exclusion_flag",
+    "description": "Boolean flag marking the estimate as excluded from analysis due to unreliability or rules",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6408,
+    "userCount": 4,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "eps_consensus_estimate_value",
+    "description": "Lookup index identifying the consensus category/type for the estimate",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7348,
+    "userCount": 13,
+    "alphaCount": 14,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "estimate_currency_code_2",
+    "description": "Currency in which the estimate is reported.",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6408,
+    "userCount": 12,
+    "alphaCount": 16,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "estimated_metric_value",
+    "description": "Numeric value of the estimate for the specified metric",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6408,
+    "userCount": 10,
+    "alphaCount": 10,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "income_other_consensus_value",
+    "description": "<baseModule>.ConsensusIdIx idx",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7415,
+    "userCount": 15,
+    "alphaCount": 16,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "parent_company_only_flag",
+    "description": "Flag indicating if the estimate is for the parent entity only.",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.6408,
+    "userCount": 13,
+    "alphaCount": 13,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "revision_consensus_value",
+    "description": "Index key referencing the consensus estimate category in the ConsensusId lookup",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.664,
+    "userCount": 12,
+    "alphaCount": 13,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "revision_consensus_value_revisions",
+    "description": "Integer code identifying the consensus estimate category for the metric/period, joinable to a consensus lookup",
+    "dataset": {
+      "id": "analyst9",
+      "name": "Analyst Estimate Daily Data"
+    },
+    "category": {
+      "id": "analyst",
+      "name": "Analyst"
+    },
+    "subcategory": {
+      "id": "analyst-analyst-estimates",
+      "name": "Analyst Estimates"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "VECTOR",
+    "dateCoverage": 0.9507,
+    "coverage": 0.7685,
+    "userCount": 12,
+    "alphaCount": 14,
+    "pyramidMultiplier": 1.5,
+    "themes": []
+  },
+  {
+    "id": "mdl192_altmanz_di",
+    "description": "Altman Z-score, a measure of company credit risk or bankruptcy risk",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 39,
+    "alphaCount": 67,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_benchmark_fee_di",
+    "description": "Imputed or backfilled value of Benchmark_fee used when the raw benchmark fee is missing to enhance continuity",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 18,
+    "alphaCount": 55,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_booklev_di",
+    "description": "Book leverage ratio (likely debt to equity or related measure using book values)",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 22,
+    "alphaCount": 109,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cashburnrate_di",
+    "description": "Imputed/backfilled version of CashBurnRate to maintain continuity when raw data are missing",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 12,
+    "alphaCount": 22,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cashc_di",
+    "description": "Imputed/backfilled version of CashC to maintain continuity when raw data are missing",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 20,
+    "alphaCount": 53,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cashratio_di",
+    "description": "Imputed or backfilled ratio of cash & equivalents to current liabilities; measure of short-term liquidity",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 14,
+    "alphaCount": 21,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cds_1mvol_di",
+    "description": "1-month CDS Spread Change Volatility (Tenor=5Y)",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 21,
+    "alphaCount": 48,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cds_1ybeta_di",
+    "description": "Imputed or backfilled value of CDS_1YBeta used when the raw beta is missing to enhance continuity",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 15,
+    "alphaCount": 36,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cds_beta_di",
+    "description": "5-year (60 month) beta of CDS spread changes (measure of CDS spread sensitivity to market)",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 15,
+    "alphaCount": 53,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cds_canbeta_di",
+    "description": "Sovereign Sensitivity - Canada",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 11,
+    "alphaCount": 30,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cds_eurusd_di",
+    "description": "Sensitivity of CDS spread to EUR/USD exchange rate movements",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 11,
+    "alphaCount": 38,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cds_frabeta_di",
+    "description": "Sensitivity of an entity's CDS spread changes to France sovereign CDS, representing how much the entity's CDS responds to movements in France's sovereign credit risk, with values typically indicating degree of co-movement",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 9,
+    "alphaCount": 30,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cds_gerbeta_di",
+    "description": "Sensitivity of an entity's CDS spread changes to German sovereign CDS, representing correlation to changes in Germany's sovereign credit risk",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 8,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cds_gnd_di",
+    "description": "Imputed or backfilled gross notional CDS volume as reported by DTCC relative to total debt",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 20,
+    "alphaCount": 84,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cds_gnvol5wavg_di",
+    "description": "Five-week moving average of weekly gross notional CDS transaction volumes from DTCC, measuring recent liquidity/activity trends",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 7,
+    "alphaCount": 15,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cds_gnvol5wchg_di",
+    "description": "5-week Change in DTCC Weekly Gross Notional Volumes",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 7,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cds_itabeta_di",
+    "description": "Sensitivity of CDS spread changes to Italian sovereign movements",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 14,
+    "alphaCount": 15,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cds_japbeta_di",
+    "description": "Sovereign Sensitivity - Japan",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 11,
+    "alphaCount": 12,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cds_op_di",
+    "description": "Imputed or backfilled sensitivity of CDS spread to oil price movements",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 13,
+    "alphaCount": 20,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cds_pd1y_di",
+    "description": "Estimated probability of default over a one-year horizon, typically derived from the entity’s CDS data (Tenor=1Y)",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 11,
+    "alphaCount": 16,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cds_pd5y_di",
+    "description": "Probability of default over a 5-year horizon implied by CDS spread",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 6,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cds_porbeta_di",
+    "description": "Imputed/backfilled version of CDS_PorBeta, the ranked sensitivity of daily CDS spread changes to Portugal sovereign CDS changes, used when raw data are missing",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 8,
+    "alphaCount": 16,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cds_ps_rank1m_di",
+    "description": "1-month Momentum Divergence",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 8,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cds_ps_rank5d_di",
+    "description": "Imputed/backfilled version of CDS_PS_Rank5D, the same 5-day momentum divergence measure used when raw data are missing",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 6,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cds_ps_reg3_di",
+    "description": "Imputed/backfilled version of CDS_PS_Reg3, representing the same model-based value divergence when raw data are missing",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 7,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cds_spabeta_di",
+    "description": "Imputed/backfilled version of CDS_SpaBeta, the ranked sensitivity of daily CDS spread changes to Spain sovereign CDS changes, used when raw data are missing",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 6,
+    "alphaCount": 6,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cds_tier_di",
+    "description": "CDS seniority tier (e.g., senior/subordinated), imputed for missing data",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 7,
+    "alphaCount": 11,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cds_ukbeta_di",
+    "description": "Sensitivity of CDS spread changes to UK sovereign movements",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 7,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cds_usbeta_di",
+    "description": "Sensitivity of CDS spread changes to US sovereign movements",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 3,
+    "alphaCount": 5,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_cfleverage_di",
+    "description": "Imputed/backfilled version of CFLeverage to maintain continuity when raw data are missing",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 6,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_chg12mtotdebt_di",
+    "description": "Change in total debt over the past 12 months",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 12,
+    "alphaCount": 14,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_chg3ycfast_di",
+    "description": "Imputed/backfilled version of Chg3YCFAst to maintain continuity when raw data are missing",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 5,
+    "alphaCount": 5,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_chgshare_di",
+    "description": "Percent change in the number of shares outstanding compared to a specified previous period, typically one year ago",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 5,
+    "alphaCount": 5,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_curratio_di",
+    "description": "Current ratio; company liquidity measured as current assets divided by current liabilities",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 7,
+    "alphaCount": 9,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_days_to_cover_di",
+    "description": "Number of days of typical volume needed for short sellers to cover positions (imputed)",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 6,
+    "alphaCount": 6,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_div5yg_di",
+    "description": "5-Year Dividend Growth Rate",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 5,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_dmd_supply_di",
+    "description": "Imputed or backfilled demand supply ratio, i.e., borrowed stock relative to lendable inventory",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 11,
+    "alphaCount": 16,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_earnshortfall_di",
+    "description": "Earnings Shortfall",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 7,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_ebitdadebt_di",
+    "description": "EBITDA-to-debt ratio (imputed/backfill value)",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_ebitdadebtchg_di",
+    "description": "Year-over-Year Change in EBITDA-to-Debt",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 7,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_ebitdaev_di",
+    "description": "Trailing-twelve-month EBITDA divided by enterprise value (imputed/backfill value)",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 4,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_fc_fqsurstd_di",
+    "description": "Most recent quarterly earnings surprise (difference between actual and estimated EPS), normalized by the standard deviation of analyst forecasts; measures the magnitude of surprise relative to consensus dispersion",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 6,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_fc_numrevy1_di",
+    "description": "Net number of analyst forecast revisions for fiscal year 1",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 5,
+    "alphaCount": 5,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_gear_di",
+    "description": "Imputed/backfilled version of GEAR, used when raw data are missing",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 4,
+    "alphaCount": 8,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_id_2adpmoc_sdc",
+    "description": "Relative Value - Comprehensive Debt to Total Assets",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 4,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_id_2vd_adpmoc_sdc",
+    "description": "Comprehensive debt-to-assets ratio; total company debt as percentage of total assets for deep value analysis",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 7,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_id_2vd_voctni_sdc",
+    "description": "Deep Value - Interest Coverage",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 3,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_id_2voctni_sdc",
+    "description": "Relative value metric based on interest coverage ratio (imputed/backfill value)",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 4,
+    "alphaCount": 4,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_id_ad",
+    "description": "Total Debt to Total Assets ratio (leverage measure)",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 4,
+    "alphaCount": 7,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  },
+  {
+    "id": "mdl192_id_adpmoc",
+    "description": "Imputed/backfilled version of CompDA to maintain continuity when raw data are missing",
+    "dataset": {
+      "id": "model192",
+      "name": "CDS Factor Data"
+    },
+    "category": {
+      "id": "model",
+      "name": "Model"
+    },
+    "subcategory": {
+      "id": "model-risk-based-models",
+      "name": "Risk Based Models"
+    },
+    "region": "IND",
+    "delay": 1,
+    "universe": "TOP500",
+    "type": "MATRIX",
+    "dateCoverage": 0.9507,
+    "coverage": 1.0,
+    "userCount": 3,
+    "alphaCount": 3,
+    "pyramidMultiplier": 1.3,
+    "themes": []
+  }
+]
