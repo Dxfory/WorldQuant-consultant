@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { planSlice, spanSizes } from "../web/processor.js";
+import { assertSafeSize, describePlan, planSlice, spanSizes } from "../web/processor.js";
 
 const widths = spanSizes(101, 3);
 assert.deepEqual(widths, [34, 34, 33]);
@@ -21,5 +21,8 @@ assert.equal(sized.rows, 3);
 assert.equal(sized.tiles.at(-1).width, 10);
 assert.equal(sized.tiles.at(-1).height, 1);
 assert.equal(sized.complete, true);
+assert.match(describePlan(plan), /丢弃 0/);
+
+assert.throws(() => assertSafeSize(20000, 20000), /太大/);
 
 console.log("processor plan tests passed");

@@ -3,9 +3,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 from pathlib import Path
 
-from PIL import Image
-
 from .completeness import load_intact_image
+from .enhance import EnhanceSettings, enhance_pil
 
 
 @dataclass(frozen=True)
@@ -141,8 +140,11 @@ def slice_image(
     rows: int | None = None,
     tile_width: int | None = None,
     tile_height: int | None = None,
+    enhance: EnhanceSettings | None = None,
 ) -> SlicePlan:
     image = load_intact_image(path)
+    if enhance is not None:
+        image = enhance_pil(image, enhance)
     plan = plan_slice(
         image.width,
         image.height,

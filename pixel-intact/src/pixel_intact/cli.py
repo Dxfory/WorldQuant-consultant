@@ -34,6 +34,9 @@ def main(argv: list[str] | None = None) -> int:
     slice_cmd.add_argument("--rows", type=int)
     slice_cmd.add_argument("--tile-width", type=int)
     slice_cmd.add_argument("--tile-height", type=int)
+    slice_cmd.add_argument("--scale", type=float, default=1.0, help="Enhance/upscale before cutting")
+    slice_cmd.add_argument("--clarity", type=float, default=0.35)
+    slice_cmd.add_argument("--sharpness", type=float, default=0.85)
 
     join_cmd = sub.add_parser("join", help="Reassemble tiles into the complete original")
     join_cmd.add_argument("tiles", help="Folder that contains rXX_cXX.png tiles")
@@ -47,6 +50,8 @@ def main(argv: list[str] | None = None) -> int:
     enhance_cmd.add_argument("--clarity", type=float, default=0.28)
     enhance_cmd.add_argument("--sharpness", type=float, default=1.35)
     enhance_cmd.add_argument("--denoise", action="store_true")
+    enhance_cmd.add_argument("--autocontrast", action="store_true")
+    enhance_cmd.add_argument("--contrast", type=float, default=1.0)
 
     studio_cmd = sub.add_parser("studio", help="Open the local high-fidelity web studio")
     studio_cmd.add_argument("--port", type=int, default=8765)
@@ -73,6 +78,13 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     if args.command == "slice":
+        enhance = None
+        if args.scale != 1:
+            enhance = EnhanceSettings(
+                scale=args.scale,
+                clarity=args.clarity,
+                sharpness=args.sharpness,
+            )
         plan = slice_image(
             args.image,
             args.out,
@@ -80,6 +92,7 @@ def main(argv: list[str] | None = None) -> int:
             rows=args.rows,
             tile_width=args.tile_width,
             tile_height=args.tile_height,
+            enhance=enhance,
         )
         _print_report(
             {
@@ -144,6 +157,8 @@ def main(argv: list[str] | None = None) -> int:
             clarity=args.clarity,
             sharpness=args.sharpness,
             denoise=args.denoise,
+            autocontrast=args.autocontrast,
+            contrast=args.contrast,
         ),
     )
     report = inspect_image(args.out)

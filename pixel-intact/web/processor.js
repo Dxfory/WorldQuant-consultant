@@ -1,3 +1,6 @@
+export const MAX_EDGE = 8192;
+export const MAX_PIXELS = 40_000_000;
+
 const TILE_NAME = (row, col) =>
   `r${String(row).padStart(2, "0")}_c${String(col).padStart(2, "0")}.png`;
 
@@ -63,11 +66,39 @@ export function planSlice(width, height, options) {
     remainderDistributed,
     exportedPixels,
     complete: exportedPixels === width * height,
+    colSizes,
+    rowSizes,
   };
 }
 
+export function assertSafeSize(width, height) {
+  if (width > MAX_EDGE || height > MAX_EDGE || width * height > MAX_PIXELS) {
+    throw new Error(
+      `输出 ${width}×${height} 太大，浏览器画布容易崩溃。请把放大改小，或先切图再单独提高某一块的清晰度。`,
+    );
+  }
+}
+
+export function stemName(filename, fallback = "image") {
+  const base = (filename || fallback).replace(/\.[^.]+$/, "");
+  return base || fallback;
+}
+
+export function outputName(filename, suffix, ext = "png") {
+  return `${stemName(filename)}-${suffix}.${ext}`;
+}
+
 export async function loadFileToCanvas(file) {
-  const bitmap = await createImageBitmap(file);
+  let bitmap;
+  try {
+    bitmap = await createImageBitmap(file, {
+      imageOrientation: "from-image",
+      colorSpaceConversion: "none",
+      premultiplyAlpha: "none",
+    });
+  } catch {
+    bitmap = await createImageBitmap(file);
+  }
   const width = bitmap.width;
   const height = bitmap.height;
   const canvas = document.createElement("canvas");
@@ -108,6 +139,41 @@ export function cropTile(sourceCanvas, tile) {
   return canvas;
 }
 
+export function thumbnail(sourceCanvas, maxEdge = 160) {
+  const scale = Math.min(1, maxEdge / Math.max(sourceCanvas.width, sourceCanvas.height));
+  const canvas = document.createElement("canvas");
+  canvas.width = Math.max(1, Math.round(sourceCanvas.width * scale));
+  canvas.height = Math.max(1, Math.round(sourceCanvas.height * scale));
+  const ctx = canvas.getContext("2d");
+  ctx.imageSmoothingEnabled = scale < 1;
+  ctx.imageSmoothingQuality = "high";
+  ctx.drawImage(sourceCanvas, 0, 0, canvas.width, canvas.height);
+  return canvas;
+}
+
+export function drawPreviewWithGrid(sourceCanvas, plan, maxWidth = 980) {
+  const scale = Math.min(1, maxWidth / sourceCanvas.width);
+  const canvas = document.createElement("canvas");
+  canvas.width = Math.max(1, Math.round(sourceCanvas.width * scale));
+  canvas.height = Math.max(1, Math.round(sourceCanvas.height * scale));
+  const ctx = canvas.getContext("2d");
+  ctx.imageSmoothingEnabled = scale < 1;
+  ctx.imageSmoothingQuality = "high";
+  ctx.drawImage(sourceCanvas, 0, 0, canvas.width, canvas.height);
+  if (!plan) return canvas;
+  ctx.strokeStyle = "rgba(224, 164, 90, 0.9)";
+  ctx.lineWidth = Math.max(1, Math.round(1 / scale));
+  plan.tiles.forEach((tile) => {
+    ctx.strokeRect(
+      tile.left * scale + 0.5,
+      tile.top * scale + 0.5,
+      tile.width * scale,
+      tile.height * scale,
+    );
+  });
+  return canvas;
+}
+
 export function joinCanvases(pieces) {
   const maxRow = Math.max(...pieces.map((piece) => piece.row));
   const maxCol = Math.max(...pieces.map((piece) => piece.col));
@@ -122,7 +188,7 @@ export function joinCanvases(pieces) {
       const cell = grid.get(`${row}:${col}`);
       if (cell) heights.push(cell.canvas.height);
     }
-    if (!heights.length) throw new Error(`missing entire row ${row}`);
+    if (!heights.length) throw new Error(`缺少整行 ${row}`);
     rowHeights.push(Math.max(...heights));
   }
 
@@ -133,7 +199,7 @@ export function joinCanvases(pieces) {
       const cell = grid.get(`${row}:${col}`);
       if (cell) widths.push(cell.canvas.width);
     }
-    if (!widths.length) throw new Error(`missing entire column ${col}`);
+    if (!widths.length) throw new Error(`缺少整列 ${col}`);
     colWidths.push(Math.max(...widths));
   }
 
@@ -149,7 +215,7 @@ export function joinCanvases(pieces) {
     let left = 0;
     for (let col = 0; col < cols; col += 1) {
       const cell = grid.get(`${row}:${col}`);
-      if (!cell) throw new Error(`missing tile ${TILE_NAME(row, col)}`);
+      if (!cell) throw new Error(`缺少切块 ${TILE_NAME(row, col)}`);
       ctx.drawImage(cell.canvas, left, top);
       usedPixels += cell.canvas.width * cell.canvas.height;
       left += colWidths[col];
@@ -171,13 +237,17 @@ function clampByte(value) {
   return value < 0 ? 0 : value > 255 ? 255 : value;
 }
 
+function yieldToUi() {
+  return new Promise((resolve) => requestAnimationFrame(() => resolve()));
+}
+
 function boxBlur(source, width, height, radius) {
   const dest = new Uint8ClampedArray(source.length);
   const windowSize = radius * 2 + 1;
   const temp = new Uint8ClampedArray(source.length);
 
   for (let y = 0; y < height; y += 1) {
-    for (let channel = 0; channel < 4; channel += 1) {
+    for (let channel = 0; channel < 3; channel += 1) {
       let sum = 0;
       for (let kx = -radius; kx <= radius; kx += 1) {
         const x = Math.min(width - 1, Math.max(0, kx));
@@ -193,7 +263,7 @@ function boxBlur(source, width, height, radius) {
   }
 
   for (let x = 0; x < width; x += 1) {
-    for (let channel = 0; channel < 4; channel += 1) {
+    for (let channel = 0; channel < 3; channel += 1) {
       let sum = 0;
       for (let ky = -radius; ky <= radius; ky += 1) {
         const y = Math.min(height - 1, Math.max(0, ky));
@@ -207,38 +277,97 @@ function boxBlur(source, width, height, radius) {
       }
     }
   }
+  for (let i = 3; i < source.length; i += 4) dest[i] = source[i];
   return dest;
+}
+
+function resizeData(source, srcW, srcH, dstW, dstH) {
+  const canvas = document.createElement("canvas");
+  canvas.width = srcW;
+  canvas.height = srcH;
+  const ctx = canvas.getContext("2d", { willReadFrequently: true });
+  ctx.putImageData(new ImageData(source, srcW, srcH), 0, 0);
+  const out = document.createElement("canvas");
+  out.width = dstW;
+  out.height = dstH;
+  const outCtx = out.getContext("2d", { willReadFrequently: true });
+  outCtx.imageSmoothingEnabled = true;
+  outCtx.imageSmoothingQuality = "high";
+  outCtx.drawImage(canvas, 0, 0, dstW, dstH);
+  return outCtx.getImageData(0, 0, dstW, dstH).data;
+}
+
+function blurForClarity(source, width, height, radius) {
+  const pixels = width * height;
+  if (pixels > 4_000_000 && radius >= 3) {
+    const halfW = Math.max(1, Math.round(width / 2));
+    const halfH = Math.max(1, Math.round(height / 2));
+    const small = resizeData(source, width, height, halfW, halfH);
+    const blurred = boxBlur(small, halfW, halfH, Math.max(1, Math.round(radius / 2)));
+    return resizeData(blurred, halfW, halfH, width, height);
+  }
+  return boxBlur(source, width, height, radius);
 }
 
 function applyClarityAndSharpen(imageData, clarity, sharpness) {
   const { data, width, height } = imageData;
-  const blur = boxBlur(data, width, height, 5);
-  const fine = boxBlur(data, width, height, 1);
+  const blur = clarity > 0 ? blurForClarity(data, width, height, 6) : null;
+  const fine = sharpness > 0 ? boxBlur(data, width, height, 1) : null;
   const out = new Uint8ClampedArray(data.length);
 
   for (let i = 0; i < data.length; i += 4) {
     for (let channel = 0; channel < 3; channel += 1) {
-      const src = data[i + channel];
-      const mid = src + (src - blur[i + channel]) * clarity;
-      const sharp = mid + (src - fine[i + channel]) * sharpness;
-      out[i + channel] = clampByte(sharp);
+      let value = data[i + channel];
+      if (blur) value += (data[i + channel] - blur[i + channel]) * clarity;
+      if (fine) value += (data[i + channel] - fine[i + channel]) * sharpness;
+      out[i + channel] = clampByte(value);
     }
     out[i + 3] = data[i + 3];
   }
   return new ImageData(out, width, height);
 }
 
-export function enhanceCanvas(sourceCanvas, { scale = 2, clarity = 0.35, sharpness = 0.85 } = {}) {
-  const width = Math.max(1, Math.round(sourceCanvas.width * scale));
-  const height = Math.max(1, Math.round(sourceCanvas.height * scale));
-  const scaled = document.createElement("canvas");
-  scaled.width = width;
-  scaled.height = height;
-  const ctx = scaled.getContext("2d", { willReadFrequently: true, alpha: true });
+function drawSmooth(source, width, height) {
+  const canvas = document.createElement("canvas");
+  canvas.width = width;
+  canvas.height = height;
+  const ctx = canvas.getContext("2d", { willReadFrequently: true, alpha: true });
   ctx.imageSmoothingEnabled = true;
   ctx.imageSmoothingQuality = "high";
-  ctx.drawImage(sourceCanvas, 0, 0, width, height);
+  ctx.drawImage(source, 0, 0, width, height);
+  return canvas;
+}
 
+export function resizeHigh(sourceCanvas, width, height) {
+  let canvas = sourceCanvas;
+  let currentW = sourceCanvas.width;
+  let currentH = sourceCanvas.height;
+  if (width === currentW && height === currentH) return sourceCanvas;
+  while (currentW < width || currentH < height) {
+    const nextW = Math.min(width, Math.max(currentW + 1, currentW * 2));
+    const nextH = Math.min(height, Math.max(currentH + 1, currentH * 2));
+    canvas = drawSmooth(canvas, nextW, nextH);
+    currentW = nextW;
+    currentH = nextH;
+  }
+  if (currentW !== width || currentH !== height) {
+    canvas = drawSmooth(canvas, width, height);
+  }
+  return canvas;
+}
+
+export async function enhanceCanvas(
+  sourceCanvas,
+  { scale = 2, clarity = 0.35, sharpness = 0.85 } = {},
+) {
+  const width = Math.max(1, Math.round(sourceCanvas.width * scale));
+  const height = Math.max(1, Math.round(sourceCanvas.height * scale));
+  assertSafeSize(width, height);
+  await yieldToUi();
+  const scaled = resizeHigh(sourceCanvas, width, height);
+  if (clarity <= 0 && sharpness <= 0) return scaled;
+  await yieldToUi();
+  const ctx = scaled.getContext("2d", { willReadFrequently: true, alpha: true });
   const refined = applyClarityAndSharpen(ctx.getImageData(0, 0, width, height), clarity, sharpness);
   ctx.putImageData(refined, 0, 0);
   return scaled;
@@ -247,7 +376,7 @@ export function enhanceCanvas(sourceCanvas, { scale = 2, clarity = 0.35, sharpne
 export function canvasToBlob(canvas, type = "image/png", quality = 1) {
   return new Promise((resolve, reject) => {
     canvas.toBlob((blob) => {
-      if (!blob) reject(new Error("failed to encode image"));
+      if (!blob) reject(new Error("图片编码失败"));
       else resolve(blob);
     }, type, quality);
   });
@@ -263,11 +392,17 @@ export function downloadBlob(blob, filename) {
 }
 
 export function formatPixels(value) {
-  return new Intl.NumberFormat("en-US").format(value);
+  return new Intl.NumberFormat("zh-CN").format(value);
 }
 
 export function parseTileName(name) {
   const match = name.match(/r(\d+)_c(\d+)\.(png|jpg|jpeg|webp)$/i);
   if (!match) return null;
   return { row: Number(match[1]), col: Number(match[2]) };
+}
+
+export function describePlan(plan) {
+  const colText = plan.colSizes.join("/");
+  const rowText = plan.rowSizes.join("/");
+  return `${plan.cols}×${plan.rows} 块，宽 ${colText}，高 ${rowText}，总像素 ${formatPixels(plan.exportedPixels)}，丢弃 ${plan.discardedPixels}`;
 }

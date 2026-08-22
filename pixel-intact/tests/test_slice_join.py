@@ -2,7 +2,7 @@ from pathlib import Path
 
 from PIL import Image
 
-from pixel_intact import inspect_image, join_tiles, plan_slice, slice_image
+from pixel_intact import EnhanceSettings, inspect_image, join_tiles, plan_slice, slice_image
 
 
 def _make_image(path: Path, width: int = 101, height: int = 77) -> Path:
@@ -47,6 +47,21 @@ def test_size_slice_emits_remainder_tiles(tmp_path: Path) -> None:
 
     result = join_tiles(tmp_path / "tiles", tmp_path / "restored.png", original_path=source)
     assert result.matches_original is True
+
+
+def test_slice_after_enhance_covers_new_canvas(tmp_path: Path) -> None:
+    source = _make_image(tmp_path / "source.png", 21, 15)
+    plan = slice_image(
+        source,
+        tmp_path / "tiles",
+        cols=2,
+        rows=2,
+        enhance=EnhanceSettings(scale=2, clarity=0, sharpness=0),
+    )
+    assert plan.source_width == 42
+    assert plan.source_height == 30
+    assert plan.complete
+    assert plan.discarded_pixels == 0
 
 
 def test_plan_rejects_ambiguous_mode() -> None:

@@ -237,6 +237,27 @@ input[type="number"] {
   margin-top: 4px;
 }
 
+.presets {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.presets button {
+  font: inherit;
+  font-size: 12px;
+  padding: 7px 6px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.presets button:hover {
+  border-color: var(--amber);
+  color: var(--amber);
+}
+
 .actions {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -299,6 +320,69 @@ button[disabled] {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.compare {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+
+.compare-after {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.compare-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}
+
+.compare-before canvas {
+  height: 100%;
+  width: auto;
+  max-width: none;
+  display: block;
+}
+
+.compare-range {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  width: calc(100% - 24px);
+  margin: 0 12px;
+}
+
+.compare-tag {
+  position: absolute;
+  top: 10px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  padding: 4px 7px;
+  background: rgba(12, 9, 7, 0.7);
+  color: var(--ink);
+}
+
+.compare-tag.is-before {
+  left: 10px;
+}
+
+.compare-tag.is-after {
+  right: 10px;
+}
+
+.tile-card {
+  cursor: pointer;
+}
+
+.tile-card:hover {
+  border-color: var(--amber);
 }
 
 .empty {

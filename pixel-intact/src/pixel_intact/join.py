@@ -84,8 +84,10 @@ def join_tiles(
 ) -> JoinResult:
     folder = Path(tiles_dir)
     parsed = _parse_manifest(folder / "intact-manifest.txt")
+    tile_count = 0
     if parsed is not None:
         width, height, tiles = parsed
+        tile_count = len(tiles)
         canvas = Image.new("RGBA", (width, height))
         used_pixels = 0
         for tile in tiles:
@@ -96,6 +98,7 @@ def join_tiles(
             used_pixels += tile.width * tile.height
     else:
         discovered = _discover_tiles(folder)
+        tile_count = len(discovered)
         rows = max(tile.row for tile, _ in discovered) + 1
         cols = max(tile.col for tile, _ in discovered) + 1
         grid: dict[tuple[int, int], tuple[SliceTile, Path]] = {
@@ -143,7 +146,7 @@ def join_tiles(
     return JoinResult(
         width=width,
         height=height,
-        tiles=len(parsed[2]) if parsed else len(_discover_tiles(folder)),
+        tiles=tile_count,
         discarded_pixels=width * height - used_pixels,
         pixel_sha256=digest,
         matches_original=matches,

@@ -51,6 +51,11 @@
           </div>
 
           <form id="slice-form" class="mode-form">
+            <div class="presets" id="presets">
+              <button type="button" data-cols="3" data-rows="3">九宫格</button>
+              <button type="button" data-cols="2" data-rows="2">四宫格</button>
+              <button type="button" data-cols="4" data-rows="4">16 宫</button>
+            </div>
             <label class="choice">
               <input type="radio" name="slice-mode" value="grid" checked />
               按行列切
@@ -71,6 +76,7 @@
               <input id="enhance-first" type="checkbox" />
               先提高清晰度再切（每块像素更多）
             </label>
+            <p class="hint" id="plan-estimate">设置行列后会预估每块像素，并在右侧画切割线。</p>
           </form>
 
           <form id="enhance-form" class="mode-form is-hidden">

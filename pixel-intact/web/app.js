@@ -2,13 +2,17 @@ import JSZip from "https://cdn.jsdelivr.net/npm/jszip@3.10.1/+esm";
 import {
   canvasToBlob,
   cropTile,
+  describePlan,
   downloadBlob,
+  drawPreviewWithGrid,
   enhanceCanvas,
   formatPixels,
   joinCanvases,
   loadFileToCanvas,
+  outputName,
   parseTileName,
   planSlice,
+  thumbnail,
 } from "./processor.js";
 
 const els = {
@@ -39,6 +43,8 @@ const els = {
   joinInput: document.getElementById("join-input"),
   joinCount: document.getElementById("join-count"),
   enhanceFirst: document.getElementById("enhance-first"),
+  estimate: document.getElementById("plan-estimate"),
+  presets: document.getElementById("presets"),
 };
 
 const state = {
@@ -58,6 +64,10 @@ function showCanvas(canvas) {
   els.viewport.replaceChildren(canvas);
 }
 
+function sourceName() {
+  return state.source?.name || "image.png";
+}
+
 function bindDrop(zone, input, onFiles) {
   zone.addEventListener("click", () => input.click());
   zone.addEventListener("dragover", (event) => {
@@ -71,24 +81,6 @@ function bindDrop(zone, input, onFiles) {
     onFiles(event.dataTransfer.files);
   });
   input.addEventListener("change", () => onFiles(input.files));
-}
-
-async function setSource(file) {
-  if (!file) return;
-  state.source = await loadFileToCanvas(file);
-  els.size.textContent = `${state.source.width} × ${state.source.height}`;
-  els.pixels.textContent = formatPixels(state.source.width * state.source.height);
-  els.fileMeta.textContent = `${file.name} · ${Math.round(file.size / 1024)} KB`;
-  els.badge.textContent = "原图完整读入 · 0 像素被丢弃";
-  els.badge.className = "badge is-good";
-  showCanvas(state.source.canvas);
-  els.sheet.hidden = true;
-  els.sheet.replaceChildren();
-  state.resultCanvas = state.source.canvas;
-  state.tiles = [];
-  state.downloadKind = "source";
-  els.download.disabled = false;
-  setStatus("原图已按完整像素载入。切图不会重采样；清晰模式才会增加像素数。");
 }
 
 function currentSliceOptions() {
@@ -113,6 +105,94 @@ function enhanceSettings() {
   };
 }
 
+function workingSize() {
+  if (!state.source) return null;
+  const scale = els.enhanceFirst.checked || state.mode === "enhance" ? Number(els.scale.value) : 1;
+  return {
+    width: Math.max(1, Math.round(state.source.width * scale)),
+    height: Math.max(1, Math.round(state.source.height * scale)),
+    scale,
+  };
+}
+
+function updatePlanPreview() {
+  if (!state.source || state.mode !== "slice") return;
+  try {
+    const size = workingSize();
+    const plan = planSlice(size.width, size.height, currentSliceOptions());
+    els.estimate.textContent = (size.scale !== 1 ? `${size.scale}× 后 ` : "") + describePlan(plan);
+    showCanvas(drawPreviewWithGrid(state.source.canvas, planSlice(state.source.width, state.source.height, currentSliceOptions())));
+    els.note.textContent = plan.complete
+      ? "切割线只是预览。处理前不会改原图，余数像素会留下来。"
+      : `预览发现会丢掉 ${plan.discardedPixels} 像素。`;
+  } catch (error) {
+    els.estimate.textContent = error.message;
+  }
+}
+
+function showCompare(beforeCanvas, afterCanvas) {
+  const wrap = document.createElement("div");
+  wrap.className = "compare";
+  afterCanvas.className = "compare-after";
+  const clip = document.createElement("div");
+  clip.className = "compare-before";
+  const before = document.createElement("canvas");
+  before.width = afterCanvas.width;
+  before.height = afterCanvas.height;
+  const ctx = before.getContext("2d");
+  ctx.imageSmoothingEnabled = true;
+  ctx.imageSmoothingQuality = "high";
+  ctx.drawImage(beforeCanvas, 0, 0, afterCanvas.width, afterCanvas.height);
+  clip.append(before);
+  const range = document.createElement("input");
+  range.className = "compare-range";
+  range.type = "range";
+  range.min = "0";
+  range.max = "100";
+  range.value = "50";
+  const beforeTag = document.createElement("span");
+  beforeTag.className = "compare-tag is-before";
+  beforeTag.textContent = "原图";
+  const afterTag = document.createElement("span");
+  afterTag.className = "compare-tag is-after";
+  afterTag.textContent = "清晰";
+  const sync = () => {
+    clip.style.width = `${range.value}%`;
+    const width = afterCanvas.getBoundingClientRect().width;
+    const height = afterCanvas.getBoundingClientRect().height;
+    before.style.width = `${width}px`;
+    before.style.height = `${height}px`;
+  };
+  range.addEventListener("input", sync);
+  wrap.append(afterCanvas, clip, range, beforeTag, afterTag);
+  els.viewport.replaceChildren(wrap);
+  requestAnimationFrame(sync);
+}
+
+async function setSource(file) {
+  if (!file) return;
+  state.source = await loadFileToCanvas(file);
+  els.size.textContent = `${state.source.width} × ${state.source.height}`;
+  els.pixels.textContent = formatPixels(state.source.width * state.source.height);
+  els.fileMeta.textContent = `${file.name} · ${Math.round(file.size / 1024)} KB`;
+  els.badge.textContent = "原图完整读入 · 0 像素被丢弃";
+  els.badge.className = "badge is-good";
+  els.sheet.hidden = true;
+  els.sheet.replaceChildren();
+  state.resultCanvas = state.source.canvas;
+  state.tiles = [];
+  state.downloadKind = "source";
+  els.download.disabled = false;
+  const jpeg = /jpe?g/i.test(file.type) || /\.jpe?g$/i.test(file.name);
+  setStatus(
+    jpeg
+      ? "这是 JPEG，相机或网站可能已经压过。本工具会按当前像素完整处理，但无法找回丢失的细节；可用清晰模式提高观感。"
+      : "原图已按完整像素载入。切图不会重采样；清晰模式才会增加像素数。",
+  );
+  if (state.mode === "slice") updatePlanPreview();
+  else showCanvas(state.source.canvas);
+}
+
 function renderTiles(plan, sourceCanvas) {
   state.tiles = plan.tiles.map((tile) => ({
     ...tile,
@@ -123,10 +203,13 @@ function renderTiles(plan, sourceCanvas) {
     ...state.tiles.map((tile) => {
       const card = document.createElement("div");
       card.className = "tile-card";
-      card.append(tile.canvas);
+      card.append(thumbnail(tile.canvas));
       const caption = document.createElement("span");
       caption.textContent = `${tile.name} · ${tile.width}×${tile.height}`;
       card.append(caption);
+      card.addEventListener("click", async () => {
+        downloadBlob(await canvasToBlob(tile.canvas), outputName(sourceName(), tile.name.replace(".png", "")));
+      });
       return card;
     }),
   );
@@ -137,15 +220,15 @@ async function runSlice() {
   let working = state.source.canvas;
   if (els.enhanceFirst.checked) {
     setStatus("正在提高清晰度，然后按完整画布切块…");
-    working = enhanceCanvas(working, enhanceSettings());
-    showCanvas(working);
+    working = await enhanceCanvas(working, enhanceSettings());
     state.resultCanvas = working;
   }
   const plan = planSlice(working.width, working.height, currentSliceOptions());
   renderTiles(plan, working);
+  showCanvas(drawPreviewWithGrid(working, plan));
   els.title.textContent = `切成 ${plan.rows} × ${plan.cols}`;
   els.note.textContent = plan.complete
-    ? `导出 ${formatPixels(plan.exportedPixels)} 像素，丢弃 0。余数已并入前排图块。`
+    ? `导出 ${formatPixels(plan.exportedPixels)} 像素，丢弃 0。点击小图可单独下载该块。`
     : `仍有 ${plan.discardedPixels} 像素未导出。`;
   els.badge.textContent = plan.complete ? "切图完整 · discarded pixels = 0" : "切图不完整";
   els.badge.className = plan.complete ? "badge is-good" : "badge is-wait";
@@ -158,11 +241,12 @@ async function runSlice() {
   );
 }
 
-function runEnhance() {
+async function runEnhance() {
   if (!state.source) throw new Error("先放入一张原图");
   const settings = enhanceSettings();
-  const canvas = enhanceCanvas(state.source.canvas, settings);
-  showCanvas(canvas);
+  setStatus("正在分步放大并提高局部对比，请稍候…");
+  const canvas = await enhanceCanvas(state.source.canvas, settings);
+  showCompare(state.source.canvas, canvas);
   els.sheet.hidden = true;
   state.resultCanvas = canvas;
   state.tiles = [];
@@ -171,10 +255,10 @@ function runEnhance() {
   const before = state.source.width * state.source.height;
   const after = canvas.width * canvas.height;
   els.title.textContent = `${settings.scale}× 清晰输出`;
-  els.note.textContent = `从 ${formatPixels(before)} 提升到 ${formatPixels(after)} 像素。构图不变，只增加采样密度和边缘对比。`;
+  els.note.textContent = `从 ${formatPixels(before)} 提升到 ${formatPixels(after)} 像素。拖动底部滑杆对比原图。`;
   els.badge.textContent = `清晰度已提高 · ${canvas.width}×${canvas.height}`;
   els.badge.className = "badge is-good";
-  setStatus("已用高质量缩放 + 局部对比 + 锐化。需要切图时，可勾选「先提高清晰度再切」。");
+  setStatus("已用分步高质量缩放 + 中频清晰 + 边缘锐化。构图不变。需要切图时可勾选「先提高清晰度再切」。");
 }
 
 async function collectJoinFiles(fileList) {
@@ -184,6 +268,10 @@ async function collectJoinFiles(fileList) {
 
 async function runJoin() {
   if (!state.joinFiles.length) throw new Error("先放入切块");
+  const named = state.joinFiles.map((file) => parseTileName(file.name)).filter(Boolean);
+  if (named.length && named.length !== state.joinFiles.length) {
+    throw new Error("切块文件名请统一成 r00_c00.png，或全部不要带行列名、按顺序多选。");
+  }
   const pieces = [];
   for (const [index, file] of state.joinFiles.entries()) {
     const loaded = await loadFileToCanvas(file);
@@ -234,24 +322,20 @@ async function downloadResult() {
         ),
       ].join("\n"),
     );
-    downloadBlob(await zip.generateAsync({ type: "blob" }), "pixel-intact-tiles.zip");
+    downloadBlob(await zip.generateAsync({ type: "blob" }), outputName(sourceName(), "tiles", "zip"));
     return;
   }
   if (!state.resultCanvas) return;
-  const blob = await canvasToBlob(state.resultCanvas);
-  const name =
-    state.downloadKind === "enhanced"
-      ? "pixel-intact-enhanced.png"
-      : state.downloadKind === "joined"
-        ? "pixel-intact-joined.png"
-        : "pixel-intact-original.png";
-  downloadBlob(blob, name);
+  const suffix =
+    state.downloadKind === "enhanced" ? "enhanced" : state.downloadKind === "joined" ? "joined" : "original";
+  downloadBlob(await canvasToBlob(state.resultCanvas), outputName(sourceName(), suffix));
 }
 
 function syncEnhanceVisibility() {
   const showEnhance =
     state.mode === "enhance" || (state.mode === "slice" && els.enhanceFirst.checked);
   els.enhanceForm.classList.toggle("is-hidden", !showEnhance);
+  if (state.mode === "slice") updatePlanPreview();
 }
 
 function setMode(mode) {
@@ -260,14 +344,33 @@ function setMode(mode) {
   els.sliceForm.classList.toggle("is-hidden", mode !== "slice");
   els.joinForm.classList.toggle("is-hidden", mode !== "join");
   syncEnhanceVisibility();
+  if (mode === "slice" && state.source) updatePlanPreview();
+  if (mode === "enhance" && state.source && !state.tiles.length) showCanvas(state.source.canvas);
 }
 
 els.tabs.forEach((tab) => tab.addEventListener("click", () => setMode(tab.dataset.mode)));
 els.enhanceFirst.addEventListener("change", syncEnhanceVisibility);
 
+els.presets.addEventListener("click", (event) => {
+  const button = event.target.closest("button[data-cols]");
+  if (!button) return;
+  document.querySelector("input[name='slice-mode'][value='grid']").checked = true;
+  document.getElementById("cols").value = button.dataset.cols;
+  document.getElementById("rows").value = button.dataset.rows;
+  updatePlanPreview();
+});
+
+["cols", "rows", "tile-w", "tile-h"].forEach((id) => {
+  document.getElementById(id).addEventListener("input", updatePlanPreview);
+});
+document.querySelectorAll("input[name='slice-mode']").forEach((input) => {
+  input.addEventListener("change", updatePlanPreview);
+});
+
 ["input", "change"].forEach((eventName) => {
   els.scale.addEventListener(eventName, () => {
     els.scaleOut.textContent = `${els.scale.value}×`;
+    if (state.mode === "slice") updatePlanPreview();
   });
   els.clarity.addEventListener(eventName, () => {
     els.clarityOut.textContent = Number(els.clarity.value).toFixed(2);
@@ -293,7 +396,7 @@ els.run.addEventListener("click", async () => {
   els.run.disabled = true;
   try {
     if (state.mode === "slice") await runSlice();
-    else if (state.mode === "enhance") runEnhance();
+    else if (state.mode === "enhance") await runEnhance();
     else await runJoin();
   } catch (error) {
     setStatus(error.message);

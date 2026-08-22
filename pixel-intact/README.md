@@ -27,9 +27,10 @@ python -m http.server 8765 --directory web
 流程：
 
 - 放入原图，看尺寸和总像素。
-- **切图**：3×3、任意行列，或按固定像素块。勾选「先提高清晰度再切」可先放大再切。
-- **清晰**：只提高采样密度和边缘对比，不改构图。
+- **切图**：九宫格 / 四宫格 / 任意行列，或按固定像素块。放入原图后立刻画切割线和每块像素预估。勾选「先提高清晰度再切」可先放大再切。
+- **清晰**：分步高质量放大，再做中频清晰和边缘锐化。处理后可拖杆对比原图。默认不改整体颜色。
 - **拼回**：把 `r00_c00.png` 这类切块还原成完整图。
+- 大图会限制输出边长，避免浏览器画布崩溃；切块缩略图可点选单独下载。
 
 全部在本地完成，原图不会被第三方网站压小。
 
@@ -52,6 +53,7 @@ enhance_image("photo.png", "photo-2x.png")
 ```bash
 pixel-intact inspect photo.png
 pixel-intact slice photo.png --cols 3 --rows 3 --out tiles
+pixel-intact slice photo.png --cols 3 --rows 3 --scale 2 --out tiles
 pixel-intact join tiles --out restored.png --original photo.png
 pixel-intact enhance photo.png --scale 2 --clarity 0.3 --out photo-2x.png
 ```
