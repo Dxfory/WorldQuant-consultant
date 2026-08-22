@@ -6,6 +6,8 @@ from pathlib import Path
 from PIL import Image, ImageEnhance, ImageFilter
 
 from .completeness import load_intact_image
+from .export import save_image
+from .superres import fsr_available, pick_fsr_factor, upscale_fsr
 
 MAX_EDGE = 16_384
 MAX_PIXELS = 80_000_000
@@ -19,6 +21,7 @@ class EnhanceSettings:
     contrast: float = 1.0
     denoise: bool = False
     autocontrast: bool = False
+    engine: str = "lanczos"
 
     def __post_init__(self) -> None:
         if self.scale < 1:
@@ -27,6 +30,8 @@ class EnhanceSettings:
             raise ValueError("clarity must be between 0 and 1.5")
         if not 0 <= self.sharpness <= 2:
             raise ValueError("sharpness must be between 0 and 2")
+        if self.engine not in {"lanczos", "fsr"}:
+            raise ValueError("engine must be lanczos or fsr")
 
 
 def target_size(width: int, height: int, scale: float) -> tuple[int, int]:
@@ -58,9 +63,14 @@ def enhance_pil(image: Image.Image, settings: EnhanceSettings | None = None) -> 
     if settings.scale != 1:
         width, height = target_size(working.width, working.height, settings.scale)
         assert_safe_size(width, height)
-        working = working.resize((width, height), resample=Image.Resampling.LANCZOS)
+        if settings.engine == "fsr" and pick_fsr_factor(settings.scale):
+            if not fsr_available():
+                raise ValueError("FSRCNN 超分不可用：请安装 opencv-contrib-python-headless 并放入 models/FSRCNN_x2.pb")
+            working = upscale_fsr(working, settings.scale)
+        else:
+            working = working.resize((width, height), resample=Image.Resampling.LANCZOS)
         if alpha is not None:
-            alpha = alpha.resize((width, height), resample=Image.Resampling.LANCZOS)
+            alpha = alpha.resize((working.width, working.height), resample=Image.Resampling.LANCZOS)
 
     if settings.autocontrast:
         from PIL import ImageOps
@@ -102,13 +112,5 @@ def enhance_image(
     working = enhance_pil(load_intact_image(path), settings)
     destination = Path(out_path)
     destination.parent.mkdir(parents=True, exist_ok=True)
-    suffix = destination.suffix.lower()
-    if suffix in {".jpg", ".jpeg"}:
-        rgb = working.convert("RGB")
-        rgb.save(destination, format="JPEG", quality=98, subsampling=0, optimize=True)
-        return rgb
-    if suffix == ".webp":
-        working.save(destination, format="WEBP", lossless=True, quality=100)
-        return working
-    working.save(destination, format="PNG", compress_level=1)
+    save_image(working, destination, fmt=destination.suffix.lower().lstrip(".") or "png")
     return working

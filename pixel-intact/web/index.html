@@ -80,6 +80,16 @@
           </form>
 
           <form id="enhance-form" class="mode-form is-hidden">
+            <label class="choice tight">
+              <input id="use-local" type="checkbox" checked />
+              用本地引擎（画质更高）
+            </label>
+            <label>超分
+              <select id="engine">
+                <option value="lanczos">Lanczos 经典</option>
+                <option value="fsr">FSRCNN 超分</option>
+              </select>
+            </label>
             <label>放大 <output id="scale-out">2×</output>
               <input id="scale" type="range" min="1" max="4" step="0.5" value="2" />
             </label>
@@ -89,6 +99,18 @@
             <label>锐化 <output id="sharp-out">0.85</output>
               <input id="sharpness" type="range" min="0" max="1.6" step="0.05" value="0.85" />
             </label>
+            <label>导出
+              <select id="export-format">
+                <option value="png">PNG 无损</option>
+                <option value="jpeg">JPEG 98</option>
+                <option value="webp">WebP 无损</option>
+              </select>
+            </label>
+            <div class="live-box">
+              <span>中心预览</span>
+              <div id="live-preview" class="live-preview"></div>
+            </div>
+            <p class="hint" id="engine-hint">正在检测本地引擎…</p>
           </form>
 
           <form id="join-form" class="mode-form is-hidden">
@@ -116,6 +138,8 @@
         <div class="viewport" id="viewport">
           <p class="empty">把一张图放到左侧，开始检查完整度。</p>
         </div>
+        <div class="loupe" id="loupe" hidden></div>
+        <p class="hint loupe-hint">鼠标移到预览上可 1:1 查看像素。</p>
         <div class="sheet" id="tile-sheet" hidden></div>
       </section>
     </main>

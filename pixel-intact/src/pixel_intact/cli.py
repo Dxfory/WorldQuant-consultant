@@ -3,14 +3,15 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
-from functools import partial
-from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 import webbrowser
 
+from .batch import batch_enhance
 from .completeness import inspect_image
 from .enhance import EnhanceSettings, enhance_image
 from .join import join_tiles
 from .slice import slice_image
+from .studio import serve_studio
+from .superres import fsr_available
 
 
 def _print_report(payload: dict) -> None:
@@ -37,6 +38,7 @@ def main(argv: list[str] | None = None) -> int:
     slice_cmd.add_argument("--scale", type=float, default=1.0, help="Enhance/upscale before cutting")
     slice_cmd.add_argument("--clarity", type=float, default=0.35)
     slice_cmd.add_argument("--sharpness", type=float, default=0.85)
+    slice_cmd.add_argument("--engine", choices=("lanczos", "fsr"), default="lanczos")
 
     join_cmd = sub.add_parser("join", help="Reassemble tiles into the complete original")
     join_cmd.add_argument("tiles", help="Folder that contains rXX_cXX.png tiles")
@@ -48,10 +50,20 @@ def main(argv: list[str] | None = None) -> int:
     enhance_cmd.add_argument("--out", required=True)
     enhance_cmd.add_argument("--scale", type=float, default=2.0)
     enhance_cmd.add_argument("--clarity", type=float, default=0.28)
-    enhance_cmd.add_argument("--sharpness", type=float, default=1.35)
+    enhance_cmd.add_argument("--sharpness", type=float, default=0.85)
+    enhance_cmd.add_argument("--engine", choices=("lanczos", "fsr"), default="lanczos")
     enhance_cmd.add_argument("--denoise", action="store_true")
     enhance_cmd.add_argument("--autocontrast", action="store_true")
     enhance_cmd.add_argument("--contrast", type=float, default=1.0)
+
+    batch_cmd = sub.add_parser("batch", help="Enhance every image in a folder")
+    batch_cmd.add_argument("folder")
+    batch_cmd.add_argument("--out", required=True)
+    batch_cmd.add_argument("--scale", type=float, default=2.0)
+    batch_cmd.add_argument("--clarity", type=float, default=0.35)
+    batch_cmd.add_argument("--sharpness", type=float, default=0.85)
+    batch_cmd.add_argument("--engine", choices=("lanczos", "fsr"), default="lanczos")
+    batch_cmd.add_argument("--format", dest="fmt", choices=("png", "jpeg", "webp"), default="png")
 
     studio_cmd = sub.add_parser("studio", help="Open the local high-fidelity web studio")
     studio_cmd.add_argument("--port", type=int, default=8765)
@@ -84,6 +96,7 @@ def main(argv: list[str] | None = None) -> int:
                 scale=args.scale,
                 clarity=args.clarity,
                 sharpness=args.sharpness,
+                engine=args.engine,
             )
         plan = slice_image(
             args.image,
@@ -137,16 +150,31 @@ def main(argv: list[str] | None = None) -> int:
         web_root = next((path for path in candidates if (path / "index.html").exists()), None)
         if web_root is None:
             raise SystemExit("cannot find web/index.html; run from the pixel-intact checkout")
-        handler = partial(SimpleHTTPRequestHandler, directory=str(web_root))
-        server = ThreadingHTTPServer(("127.0.0.1", args.port), handler)
+        server = serve_studio(web_root, args.port)
         url = f"http://127.0.0.1:{args.port}/"
         print(f"Pixel Intact studio: {url}")
+        print(f"local engine: lanczos=yes  fsr={'yes' if fsr_available() else 'no'}")
         if not args.no_browser:
             webbrowser.open(url)
         try:
             server.serve_forever()
         except KeyboardInterrupt:
             print("\nstudio stopped")
+        return 0
+
+    if args.command == "batch":
+        written = batch_enhance(
+            args.folder,
+            args.out,
+            EnhanceSettings(
+                scale=args.scale,
+                clarity=args.clarity,
+                sharpness=args.sharpness,
+                engine=args.engine,
+            ),
+            fmt=args.fmt,
+        )
+        _print_report({"count": len(written), "out": str(Path(args.out).resolve())})
         return 0
 
     enhance_image(
@@ -159,6 +187,7 @@ def main(argv: list[str] | None = None) -> int:
             denoise=args.denoise,
             autocontrast=args.autocontrast,
             contrast=args.contrast,
+            engine=args.engine,
         ),
     )
     report = inspect_image(args.out)

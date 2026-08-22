@@ -6,7 +6,7 @@ High-fidelity image studio: keep the original complete, cut it without losing pi
 
 1. **原图完整** — 按原始宽高读入，不先缩小，不上传压缩。
 2. **无损切图** — 按行列或按像素块切开。除不尽的余数会分给前几列/行，或单独输出余块，所以 `discarded_pixels = 0`。
-3. **提高清晰度** — Lanczos 放大 2×–4×，再做局部对比和锐化。可以先增强再切，让每一块都比原网站更清楚。
+3. **提高清晰度** — 本地 Lanczos，或可选 FSRCNN 超分（比浏览器插值更清楚）。可以先增强再切。
 
 浏览器里处理切图和预览；Python CLI 适合批量出图，并用像素级比对确认「切完再拼回 == 原图」。
 
@@ -28,7 +28,7 @@ python -m http.server 8765 --directory web
 
 - 放入原图，看尺寸和总像素。
 - **切图**：九宫格 / 四宫格 / 任意行列，或按固定像素块。放入原图后立刻画切割线和每块像素预估。勾选「先提高清晰度再切」可先放大再切。
-- **清晰**：分步高质量放大，再做中频清晰和边缘锐化。处理后可拖杆对比原图。默认不改整体颜色。
+- **清晰**：`pixel-intact studio` 会接上本地引擎。可选 FSRCNN 超分、拖杆对比原图、1:1 看像素、中心预览调滑杆。默认不改整体颜色。
 - **拼回**：把 `r00_c00.png` 这类切块还原成完整图。
 - 大图会限制输出边长，避免浏览器画布崩溃；切块缩略图可点选单独下载。
 
@@ -56,6 +56,8 @@ pixel-intact slice photo.png --cols 3 --rows 3 --out tiles
 pixel-intact slice photo.png --cols 3 --rows 3 --scale 2 --out tiles
 pixel-intact join tiles --out restored.png --original photo.png
 pixel-intact enhance photo.png --scale 2 --clarity 0.3 --out photo-2x.png
+pixel-intact enhance photo.png --scale 2 --engine fsr --out photo-fsr.png
+pixel-intact batch photos --scale 2 --engine fsr --out enhanced
 ```
 
 按尺寸切（余块会留下来）：

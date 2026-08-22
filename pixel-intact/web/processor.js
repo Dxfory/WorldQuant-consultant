@@ -119,6 +119,14 @@ export async function loadFileToCanvas(file) {
   };
 }
 
+export function cropCenter(sourceCanvas, size = 160) {
+  const width = Math.min(size, sourceCanvas.width);
+  const height = Math.min(size, sourceCanvas.height);
+  const left = Math.max(0, Math.round((sourceCanvas.width - width) / 2));
+  const top = Math.max(0, Math.round((sourceCanvas.height - height) / 2));
+  return cropTile(sourceCanvas, { left, top, width, height });
+}
+
 export function cropTile(sourceCanvas, tile) {
   const canvas = document.createElement("canvas");
   canvas.width = tile.width;

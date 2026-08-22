@@ -1,6 +1,7 @@
 import JSZip from "https://cdn.jsdelivr.net/npm/jszip@3.10.1/+esm";
 import {
   canvasToBlob,
+  cropCenter,
   cropTile,
   describePlan,
   downloadBlob,
@@ -45,16 +46,26 @@ const els = {
   enhanceFirst: document.getElementById("enhance-first"),
   estimate: document.getElementById("plan-estimate"),
   presets: document.getElementById("presets"),
+  useLocal: document.getElementById("use-local"),
+  engine: document.getElementById("engine"),
+  engineHint: document.getElementById("engine-hint"),
+  exportFormat: document.getElementById("export-format"),
+  livePreview: document.getElementById("live-preview"),
+  loupe: document.getElementById("loupe"),
 };
 
 const state = {
   mode: "slice",
+  file: null,
   source: null,
   resultCanvas: null,
   tiles: [],
   joinFiles: [],
   downloadKind: null,
+  health: { lanczos: false, fsr: false },
 };
+
+let liveTimer = 0;
 
 function setStatus(text) {
   els.status.textContent = text;
@@ -102,7 +113,105 @@ function enhanceSettings() {
     scale: Number(els.scale.value),
     clarity: Number(els.clarity.value),
     sharpness: Number(els.sharpness.value),
+    engine: els.engine.value,
   };
+}
+
+function canUseLocal() {
+  return els.useLocal.checked && state.health.lanczos && state.file;
+}
+
+async function probeHealth() {
+  try {
+    const response = await fetch("/api/health");
+    if (!response.ok) throw new Error("no api");
+    const payload = await response.json();
+    state.health = payload.engine || {};
+    els.useLocal.disabled = false;
+    els.useLocal.checked = true;
+    if (!state.health.fsr) {
+      els.engine.querySelector("option[value='fsr']").disabled = true;
+      els.engine.value = "lanczos";
+    }
+    els.engineHint.textContent = state.health.fsr
+      ? "本地引擎已连接。FSRCNN 超分可用，适合把糊图拉清楚。"
+      : "本地引擎已连接。当前只有 Lanczos；装上 opencv 和 models 后可开 FSRCNN。";
+  } catch {
+    state.health = { lanczos: false, fsr: false };
+    els.useLocal.checked = false;
+    els.useLocal.disabled = true;
+    els.engine.disabled = true;
+    els.engineHint.textContent = "未检测到本地工作室接口，将使用浏览器引擎。请用 pixel-intact studio 启动。";
+  }
+}
+
+async function enhanceViaApi(file, settings) {
+  const form = new FormData();
+  form.append("image", file);
+  form.append("scale", String(settings.scale));
+  form.append("clarity", String(settings.clarity));
+  form.append("sharpness", String(settings.sharpness));
+  form.append("engine", settings.engine);
+  const response = await fetch("/api/enhance", { method: "POST", body: form });
+  if (!response.ok) throw new Error(await response.text());
+  const blob = await response.blob();
+  return loadFileToCanvas(new File([blob], "enhanced.png", { type: "image/png" }));
+}
+
+async function enhanceCurrent(settings) {
+  if (canUseLocal()) {
+    const loaded = await enhanceViaApi(state.file, settings);
+    return loaded.canvas;
+  }
+  return enhanceCanvas(state.source.canvas, settings);
+}
+
+async function updateLivePreview() {
+  if (!state.source || !els.livePreview) return;
+  const crop = cropCenter(state.source.canvas, 160);
+  const preview = await enhanceCanvas(crop, {
+    scale: Math.min(2, Number(els.scale.value)),
+    clarity: Number(els.clarity.value),
+    sharpness: Number(els.sharpness.value),
+  });
+  els.livePreview.replaceChildren(preview);
+}
+
+function scheduleLivePreview() {
+  window.clearTimeout(liveTimer);
+  liveTimer = window.setTimeout(() => {
+    updateLivePreview().catch(() => {});
+  }, 160);
+}
+
+function bindLoupe() {
+  const loupeCanvas = document.createElement("canvas");
+  loupeCanvas.width = 180;
+  loupeCanvas.height = 180;
+  els.loupe.replaceChildren(loupeCanvas);
+  const ctx = loupeCanvas.getContext("2d");
+  els.viewport.addEventListener("mousemove", (event) => {
+    const source = state.resultCanvas || state.source?.canvas;
+    if (!source) return;
+    const canvas = els.viewport.querySelector("canvas");
+    if (!canvas) return;
+    const rect = canvas.getBoundingClientRect();
+    if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) {
+      els.loupe.hidden = true;
+      return;
+    }
+    const x = ((event.clientX - rect.left) / rect.width) * source.width;
+    const y = ((event.clientY - rect.top) / rect.height) * source.height;
+    els.loupe.hidden = false;
+    els.loupe.style.left = `${event.clientX + 16}px`;
+    els.loupe.style.top = `${event.clientY + 16}px`;
+    ctx.imageSmoothingEnabled = false;
+    ctx.clearRect(0, 0, 180, 180);
+    ctx.drawImage(source, x - 45, y - 45, 90, 90, 0, 0, 180, 180);
+  });
+  els.viewport.addEventListener("mouseleave", () => {
+    els.loupe.hidden = true;
+  });
 }
 
 function workingSize() {
@@ -171,6 +280,7 @@ function showCompare(beforeCanvas, afterCanvas) {
 
 async function setSource(file) {
   if (!file) return;
+  state.file = file;
   state.source = await loadFileToCanvas(file);
   els.size.textContent = `${state.source.width} × ${state.source.height}`;
   els.pixels.textContent = formatPixels(state.source.width * state.source.height);
@@ -191,6 +301,7 @@ async function setSource(file) {
   );
   if (state.mode === "slice") updatePlanPreview();
   else showCanvas(state.source.canvas);
+  scheduleLivePreview();
 }
 
 function renderTiles(plan, sourceCanvas) {
@@ -219,8 +330,8 @@ async function runSlice() {
   if (!state.source) throw new Error("先放入一张原图");
   let working = state.source.canvas;
   if (els.enhanceFirst.checked) {
-    setStatus("正在提高清晰度，然后按完整画布切块…");
-    working = await enhanceCanvas(working, enhanceSettings());
+    setStatus(canUseLocal() ? "本地引擎正在提高清晰度，然后切块…" : "正在提高清晰度，然后按完整画布切块…");
+    working = await enhanceCurrent(enhanceSettings());
     state.resultCanvas = working;
   }
   const plan = planSlice(working.width, working.height, currentSliceOptions());
@@ -244,8 +355,8 @@ async function runSlice() {
 async function runEnhance() {
   if (!state.source) throw new Error("先放入一张原图");
   const settings = enhanceSettings();
-  setStatus("正在分步放大并提高局部对比，请稍候…");
-  const canvas = await enhanceCanvas(state.source.canvas, settings);
+  setStatus(canUseLocal() ? "本地引擎正在超分 / 放大…" : "正在分步放大并提高局部对比，请稍候…");
+  const canvas = await enhanceCurrent(settings);
   showCompare(state.source.canvas, canvas);
   els.sheet.hidden = true;
   state.resultCanvas = canvas;
@@ -258,7 +369,8 @@ async function runEnhance() {
   els.note.textContent = `从 ${formatPixels(before)} 提升到 ${formatPixels(after)} 像素。拖动底部滑杆对比原图。`;
   els.badge.textContent = `清晰度已提高 · ${canvas.width}×${canvas.height}`;
   els.badge.className = "badge is-good";
-  setStatus("已用分步高质量缩放 + 中频清晰 + 边缘锐化。构图不变。需要切图时可勾选「先提高清晰度再切」。");
+  const engineLabel = canUseLocal() && settings.engine === "fsr" ? "FSRCNN 超分" : "Lanczos";
+  setStatus(`已用${engineLabel}提高像素密度，再做中频清晰和边缘锐化。构图不变。`);
 }
 
 async function collectJoinFiles(fileList) {
@@ -328,7 +440,12 @@ async function downloadResult() {
   if (!state.resultCanvas) return;
   const suffix =
     state.downloadKind === "enhanced" ? "enhanced" : state.downloadKind === "joined" ? "joined" : "original";
-  downloadBlob(await canvasToBlob(state.resultCanvas), outputName(sourceName(), suffix));
+  const fmt = els.exportFormat.value;
+  const mime = fmt === "jpeg" ? "image/jpeg" : fmt === "webp" ? "image/webp" : "image/png";
+  downloadBlob(
+    await canvasToBlob(state.resultCanvas, mime, fmt === "jpeg" ? 0.98 : 1),
+    outputName(sourceName(), suffix, fmt === "jpeg" ? "jpg" : fmt),
+  );
 }
 
 function syncEnhanceVisibility() {
@@ -377,8 +494,12 @@ document.querySelectorAll("input[name='slice-mode']").forEach((input) => {
   });
   els.sharpness.addEventListener(eventName, () => {
     els.sharpOut.textContent = Number(els.sharpness.value).toFixed(2);
+    scheduleLivePreview();
   });
 });
+els.scale.addEventListener("input", scheduleLivePreview);
+els.clarity.addEventListener("input", scheduleLivePreview);
+els.engine.addEventListener("change", scheduleLivePreview);
 
 bindDrop(els.drop, els.file, (files) => {
   if (files[0]) setSource(files[0]).catch((error) => setStatus(error.message));
@@ -408,3 +529,6 @@ els.run.addEventListener("click", async () => {
 els.download.addEventListener("click", () => {
   downloadResult().catch((error) => setStatus(error.message));
 });
+
+bindLoupe();
+probeHealth();

@@ -219,7 +219,8 @@ input[type="range"] {
   accent-color: var(--amber);
 }
 
-input[type="number"] {
+input[type="number"],
+select {
   background: #120e0a;
   color: var(--ink);
   border: 1px solid var(--line);
@@ -428,6 +429,47 @@ em {
   font-family: "IBM Plex Mono", monospace;
   font-style: normal;
   color: var(--amber);
+}
+
+.live-box {
+  display: grid;
+  gap: 6px;
+}
+
+.live-preview {
+  width: 160px;
+  height: 160px;
+  border: 1px solid var(--line);
+  background: #100c09;
+  overflow: hidden;
+}
+
+.live-preview canvas {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.loupe {
+  position: fixed;
+  width: 180px;
+  height: 180px;
+  border: 1px solid var(--amber);
+  background: #100c09;
+  box-shadow: var(--shadow);
+  pointer-events: none;
+  z-index: 8;
+  overflow: hidden;
+}
+
+.loupe canvas {
+  display: block;
+}
+
+.loupe-hint {
+  margin: 8px 0 0;
+  font-size: 12px;
 }
 
 @media (max-width: 880px) {
