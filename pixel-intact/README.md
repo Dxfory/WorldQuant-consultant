@@ -10,6 +10,10 @@ High-fidelity image studio: keep the original complete, cut it without losing pi
 
 浏览器里处理切图和预览；Python CLI 适合批量出图，并用像素级比对确认「切完再拼回 == 原图」。
 
+## 微信小程序
+
+目录：`miniprogram/`。用[微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html)导入该文件夹。选图走原图、可切九宫格、提高清晰度、拼回并保存到相册。说明见 `miniprogram/README.md`。
+
 ## Mac 教程 PDF
 
 发给别人用这一份：`docs/Pixel-Intact-Mac-Guide.pdf`。重新生成：

@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/studio/studio",
+    "pages/join/join"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#16110c",
+    "navigationBarTitleText": "Pixel Intact",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#0c0907",
+    "backgroundTextStyle": "light"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "permission": {
+    "scope.writePhotosAlbum": {
+      "desc": "把完整切图和清晰图保存到你的相册"
+    }
+  }
+}

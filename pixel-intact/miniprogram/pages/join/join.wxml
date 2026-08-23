@@ -1,0 +1,21 @@
+<view class="page">
+  <text class="lede">选择切块。文件名最好是 r00_c00.png。点处理即可拼回完整图。</text>
+  <button class="btn btn-primary" bindtap="pickTiles">选择切块</button>
+  <text class="hint">已选 {{tiles.length}} 个</text>
+
+  <view class="list">
+    <view class="row" wx:for="{{tiles}}" wx:key="path">
+      <image src="{{item.path}}" mode="aspectFill"></image>
+      <text>{{item.label}}</text>
+    </view>
+  </view>
+
+  <canvas type="2d" id="work" class="work"></canvas>
+  <image wx:if="{{resultPath}}" class="preview" src="{{resultPath}}" mode="widthFix"></image>
+
+  <view class="actions">
+    <button class="btn btn-primary" loading="{{busy}}" disabled="{{busy || !tiles.length}}" bindtap="run">拼回</button>
+    <button class="btn" disabled="{{!resultPath}}" bindtap="save">保存完整图</button>
+  </view>
+  <text class="hint">{{status}}</text>
+</view>

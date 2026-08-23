@@ -1,0 +1,40 @@
+.work {
+  position: fixed;
+  left: -2000px;
+  width: 10px;
+  height: 10px;
+}
+
+.preview {
+  width: 100%;
+  margin-top: 24rpx;
+  border: 1rpx solid #3a2d1f;
+}
+
+.list {
+  margin-top: 20rpx;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+  margin-bottom: 12rpx;
+}
+
+.row image {
+  width: 96rpx;
+  height: 96rpx;
+  background: #100c09;
+}
+
+.row text {
+  font-size: 24rpx;
+  color: #b7aa94;
+}
+
+.actions {
+  display: flex;
+  gap: 16rpx;
+  margin-top: 24rpx;
+}

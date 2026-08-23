@@ -1,0 +1,25 @@
+<view class="page">
+  <view class="hero">
+    <text class="mark">PI</text>
+    <view>
+      <text class="title">Pixel Intact</text>
+      <text class="sub">原图完整 · 无损切图 · 清晰度拉高</text>
+    </view>
+  </view>
+
+  <text class="lede">
+    对照做好图切图：这里按原图像素读入，余数不丢，切完可以拼回。清晰度在手机本地处理，不上传。
+  </text>
+
+  <view class="actions">
+    <button class="btn btn-primary" bindtap="pickImage">选一张原图</button>
+    <button class="btn" bindtap="goJoin">拼回切块</button>
+  </view>
+
+  <view class="panel">
+    <text class="item-title">会怎么处理</text>
+    <text class="lede">1. 选图时强制用「原图」，不走微信压缩。</text>
+    <text class="lede">2. 九宫格 / 行列 / 像素块切开，丢弃像素为 0。</text>
+    <text class="lede">3. 可放大并提高清晰度，再保存到相册。</text>
+  </view>
+</view>

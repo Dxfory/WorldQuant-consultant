@@ -1,0 +1,55 @@
+<view class="page">
+  <image class="preview" src="{{previewPath}}" mode="widthFix"></image>
+  <canvas type="2d" id="work" class="work"></canvas>
+
+  <view class="meta-row"><text>尺寸</text><text>{{width}} × {{height}}</text></view>
+  <view class="meta-row"><text>像素</text><text>{{pixels}}</text></view>
+  <view class="badge {{complete ? 'badge-good' : ''}}">{{badge}}</view>
+
+  <view class="tabs">
+    <view class="tab {{mode === 'slice' ? 'on' : ''}}" data-mode="slice" bindtap="setMode">切图</view>
+    <view class="tab {{mode === 'enhance' ? 'on' : ''}}" data-mode="enhance" bindtap="setMode">清晰</view>
+  </view>
+
+  <view class="panel" wx:if="{{mode === 'slice'}}">
+    <view class="presets">
+      <button class="mini" data-cols="3" data-rows="3" bindtap="preset">九宫格</button>
+      <button class="mini" data-cols="2" data-rows="2" bindtap="preset">四宫格</button>
+      <button class="mini" data-cols="4" data-rows="4" bindtap="preset">16 宫</button>
+    </view>
+    <view class="pair">
+      <view class="field">横向 <input type="number" value="{{cols}}" bindinput="onCols"/></view>
+      <view class="field">纵向 <input type="number" value="{{rows}}" bindinput="onRows"/></view>
+    </view>
+    <label class="check">
+      <switch checked="{{enhanceFirst}}" bindchange="onEnhanceFirst" color="#e0a45a"/>
+      <text>先提高清晰度再切</text>
+    </label>
+    <text class="hint">{{estimate}}</text>
+  </view>
+
+  <view class="panel" wx:if="{{mode === 'enhance' || enhanceFirst}}">
+    <view class="field">放大 {{scale}}×
+      <slider min="1" max="3" step="0.5" value="{{scale}}" bindchanging="onScale" bindchange="onScale" activeColor="#e0a45a"/>
+    </view>
+    <view class="field">清晰度 {{clarity}}
+      <slider min="0" max="1" step="0.05" value="{{clarity}}" bindchanging="onClarity" bindchange="onClarity" activeColor="#e0a45a"/>
+    </view>
+    <view class="field">锐化 {{sharpness}}
+      <slider min="0" max="1.6" step="0.05" value="{{sharpness}}" bindchanging="onSharp" bindchange="onSharp" activeColor="#e0a45a"/>
+    </view>
+  </view>
+
+  <view class="actions">
+    <button class="btn btn-primary" loading="{{busy}}" disabled="{{busy}}" bindtap="run">处理</button>
+    <button class="btn" disabled="{{!resultPath}}" bindtap="saveCurrent">保存当前图</button>
+  </view>
+  <text class="hint">{{status}}</text>
+
+  <view class="tiles" wx:if="{{tiles.length}}">
+    <view class="tile" wx:for="{{tiles}}" wx:key="name" data-path="{{item.path}}" bindtap="saveTile">
+      <image src="{{item.path}}" mode="aspectFill"></image>
+      <text>{{item.name}} {{item.width}}×{{item.height}}</text>
+    </view>
+  </view>
+</view>

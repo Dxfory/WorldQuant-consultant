@@ -1,0 +1,43 @@
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 20rpx;
+  margin-bottom: 24rpx;
+}
+
+.mark {
+  width: 88rpx;
+  height: 88rpx;
+  border: 1rpx solid #e0a45a;
+  color: #e0a45a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+}
+
+.title {
+  display: block;
+  font-size: 40rpx;
+  font-weight: 600;
+}
+
+.sub {
+  display: block;
+  margin-top: 6rpx;
+  color: #b7aa94;
+  font-size: 24rpx;
+}
+
+.actions {
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+}
+
+.item-title {
+  display: block;
+  margin-bottom: 12rpx;
+  font-size: 28rpx;
+}
