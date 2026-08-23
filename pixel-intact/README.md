@@ -10,6 +10,14 @@ High-fidelity image studio: keep the original complete, cut it without losing pi
 
 浏览器里处理切图和预览；Python CLI 适合批量出图，并用像素级比对确认「切完再拼回 == 原图」。
 
+## Mac 教程 PDF
+
+发给别人用这一份：`docs/Pixel-Intact-Mac-Guide.pdf`。重新生成：
+
+```bash
+python3 docs/build_mac_guide.py
+```
+
 ## Studio
 
 ```bash
