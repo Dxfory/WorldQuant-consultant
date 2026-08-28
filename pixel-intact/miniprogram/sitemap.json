@@ -1,0 +1,9 @@
+{
+  "desc": "Pixel Intact 仅处理用户自己选择的图片",
+  "rules": [
+    {
+      "action": "allow",
+      "page": "*"
+    }
+  ]
+}

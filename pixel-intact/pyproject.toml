@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pixel-intact"
+version = "0.2.1"
+description = "Lossless image cutting, exact original reconstruction, and high-clarity upscaling."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Zheng Xing" }]
+keywords = ["image", "slice", "upscale", "clarity", "lossless"]
+dependencies = [
+  "Pillow>=10.0.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+sr = ["opencv-contrib-python-headless>=4.8.0"]
+
+[project.scripts]
+pixel-intact = "pixel_intact.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

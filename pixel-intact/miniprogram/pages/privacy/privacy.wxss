@@ -1,0 +1,4 @@
+.page .lede {
+  display: block;
+  margin-bottom: 12rpx;
+}

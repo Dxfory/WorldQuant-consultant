@@ -1,0 +1,29 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "pixel-intact-wechat",
+  "description": "原图完整 · 无损切图 · 清晰度 · 拼回",
+  "appid": "touristappid",
+  "compileType": "miniprogram",
+  "libVersion": "3.7.8",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "setting": {
+    "es6": true,
+    "enhance": true,
+    "minified": true,
+    "minifyWXSS": true,
+    "minifyWXML": true,
+    "coverView": true,
+    "showShadowRootInWxmlPanel": true,
+    "useCompilerPlugins": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
+  },
+  "simulatorPluginLibVersion": {},
+  "editorSetting": {}
+}

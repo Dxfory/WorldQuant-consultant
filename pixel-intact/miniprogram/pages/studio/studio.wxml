@@ -1,0 +1,81 @@
+<view class="page">
+  <view wx:if="{{!previewPath}}" class="empty">
+    <text class="item-title">还没有原图</text>
+    <text class="lede">选图时会强制用原图，不走微信压缩。超大图请先看预估，处理时不要切到后台。</text>
+    <button class="btn btn-primary" bindtap="pickImage">选一张原图</button>
+  </view>
+
+  <block wx:else>
+    <view class="preview-box">
+      <image class="preview" src="{{previewPath}}" mode="widthFix"></image>
+      <view class="grid-overlay" wx:if="{{mode === 'slice'}}">
+        <view class="vline" wx:for="{{vLines}}" wx:key="*this" style="left: {{item}}%;"></view>
+        <view class="hline" wx:for="{{hLines}}" wx:key="*this" style="top: {{item}}%;"></view>
+      </view>
+    </view>
+
+    <canvas type="2d" id="work" class="work"></canvas>
+
+    <view class="meta-row"><text>尺寸</text><text>{{width}} × {{height}}</text></view>
+    <view class="meta-row"><text>像素</text><text>{{pixels}}</text></view>
+    <view class="meta-row"><text>文件</text><text>{{fileMeta}}</text></view>
+    <view class="badge {{complete ? 'badge-good' : 'badge-wait'}}">{{badge}}</view>
+
+    <view class="tabs">
+      <view class="tab {{mode === 'slice' ? 'on' : ''}}" data-mode="slice" bindtap="setMode">切图</view>
+      <view class="tab {{mode === 'enhance' ? 'on' : ''}}" data-mode="enhance" bindtap="setMode">清晰</view>
+    </view>
+
+    <view class="panel" wx:if="{{mode === 'slice'}}">
+      <view class="presets">
+        <button class="mini {{cols === 3 && rows === 3 && sliceMode === 'grid' ? 'on' : ''}}" data-cols="3" data-rows="3" bindtap="preset">九宫格</button>
+        <button class="mini {{cols === 2 && rows === 2 && sliceMode === 'grid' ? 'on' : ''}}" data-cols="2" data-rows="2" bindtap="preset">四宫格</button>
+        <button class="mini {{cols === 4 && rows === 4 && sliceMode === 'grid' ? 'on' : ''}}" data-cols="4" data-rows="4" bindtap="preset">16 宫</button>
+      </view>
+      <view class="modes">
+        <text class="mode-chip {{sliceMode === 'grid' ? 'on' : ''}}" data-slice="grid" bindtap="setSliceMode">按行列</text>
+        <text class="mode-chip {{sliceMode === 'size' ? 'on' : ''}}" data-slice="size" bindtap="setSliceMode">按像素块</text>
+      </view>
+      <view class="pair" wx:if="{{sliceMode === 'grid'}}">
+        <view class="field">横向 <input type="number" value="{{cols}}" bindinput="onCols"/></view>
+        <view class="field">纵向 <input type="number" value="{{rows}}" bindinput="onRows"/></view>
+      </view>
+      <view class="pair" wx:else>
+        <view class="field">宽 px <input type="number" value="{{tileW}}" bindinput="onTileW"/></view>
+        <view class="field">高 px <input type="number" value="{{tileH}}" bindinput="onTileH"/></view>
+      </view>
+      <label class="check">
+        <switch checked="{{enhanceFirst}}" bindchange="onEnhanceFirst" color="#e0a45a"/>
+        <text>先提高清晰度再切（超大图会自动先切再逐块提高）</text>
+      </label>
+      <text class="hint {{estimateLevel}}">{{estimate}}</text>
+    </view>
+
+    <view class="panel" wx:if="{{mode === 'enhance' || enhanceFirst}}">
+      <text class="engine">手机本地 Lanczos。没有 FSRCNN；要神经网络超分请用电脑工作室。</text>
+      <view class="field">放大 {{scale}}×
+        <slider min="1" max="3" step="0.5" value="{{scale}}" bindchanging="onScale" bindchange="onScale" activeColor="#e0a45a"/>
+      </view>
+      <view class="field">清晰度 {{clarity}}
+        <slider min="0" max="1" step="0.05" value="{{clarity}}" bindchanging="onClarity" bindchange="onClarity" activeColor="#e0a45a"/>
+      </view>
+      <view class="field">锐化 {{sharpness}}
+        <slider min="0" max="1.6" step="0.05" value="{{sharpness}}" bindchanging="onSharp" bindchange="onSharp" activeColor="#e0a45a"/>
+      </view>
+    </view>
+
+    <view class="actions">
+      <button class="btn btn-primary" loading="{{busy}}" disabled="{{busy}}" bindtap="run">处理</button>
+      <button class="btn" disabled="{{!resultPath || busy}}" bindtap="saveCurrent">保存当前</button>
+    </view>
+    <button class="btn full" wx:if="{{tiles.length}}" disabled="{{busy}}" bindtap="saveAllTiles">保存全部 {{tiles.length}} 块到相册</button>
+    <text class="hint">{{status}}</text>
+
+    <view class="tiles" wx:if="{{tiles.length}}">
+      <view class="tile" wx:for="{{tiles}}" wx:key="name" data-path="{{item.path}}" bindtap="saveTile">
+        <image src="{{item.path}}" mode="aspectFill"></image>
+        <text>{{item.name}} {{item.width}}×{{item.height}}</text>
+      </view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,29 @@
+<view class="page">
+  <text class="lede">
+    把切块按从左到右、从上到下的顺序选进来。本工具保存到相册时，微信通常不会保留 r00_c00 文件名，所以默认按你的选择顺序排列。若文件名仍是 r00_c00.png，会自动认行列。
+  </text>
+
+  <view class="pair">
+    <view class="field">横向列数 <input type="number" value="{{cols}}" bindinput="onCols"/></view>
+    <view class="field">纵向行数 <input type="number" value="{{rows}}" bindinput="onRows"/></view>
+  </view>
+
+  <button class="btn btn-primary" bindtap="pickTiles">选择切块</button>
+  <text class="hint">已选 {{tiles.length}} 个 · 将按 {{cols}}×{{rows}} 拼回</text>
+
+  <view class="list">
+    <view class="row" wx:for="{{tiles}}" wx:key="path">
+      <image src="{{item.path}}" mode="aspectFill"></image>
+      <text>{{item.label}}</text>
+    </view>
+  </view>
+
+  <canvas type="2d" id="work" class="work"></canvas>
+  <image wx:if="{{resultPath}}" class="preview" src="{{resultPath}}" mode="widthFix"></image>
+
+  <view class="actions">
+    <button class="btn btn-primary" loading="{{busy}}" disabled="{{busy || !tiles.length}}" bindtap="run">拼回完整图</button>
+    <button class="btn" disabled="{{!resultPath || busy}}" bindtap="save">保存完整图</button>
+  </view>
+  <text class="hint {{statusLevel}}">{{status}}</text>
+</view>

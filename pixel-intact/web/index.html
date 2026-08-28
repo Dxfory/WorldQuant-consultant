@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pixel Intact · 原图完整</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,620&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="top">
+      <div class="brand">
+        <span class="mark">PI</span>
+        <div>
+          <h1>Pixel Intact</h1>
+          <p>原图完整 · 无损切图 · 清晰度拉高</p>
+        </div>
+      </div>
+      <p class="lede">
+        对照做好图切图工具，这里不压缩、不丢边、不降像素。先保证整张原图完整，再按需要切块或提高清晰度。
+      </p>
+    </header>
+
+    <main class="studio">
+      <aside class="rail">
+        <section class="panel drop-panel">
+          <label class="drop" id="dropzone">
+            <input id="file-input" type="file" accept="image/*" hidden />
+            <strong>放入原图</strong>
+            <span>拖拽、点击或粘贴。浏览器本地处理，原图像素不会被上传压缩。</span>
+          </label>
+          <dl class="meta" id="meta">
+            <div><dt>尺寸</dt><dd id="meta-size">—</dd></div>
+            <div><dt>像素</dt><dd id="meta-pixels">—</dd></div>
+            <div><dt>文件</dt><dd id="meta-file">—</dd></div>
+          </dl>
+          <div class="badge" id="complete-badge">等待原图</div>
+        </section>
+
+        <section class="panel">
+          <div class="tabs" role="tablist">
+            <button class="tab is-active" data-mode="slice" type="button">切图</button>
+            <button class="tab" data-mode="enhance" type="button">清晰</button>
+            <button class="tab" data-mode="join" type="button">拼回</button>
+          </div>
+
+          <form id="slice-form" class="mode-form">
+            <div class="presets" id="presets">
+              <button type="button" data-cols="3" data-rows="3">九宫格</button>
+              <button type="button" data-cols="2" data-rows="2">四宫格</button>
+              <button type="button" data-cols="4" data-rows="4">16 宫</button>
+            </div>
+            <label class="choice">
+              <input type="radio" name="slice-mode" value="grid" checked />
+              按行列切
+            </label>
+            <div class="pair">
+              <label>横向 <input id="cols" type="number" min="1" value="3" /></label>
+              <label>纵向 <input id="rows" type="number" min="1" value="3" /></label>
+            </div>
+            <label class="choice">
+              <input type="radio" name="slice-mode" value="size" />
+              按像素尺寸切
+            </label>
+            <div class="pair">
+              <label>宽 px <input id="tile-w" type="number" min="1" value="512" /></label>
+              <label>高 px <input id="tile-h" type="number" min="1" value="512" /></label>
+            </div>
+            <label class="choice tight">
+              <input id="enhance-first" type="checkbox" />
+              先提高清晰度再切（超大图会自动先切再逐块提高）
+            </label>
+            <p class="hint" id="plan-estimate">设置行列后会预估每块像素，并在右侧画切割线。</p>
+          </form>
+
+          <form id="enhance-form" class="mode-form is-hidden">
+            <label class="choice tight">
+              <input id="use-local" type="checkbox" checked />
+              用本地引擎（画质更高）
+            </label>
+            <label>超分
+              <select id="engine">
+                <option value="lanczos">Lanczos 经典</option>
+                <option value="fsr">FSRCNN 超分</option>
+              </select>
+            </label>
+            <label>放大 <output id="scale-out">2×</output>
+              <input id="scale" type="range" min="1" max="4" step="0.5" value="2" />
+            </label>
+            <label>清晰度 <output id="clarity-out">0.35</output>
+              <input id="clarity" type="range" min="0" max="1" step="0.05" value="0.35" />
+            </label>
+            <label>锐化 <output id="sharp-out">0.85</output>
+              <input id="sharpness" type="range" min="0" max="1.6" step="0.05" value="0.85" />
+            </label>
+            <label>导出
+              <select id="export-format">
+                <option value="png">PNG 无损</option>
+                <option value="jpeg">JPEG 98</option>
+                <option value="webp">WebP 无损</option>
+              </select>
+            </label>
+            <div class="live-box">
+              <span>中心预览</span>
+              <div id="live-preview" class="live-preview"></div>
+            </div>
+            <p class="hint" id="engine-hint">正在检测本地引擎…</p>
+          </form>
+
+          <form id="join-form" class="mode-form is-hidden">
+            <label class="drop small" id="join-drop">
+              <input id="join-input" type="file" accept="image/*" multiple hidden />
+              <strong>放入切块</strong>
+              <span>文件名用 r00_c00.png，或按行列顺序多选。</span>
+            </label>
+            <p class="hint" id="join-count">还没有切块</p>
+          </form>
+
+          <div class="actions">
+            <button id="run" type="button">处理</button>
+            <button id="download" type="button" disabled>下载</button>
+          </div>
+          <p class="status" id="status">本地暗房已就绪。</p>
+        </section>
+      </aside>
+
+      <section class="stage">
+        <div class="stage-head">
+          <h2 id="stage-title">预览</h2>
+          <p id="stage-note">原图会按 1:1 像素读入，切图只裁切，不重采样。</p>
+        </div>
+        <div class="viewport" id="viewport">
+          <p class="empty">把一张图放到左侧，开始检查完整度。</p>
+        </div>
+        <div class="loupe" id="loupe" hidden></div>
+        <p class="hint loupe-hint">鼠标移到预览上可 1:1 查看像素。</p>
+        <div class="sheet" id="tile-sheet" hidden></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        和 zuohaotu 切图不同：余数像素会分给前几列/行，或单独输出余块，所以
+        <em>discarded pixels = 0</em>。拼回后应与原图像素一一对应。
+      </p>
+    </footer>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
