@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from .completeness import load_intact_image
-from .enhance import EnhanceSettings, enhance_pil
+from .enhance import EnhanceSettings, enhance_pil, output_exceeds
 
 
 @dataclass(frozen=True)
@@ -132,6 +132,37 @@ def plan_slice(
     )
 
 
+def _plan_from_enhanced(source_plan: SlicePlan, enhanced) -> SlicePlan:
+    by_key = {(tile.row, tile.col): image for tile, image in zip(source_plan.tiles, enhanced)}
+    col_sizes = [by_key[(0, col)].width for col in range(source_plan.cols)]
+    row_sizes = [by_key[(row, 0)].height for row in range(source_plan.rows)]
+    col_origins = _offsets(col_sizes)
+    row_origins = _offsets(row_sizes)
+    tiles = tuple(
+        SliceTile(
+            row=tile.row,
+            col=tile.col,
+            left=col_origins[tile.col],
+            top=row_origins[tile.row],
+            width=by_key[(tile.row, tile.col)].width,
+            height=by_key[(tile.row, tile.col)].height,
+        )
+        for tile in source_plan.tiles
+    )
+    width = sum(col_sizes)
+    height = sum(row_sizes)
+    exported = sum(tile.width * tile.height for tile in tiles)
+    return SlicePlan(
+        source_width=width,
+        source_height=height,
+        rows=source_plan.rows,
+        cols=source_plan.cols,
+        tiles=tiles,
+        discarded_pixels=width * height - exported,
+        remainder_distributed=source_plan.remainder_distributed,
+    )
+
+
 def slice_image(
     path: str | Path,
     out_dir: str | Path,
@@ -143,18 +174,29 @@ def slice_image(
     enhance: EnhanceSettings | None = None,
 ) -> SlicePlan:
     image = load_intact_image(path)
-    if enhance is not None:
-        image = enhance_pil(image, enhance)
-    plan = plan_slice(
-        image.width,
-        image.height,
-        cols=cols,
-        rows=rows,
-        tile_width=tile_width,
-        tile_height=tile_height,
-    )
     destination = Path(out_dir)
     destination.mkdir(parents=True, exist_ok=True)
+    options = {
+        "cols": cols,
+        "rows": rows,
+        "tile_width": tile_width,
+        "tile_height": tile_height,
+    }
+
+    if enhance is not None and output_exceeds(image.width, image.height, enhance.scale):
+        source_plan = plan_slice(image.width, image.height, **options)
+        enhanced = []
+        for tile in source_plan.tiles:
+            crop = enhance_pil(image.crop(tile.box), enhance)
+            enhanced.append(crop)
+            crop.save(destination / tile.name, format="PNG", compress_level=1)
+        plan = _plan_from_enhanced(source_plan, enhanced)
+        _write_manifest(destination, plan, Path(path).name)
+        return plan
+
+    if enhance is not None:
+        image = enhance_pil(image, enhance)
+    plan = plan_slice(image.width, image.height, **options)
     for tile in plan.tiles:
         crop = image.crop(tile.box)
         crop.save(destination / tile.name, format="PNG", compress_level=1)

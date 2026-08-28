@@ -1,5 +1,6 @@
 from pathlib import Path
 
+import pytest
 from PIL import Image
 
 from pixel_intact import EnhanceSettings, inspect_image, join_tiles, plan_slice, slice_image
@@ -62,6 +63,29 @@ def test_slice_after_enhance_covers_new_canvas(tmp_path: Path) -> None:
     assert plan.source_height == 30
     assert plan.complete
     assert plan.discarded_pixels == 0
+
+
+def test_slice_enhances_each_tile_when_full_frame_exceeds(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setattr("pixel_intact.enhance.MAX_PIXELS", 800)
+    source = _make_image(tmp_path / "source.png", 21, 15)
+    plan = slice_image(
+        source,
+        tmp_path / "tiles",
+        cols=2,
+        rows=2,
+        enhance=EnhanceSettings(scale=2, clarity=0, sharpness=0),
+    )
+    first = Image.open(tmp_path / "tiles" / "r00_c00.png")
+    assert first.size[0] >= 20
+    assert first.size[1] >= 14
+    assert plan.complete
+    assert plan.discarded_pixels == 0
+    assert plan.exported_pixels == sum(
+        Image.open(path).size[0] * Image.open(path).size[1]
+        for path in (tmp_path / "tiles").glob("r*.png")
+    )
 
 
 def test_plan_rejects_ambiguous_mode() -> None:

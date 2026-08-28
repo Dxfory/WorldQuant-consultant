@@ -11,12 +11,12 @@ from urllib.parse import urlparse
 
 from PIL import Image, ImageOps
 
-from .enhance import EnhanceSettings, enhance_pil
+from .enhance import EnhanceSettings, enhance_pil, output_exceeds
 from .export import encode_png
 from .slice import plan_slice
 from .superres import fsr_available
 
-MAX_UPLOAD = 40 * 1024 * 1024
+MAX_UPLOAD = 80 * 1024 * 1024
 
 
 class StudioHandler(SimpleHTTPRequestHandler):
@@ -61,7 +61,7 @@ class StudioHandler(SimpleHTTPRequestHandler):
         if length <= 0:
             raise ValueError("empty upload")
         if length > MAX_UPLOAD:
-            raise ValueError("upload too large")
+            raise ValueError("上传切块太大，请改用更多行列，或先把原图切小再提高清晰度。")
         body = self.rfile.read(length)
         preamble = f"Content-Type: {content_type}\r\nMIME-Version: 1.0\r\n\r\n".encode("ascii")
         message = message_from_bytes(preamble + body, policy=email_default)
@@ -115,7 +115,8 @@ class StudioHandler(SimpleHTTPRequestHandler):
         try:
             image = self._open_image(files)
             settings = self._settings(fields)
-            if settings.scale != 1 or settings.engine == "fsr":
+            should_enhance = settings.scale != 1 or settings.engine == "fsr"
+            if should_enhance and not output_exceeds(image.width, image.height, settings.scale):
                 image = enhance_pil(image, settings)
             cols = int(fields["cols"]) if fields.get("cols") else None
             rows = int(fields["rows"]) if fields.get("rows") else None

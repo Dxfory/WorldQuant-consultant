@@ -86,6 +86,14 @@ footer p,
   line-height: 1.55;
 }
 
+.hint.is-warn {
+  color: var(--warn);
+}
+
+.hint.is-danger {
+  color: #d36b5a;
+}
+
 .lede {
   max-width: 68ch;
   margin: 0;

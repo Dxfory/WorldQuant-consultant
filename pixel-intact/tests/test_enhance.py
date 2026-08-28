@@ -48,5 +48,11 @@ def test_enhance_keeps_flat_color(tmp_path: Path) -> None:
 
 
 def test_reject_unsafe_output_size() -> None:
-    with pytest.raises(ValueError, match="safe limit"):
+    with pytest.raises(ValueError, match="超过安全上限"):
         assert_safe_size(MAX_EDGE + 1, 10)
+
+
+def test_three_by_two_tile_at_2x_is_allowed() -> None:
+    assert_safe_size(6336, 13692)
+    with pytest.raises(ValueError, match="超过安全上限"):
+        assert_safe_size(19010, 27384)

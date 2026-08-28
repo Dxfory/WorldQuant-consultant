@@ -10,7 +10,7 @@ from .export import save_image
 from .superres import fsr_available, pick_fsr_factor, upscale_fsr
 
 MAX_EDGE = 16_384
-MAX_PIXELS = 80_000_000
+MAX_PIXELS = 120_000_000
 
 
 @dataclass(frozen=True)
@@ -38,11 +38,16 @@ def target_size(width: int, height: int, scale: float) -> tuple[int, int]:
     return max(1, round(width * scale)), max(1, round(height * scale))
 
 
+def output_exceeds(width: int, height: int, scale: float = 1.0) -> bool:
+    out_width, out_height = target_size(width, height, scale)
+    return out_width > MAX_EDGE or out_height > MAX_EDGE or out_width * out_height > MAX_PIXELS
+
+
 def assert_safe_size(width: int, height: int) -> None:
-    if width > MAX_EDGE or height > MAX_EDGE or width * height > MAX_PIXELS:
+    if output_exceeds(width, height, 1):
         raise ValueError(
-            f"output {width}×{height} exceeds the safe limit "
-            f"({MAX_EDGE}px edge or {MAX_PIXELS} pixels). Use a smaller scale."
+            f"整张输出 {width}×{height} 超过安全上限（边长 {MAX_EDGE}px 或 {MAX_PIXELS} 像素）。"
+            f"请把放大改小，或先切图再对每一块提高清晰度。"
         )
 
 

@@ -1,5 +1,9 @@
 import JSZip from "https://cdn.jsdelivr.net/npm/jszip@3.10.1/+esm";
 import {
+  LOCAL_MAX_EDGE,
+  LOCAL_MAX_PIXELS,
+  MAX_EDGE,
+  MAX_PIXELS,
   canvasToBlob,
   cropCenter,
   cropTile,
@@ -12,8 +16,14 @@ import {
   loadFileToCanvas,
   outputName,
   parseTileName,
+  planFromEnhancedTiles,
   planSlice,
+  planWithScaledTiles,
+  sizeAfterScaleExceeds,
+  suggestSafeGrid,
+  targetSize,
   thumbnail,
+  tilesAfterScaleExceed,
 } from "./processor.js";
 
 const els = {
@@ -143,6 +153,7 @@ async function probeHealth() {
     els.engine.disabled = true;
     els.engineHint.textContent = "未检测到本地工作室接口，将使用浏览器引擎。请用 pixel-intact studio 启动。";
   }
+  if (state.mode === "slice" && state.source) updatePlanPreview();
 }
 
 async function enhanceViaApi(file, settings) {
@@ -224,13 +235,79 @@ function workingSize() {
   };
 }
 
+function enhanceBounds() {
+  return canUseLocal()
+    ? { edge: LOCAL_MAX_EDGE, pixels: LOCAL_MAX_PIXELS }
+    : { edge: MAX_EDGE, pixels: MAX_PIXELS };
+}
+
+function outputExceeds(width, height, scale) {
+  const { edge, pixels } = enhanceBounds();
+  return sizeAfterScaleExceeds(width, height, scale, edge, pixels);
+}
+
+function paintStatus(text) {
+  setStatus(text);
+  return new Promise((resolve) => requestAnimationFrame(() => resolve()));
+}
+
+async function enhanceCanvasFile(canvas, settings, name = "tile.png") {
+  if (canUseLocal()) {
+    const file = new File([await canvasToBlob(canvas)], name, { type: "image/png" });
+    const loaded = await enhanceViaApi(file, settings);
+    return loaded.canvas;
+  }
+  return enhanceCanvas(canvas, settings);
+}
+
+async function enhanceTilesFromSource(sourcePlan, settings) {
+  const canvases = [];
+  const total = sourcePlan.tiles.length;
+  for (let index = 0; index < total; index += 1) {
+    const tile = sourcePlan.tiles[index];
+    await paintStatus(`整张超限，已先切块。正在提高第 ${index + 1}/${total} 块（${tile.name}）…`);
+    const crop = cropTile(state.source.canvas, tile);
+    canvases.push(await enhanceCanvasFile(crop, settings, tile.name));
+  }
+  return planFromEnhancedTiles(sourcePlan, canvases);
+}
+
 function updatePlanPreview() {
   if (!state.source || state.mode !== "slice") return;
   try {
     const size = workingSize();
-    const plan = planSlice(size.width, size.height, currentSliceOptions());
-    els.estimate.textContent = (size.scale !== 1 ? `${size.scale}× 后 ` : "") + describePlan(plan);
-    showCanvas(drawPreviewWithGrid(state.source.canvas, planSlice(state.source.width, state.source.height, currentSliceOptions())));
+    const overlayPlan = planSlice(state.source.width, state.source.height, currentSliceOptions());
+    const bounds = enhanceBounds();
+    const willEnhance = els.enhanceFirst.checked;
+    const fullExceeds = willEnhance && sizeAfterScaleExceeds(
+      state.source.width,
+      state.source.height,
+      size.scale,
+      bounds.edge,
+      bounds.pixels,
+    );
+    els.estimate.classList.remove("is-warn", "is-danger");
+    let plan = planSlice(size.width, size.height, currentSliceOptions());
+    let extra = "";
+    if (fullExceeds) {
+      if (tilesAfterScaleExceed(overlayPlan, size.scale, bounds.edge, bounds.pixels)) {
+        const suggested = suggestSafeGrid(
+          state.source.width,
+          state.source.height,
+          size.scale,
+          bounds.edge,
+          bounds.pixels,
+        );
+        extra = ` 整张 ${size.width}×${size.height} 超限，当前切块放大后仍超限。请改成至少 ${suggested.cols}×${suggested.rows}，或把倍数改小。`;
+        els.estimate.classList.add("is-danger");
+      } else {
+        plan = planWithScaledTiles(overlayPlan, size.scale);
+        extra = ` 整张 ${size.width}×${size.height} 超过安全上限，点「处理」会先按原图切开，再对每一块做 ${size.scale}× 清晰。`;
+        els.estimate.classList.add("is-warn");
+      }
+    }
+    els.estimate.textContent = (size.scale !== 1 ? `${size.scale}× 后 ` : "") + describePlan(plan) + extra;
+    showCanvas(drawPreviewWithGrid(state.source.canvas, overlayPlan));
     els.note.textContent = plan.complete
       ? "切割线只是预览。处理前不会改原图，余数像素会留下来。"
       : `预览发现会丢掉 ${plan.discardedPixels} 像素。`;
@@ -304,10 +381,10 @@ async function setSource(file) {
   scheduleLivePreview();
 }
 
-function renderTiles(plan, sourceCanvas) {
+function renderTiles(plan, sourceCanvas = null) {
   state.tiles = plan.tiles.map((tile) => ({
     ...tile,
-    canvas: cropTile(sourceCanvas, tile),
+    canvas: tile.canvas || cropTile(sourceCanvas, tile),
   }));
   els.sheet.hidden = false;
   els.sheet.replaceChildren(
@@ -326,8 +403,49 @@ function renderTiles(plan, sourceCanvas) {
   );
 }
 
+function presentTiles(plan, previewPlan, title, note, status) {
+  renderTiles(plan, plan.tiles[0]?.canvas ? null : state.source.canvas);
+  showCanvas(drawPreviewWithGrid(state.source.canvas, previewPlan));
+  els.title.textContent = title;
+  els.note.textContent = note;
+  els.badge.textContent = plan.complete ? "切图完整 · discarded pixels = 0" : "切图不完整";
+  els.badge.className = plan.complete ? "badge is-good" : "badge is-wait";
+  state.resultCanvas = null;
+  state.downloadKind = "tiles";
+  els.download.disabled = false;
+  setStatus(status);
+}
+
 async function runSlice() {
   if (!state.source) throw new Error("先放入一张原图");
+  const settings = enhanceSettings();
+  const sourcePlan = planSlice(state.source.width, state.source.height, currentSliceOptions());
+  if (els.enhanceFirst.checked && outputExceeds(state.source.width, state.source.height, settings.scale)) {
+    const { edge, pixels } = enhanceBounds();
+    if (tilesAfterScaleExceed(sourcePlan, settings.scale, edge, pixels)) {
+      const suggested = suggestSafeGrid(
+        state.source.width,
+        state.source.height,
+        settings.scale,
+        edge,
+        pixels,
+      );
+      throw new Error(
+        `每一块放大后仍超限。请改成至少 ${suggested.cols}×${suggested.rows}，或把倍数改小。`,
+      );
+    }
+    const plan = await enhanceTilesFromSource(sourcePlan, settings);
+    const full = targetSize(state.source.width, state.source.height, settings.scale);
+    presentTiles(
+      plan,
+      sourcePlan,
+      `先切成 ${plan.rows} × ${plan.cols}，再逐块 ${settings.scale}×`,
+      `整张 ${full.width}×${full.height} 会超限，已对 ${plan.tiles.length} 块分别提高清晰度。导出 ${formatPixels(plan.exportedPixels)} 像素，丢弃 0。`,
+      "超大图已自动先切再提高每一块，避免一次画出整张放大画布。",
+    );
+    return;
+  }
+
   let working = state.source.canvas;
   if (els.enhanceFirst.checked) {
     setStatus(canUseLocal() ? "本地引擎正在提高清晰度，然后切块…" : "正在提高清晰度，然后按完整画布切块…");
@@ -355,6 +473,26 @@ async function runSlice() {
 async function runEnhance() {
   if (!state.source) throw new Error("先放入一张原图");
   const settings = enhanceSettings();
+  if (outputExceeds(state.source.width, state.source.height, settings.scale)) {
+    const { edge, pixels } = enhanceBounds();
+    const suggested = suggestSafeGrid(
+      state.source.width,
+      state.source.height,
+      settings.scale,
+      edge,
+      pixels,
+    );
+    const plan = await enhanceTilesFromSource(suggested.plan, settings);
+    const full = targetSize(state.source.width, state.source.height, settings.scale);
+    presentTiles(
+      plan,
+      suggested.plan,
+      `整张超限，已按 ${plan.cols}×${plan.rows} 分块提高`,
+      `无法一次输出 ${full.width}×${full.height}。已生成 ${plan.tiles.length} 块清晰图，下载后可用「拼回」还原。`,
+      "清晰模式遇到超大图时会自动先切再提高每一块，避免内存爆掉。",
+    );
+    return;
+  }
   setStatus(canUseLocal() ? "本地引擎正在超分 / 放大…" : "正在分步放大并提高局部对比，请稍候…");
   const canvas = await enhanceCurrent(settings);
   showCompare(state.source.canvas, canvas);
@@ -500,6 +638,9 @@ document.querySelectorAll("input[name='slice-mode']").forEach((input) => {
 els.scale.addEventListener("input", scheduleLivePreview);
 els.clarity.addEventListener("input", scheduleLivePreview);
 els.engine.addEventListener("change", scheduleLivePreview);
+els.useLocal.addEventListener("change", () => {
+  if (state.mode === "slice") updatePlanPreview();
+});
 
 bindDrop(els.drop, els.file, (files) => {
   if (files[0]) setSource(files[0]).catch((error) => setStatus(error.message));

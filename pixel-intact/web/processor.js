@@ -1,5 +1,7 @@
 export const MAX_EDGE = 8192;
 export const MAX_PIXELS = 40_000_000;
+export const LOCAL_MAX_EDGE = 16384;
+export const LOCAL_MAX_PIXELS = 120_000_000;
 
 const TILE_NAME = (row, col) =>
   `r${String(row).padStart(2, "0")}_c${String(col).padStart(2, "0")}.png`;
@@ -71,8 +73,167 @@ export function planSlice(width, height, options) {
   };
 }
 
+export function exceedsLimit(width, height, edge = LOCAL_MAX_EDGE, pixels = LOCAL_MAX_PIXELS) {
+  return width > edge || height > edge || width * height > pixels;
+}
+
+export function targetSize(width, height, scale) {
+  return {
+    width: Math.max(1, Math.round(width * scale)),
+    height: Math.max(1, Math.round(height * scale)),
+  };
+}
+
+export function sizeAfterScaleExceeds(
+  width,
+  height,
+  scale,
+  edge = LOCAL_MAX_EDGE,
+  pixels = LOCAL_MAX_PIXELS,
+) {
+  const size = targetSize(width, height, scale);
+  return exceedsLimit(size.width, size.height, edge, pixels);
+}
+
+export function tilesAfterScaleExceed(
+  plan,
+  scale,
+  edge = LOCAL_MAX_EDGE,
+  pixels = LOCAL_MAX_PIXELS,
+) {
+  return plan.tiles.some((tile) =>
+    sizeAfterScaleExceeds(tile.width, tile.height, scale, edge, pixels),
+  );
+}
+
+export function suggestSafeGrid(
+  width,
+  height,
+  scale,
+  edge = LOCAL_MAX_EDGE,
+  pixels = LOCAL_MAX_PIXELS,
+) {
+  let cols = 1;
+  let rows = 1;
+  for (let step = 0; step < 128; step += 1) {
+    const plan = planSlice(width, height, { cols, rows });
+    if (!tilesAfterScaleExceed(plan, scale, edge, pixels)) {
+      return { rows, cols, plan };
+    }
+    const maxTileW = Math.max(...plan.colSizes);
+    const maxTileH = Math.max(...plan.rowSizes);
+    const out = targetSize(maxTileW, maxTileH, scale);
+    const overEdgeW = out.width / edge;
+    const overEdgeH = out.height / edge;
+    const overPixels = (out.width * out.height) / pixels;
+    if (overEdgeW >= overEdgeH && overEdgeW >= overPixels) cols += 1;
+    else if (overEdgeH >= overPixels) rows += 1;
+    else if (maxTileW >= maxTileH) cols += 1;
+    else rows += 1;
+  }
+  throw new Error("这张图太大，即使分块也无法安全放大。请把倍数改小。");
+}
+
+export function planWithScaledTiles(plan, scale) {
+  const colSizes = plan.colSizes.map((value) => Math.max(1, Math.round(value * scale)));
+  const rowSizes = plan.rowSizes.map((value) => Math.max(1, Math.round(value * scale)));
+  const tiles = [];
+  let top = 0;
+  rowSizes.forEach((tileH, row) => {
+    let left = 0;
+    colSizes.forEach((tileW, col) => {
+      tiles.push({
+        row,
+        col,
+        left,
+        top,
+        width: tileW,
+        height: tileH,
+        name: TILE_NAME(row, col),
+      });
+      left += tileW;
+    });
+    top += tileH;
+  });
+  const sourceWidth = colSizes.reduce((sum, value) => sum + value, 0);
+  const sourceHeight = rowSizes.reduce((sum, value) => sum + value, 0);
+  const exportedPixels = tiles.reduce((sum, tile) => sum + tile.width * tile.height, 0);
+  return {
+    sourceWidth,
+    sourceHeight,
+    rows: rowSizes.length,
+    cols: colSizes.length,
+    tiles,
+    discardedPixels: sourceWidth * sourceHeight - exportedPixels,
+    remainderDistributed: plan.remainderDistributed,
+    exportedPixels,
+    complete: exportedPixels === sourceWidth * sourceHeight,
+    colSizes,
+    rowSizes,
+  };
+}
+
+export function planFromEnhancedTiles(sourcePlan, canvases) {
+  if (canvases.length !== sourcePlan.tiles.length) {
+    throw new Error("切块数量与计划不一致");
+  }
+  const byKey = new Map();
+  sourcePlan.tiles.forEach((tile, index) => {
+    byKey.set(`${tile.row}:${tile.col}`, { tile, canvas: canvases[index] });
+  });
+  const colSizes = [];
+  for (let col = 0; col < sourcePlan.cols; col += 1) {
+    const cell = byKey.get(`0:${col}`);
+    if (!cell) throw new Error(`缺少切块 ${TILE_NAME(0, col)}`);
+    colSizes.push(cell.canvas.width);
+  }
+  const rowSizes = [];
+  for (let row = 0; row < sourcePlan.rows; row += 1) {
+    const cell = byKey.get(`${row}:0`);
+    if (!cell) throw new Error(`缺少切块 ${TILE_NAME(row, 0)}`);
+    rowSizes.push(cell.canvas.height);
+  }
+  const tiles = [];
+  let top = 0;
+  for (let row = 0; row < sourcePlan.rows; row += 1) {
+    let left = 0;
+    for (let col = 0; col < sourcePlan.cols; col += 1) {
+      const cell = byKey.get(`${row}:${col}`);
+      if (!cell) throw new Error(`缺少切块 ${TILE_NAME(row, col)}`);
+      tiles.push({
+        row,
+        col,
+        left,
+        top,
+        width: cell.canvas.width,
+        height: cell.canvas.height,
+        name: cell.tile.name,
+        canvas: cell.canvas,
+      });
+      left += cell.canvas.width;
+    }
+    top += rowSizes[row];
+  }
+  const sourceWidth = colSizes.reduce((sum, value) => sum + value, 0);
+  const sourceHeight = rowSizes.reduce((sum, value) => sum + value, 0);
+  const exportedPixels = tiles.reduce((sum, tile) => sum + tile.width * tile.height, 0);
+  return {
+    sourceWidth,
+    sourceHeight,
+    rows: sourcePlan.rows,
+    cols: sourcePlan.cols,
+    tiles,
+    discardedPixels: sourceWidth * sourceHeight - exportedPixels,
+    remainderDistributed: sourcePlan.remainderDistributed,
+    exportedPixels,
+    complete: exportedPixels === sourceWidth * sourceHeight,
+    colSizes,
+    rowSizes,
+  };
+}
+
 export function assertSafeSize(width, height) {
-  if (width > MAX_EDGE || height > MAX_EDGE || width * height > MAX_PIXELS) {
+  if (exceedsLimit(width, height, MAX_EDGE, MAX_PIXELS)) {
     throw new Error(
       `输出 ${width}×${height} 太大，浏览器画布容易崩溃。请把放大改小，或先切图再单独提高某一块的清晰度。`,
     );
