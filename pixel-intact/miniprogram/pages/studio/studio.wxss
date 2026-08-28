@@ -1,7 +1,48 @@
-.preview {
+.empty {
+  padding: 40rpx 0;
+}
+
+.empty .btn {
+  margin-top: 28rpx;
+}
+
+.preview-box {
+  position: relative;
   width: 100%;
   background: #100c09;
   border: 1rpx solid #3a2d1f;
+  overflow: hidden;
+}
+
+.preview {
+  width: 100%;
+  display: block;
+}
+
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.vline,
+.hline {
+  position: absolute;
+  background: #e0a45a;
+}
+
+.vline {
+  top: 0;
+  bottom: 0;
+  width: 4rpx;
+  transform: translateX(-50%);
+}
+
+.hline {
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  transform: translateY(-50%);
 }
 
 .work {
@@ -31,14 +72,23 @@
   color: #e0a45a;
 }
 
-.presets {
+.presets,
+.modes,
+.pair,
+.actions {
   display: flex;
   gap: 12rpx;
+}
+
+.presets,
+.modes {
   margin-bottom: 16rpx;
 }
 
-.mini {
+.mini,
+.mode-chip {
   flex: 1;
+  text-align: center;
   font-size: 22rpx;
   background: transparent;
   color: #ece4d4;
@@ -46,10 +96,14 @@
   line-height: 2;
 }
 
-.pair,
-.actions {
-  display: flex;
-  gap: 16rpx;
+.mode-chip {
+  padding: 8rpx 0;
+}
+
+.mini.on,
+.mode-chip.on {
+  border-color: #e0a45a;
+  color: #e0a45a;
 }
 
 .field {
@@ -68,14 +122,27 @@
 
 .check {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12rpx;
   margin: 16rpx 0;
   font-size: 24rpx;
+  line-height: 1.45;
+}
+
+.engine {
+  display: block;
+  margin-bottom: 16rpx;
+  color: #b7aa94;
+  font-size: 22rpx;
+  line-height: 1.5;
 }
 
 .actions {
   margin-top: 24rpx;
+}
+
+.full {
+  margin-top: 16rpx;
 }
 
 .tiles {
@@ -103,4 +170,5 @@
   margin-top: 6rpx;
   font-size: 18rpx;
   color: #b7aa94;
+  word-break: break-all;
 }

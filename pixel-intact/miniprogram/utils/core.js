@@ -72,8 +72,14 @@ function planSlice(width, height, options) {
   };
 }
 
+function formatPixels(value) {
+  if (value >= 100_000_000) return `${(value / 100_000_000).toFixed(2)} 亿`;
+  if (value >= 10_000) return `${(value / 10_000).toFixed(1)} 万`;
+  return String(value);
+}
+
 function describePlan(plan) {
-  return `${plan.cols}×${plan.rows} 块，总像素 ${plan.exportedPixels}，丢弃 ${plan.discardedPixels}`;
+  return `${plan.cols}×${plan.rows} 块，总像素 ${formatPixels(plan.exportedPixels)}，丢弃 ${plan.discardedPixels}`;
 }
 
 function parseTileName(name) {
@@ -82,9 +88,108 @@ function parseTileName(name) {
   return { row: Number(match[1]), col: Number(match[2]) };
 }
 
+function exceedsLimit(width, height, edge = MAX_EDGE, pixels = MAX_PIXELS) {
+  return width > edge || height > edge || width * height > pixels;
+}
+
+function targetSize(width, height, scale) {
+  return {
+    width: Math.max(1, Math.round(width * scale)),
+    height: Math.max(1, Math.round(height * scale)),
+  };
+}
+
+function sizeAfterScaleExceeds(width, height, scale, edge = MAX_EDGE, pixels = MAX_PIXELS) {
+  const size = targetSize(width, height, scale);
+  return exceedsLimit(size.width, size.height, edge, pixels);
+}
+
+function tilesAfterScaleExceed(plan, scale, edge = MAX_EDGE, pixels = MAX_PIXELS) {
+  return plan.tiles.some((tile) => sizeAfterScaleExceeds(tile.width, tile.height, scale, edge, pixels));
+}
+
+function suggestSafeGrid(width, height, scale, edge = MAX_EDGE, pixels = MAX_PIXELS) {
+  let cols = 1;
+  let rows = 1;
+  for (let step = 0; step < 128; step += 1) {
+    const plan = planSlice(width, height, { cols, rows });
+    if (!tilesAfterScaleExceed(plan, scale, edge, pixels)) {
+      return { rows, cols, plan };
+    }
+    const maxTileW = Math.max(...plan.colSizes);
+    const maxTileH = Math.max(...plan.rowSizes);
+    const out = targetSize(maxTileW, maxTileH, scale);
+    const overEdgeW = out.width / edge;
+    const overEdgeH = out.height / edge;
+    const overPixels = (out.width * out.height) / pixels;
+    if (overEdgeW >= overEdgeH && overEdgeW >= overPixels) cols += 1;
+    else if (overEdgeH >= overPixels) rows += 1;
+    else if (maxTileW >= maxTileH) cols += 1;
+    else rows += 1;
+  }
+  throw new Error("这张图太大，即使分块也无法在手机上安全处理。请改用电脑工作室，或把倍数改小。");
+}
+
+function planWithScaledTiles(plan, scale) {
+  const colSizes = plan.colSizes.map((value) => Math.max(1, Math.round(value * scale)));
+  const rowSizes = plan.rowSizes.map((value) => Math.max(1, Math.round(value * scale)));
+  const tiles = [];
+  let top = 0;
+  rowSizes.forEach((tileH, row) => {
+    let left = 0;
+    colSizes.forEach((tileW, col) => {
+      tiles.push({
+        row,
+        col,
+        left,
+        top,
+        width: tileW,
+        height: tileH,
+        name: tileName(row, col),
+      });
+      left += tileW;
+    });
+    top += tileH;
+  });
+  const sourceWidth = colSizes.reduce((sum, value) => sum + value, 0);
+  const sourceHeight = rowSizes.reduce((sum, value) => sum + value, 0);
+  const exportedPixels = tiles.reduce((sum, tile) => sum + tile.width * tile.height, 0);
+  return {
+    sourceWidth,
+    sourceHeight,
+    rows: rowSizes.length,
+    cols: colSizes.length,
+    tiles,
+    discardedPixels: sourceWidth * sourceHeight - exportedPixels,
+    remainderDistributed: plan.remainderDistributed,
+    exportedPixels,
+    complete: exportedPixels === sourceWidth * sourceHeight,
+    colSizes,
+    rowSizes,
+  };
+}
+
+function overlayLines(plan) {
+  const vLines = [];
+  let left = 0;
+  plan.colSizes.slice(0, -1).forEach((width) => {
+    left += width;
+    vLines.push(((left / plan.sourceWidth) * 100).toFixed(2));
+  });
+  const hLines = [];
+  let top = 0;
+  plan.rowSizes.slice(0, -1).forEach((height) => {
+    top += height;
+    hLines.push(((top / plan.sourceHeight) * 100).toFixed(2));
+  });
+  return { vLines, hLines };
+}
+
 function assertSafeSize(width, height) {
-  if (width > MAX_EDGE || height > MAX_EDGE || width * height > MAX_PIXELS) {
-    throw new Error(`输出 ${width}×${height} 太大，手机画布容易崩溃。请把放大改小，或先切再提高单块清晰度。`);
+  if (exceedsLimit(width, height)) {
+    throw new Error(
+      `输出 ${width}×${height} 超过手机画布上限（边长 ${MAX_EDGE}px 或 ${formatPixels(MAX_PIXELS)} 像素）。请改更多行列，或把放大改小。`,
+    );
   }
 }
 
@@ -153,8 +258,16 @@ module.exports = {
   tileName,
   spanSizes,
   planSlice,
+  formatPixels,
   describePlan,
   parseTileName,
+  exceedsLimit,
+  targetSize,
+  sizeAfterScaleExceeds,
+  tilesAfterScaleExceed,
+  suggestSafeGrid,
+  planWithScaledTiles,
+  overlayLines,
   assertSafeSize,
   applyClarityAndSharpen,
 };

@@ -1,0 +1,27 @@
+.lead {
+  display: block;
+  margin-bottom: 8rpx;
+  font-size: 28rpx;
+  line-height: 1.6;
+}
+
+.panel .lede {
+  display: block;
+  margin-bottom: 12rpx;
+}
+
+.code {
+  display: block;
+  margin: 12rpx 0 16rpx;
+  padding: 16rpx;
+  background: #120e0a;
+  border: 1rpx solid #3a2d1f;
+  color: #e0a45a;
+  font-size: 22rpx;
+  word-break: break-all;
+}
+
+.link {
+  display: block;
+  margin-top: 8rpx;
+}

@@ -8,18 +8,44 @@
   </view>
 
   <text class="lede">
-    对照做好图切图：这里按原图像素读入，余数不丢，切完可以拼回。清晰度在手机本地处理，不上传。
+    对照做好图切图：这里按原图像素读入，不先压缩、不丢边。余数分给前几列/行，discarded pixels = 0，切完可以拼回。全程在你的手机本地完成，不上传服务器。
   </text>
 
   <view class="actions">
-    <button class="btn btn-primary" bindtap="pickImage">选一张原图</button>
-    <button class="btn" bindtap="goJoin">拼回切块</button>
+    <button class="btn btn-primary" bindtap="pickImage">选一张原图，开始处理</button>
+    <button class="btn" bindtap="goStudio">已有原图，打开暗房</button>
+  </view>
+
+  <view class="grid">
+    <view class="card">
+      <text class="card-k">1</text>
+      <text class="card-t">原图完整</text>
+      <text class="card-d">选图强制走「原图」，不走微信压缩图。显示真实宽高和总像素。</text>
+    </view>
+    <view class="card">
+      <text class="card-k">2</text>
+      <text class="card-t">无损切图</text>
+      <text class="card-d">九宫格、自定义行列，或按像素块切。除不尽的像素留下来，不裁边。</text>
+    </view>
+    <view class="card">
+      <text class="card-k">3</text>
+      <text class="card-t">清晰度</text>
+      <text class="card-d">手机本地放大 + 清晰/锐化。超大图会自动先切再逐块提高，避免画布崩溃。</text>
+    </view>
+    <view class="card">
+      <text class="card-k">4</text>
+      <text class="card-t">拼回</text>
+      <text class="card-d">按 r00_c00 或选择顺序拼回。拼回后应与处理前的像素一一对应。</text>
+    </view>
   </view>
 
   <view class="panel">
-    <text class="item-title">会怎么处理</text>
-    <text class="lede">1. 选图时强制用「原图」，不走微信压缩。</text>
-    <text class="lede">2. 九宫格 / 行列 / 像素块切开，丢弃像素为 0。</text>
-    <text class="lede">3. 可放大并提高清晰度，再保存到相册。</text>
+    <text class="item-title">手机版和电脑版</text>
+    <text class="lede">微信小程序包含全部切图、清晰、拼回规则。手机没有 FSRCNN 超分，画布上限更严（边长 4096px / 约 1200 万像素）。更大线稿、要 2× 神经网络超分，请用电脑里的 pixel-intact studio。</text>
+  </view>
+
+  <view class="foot-links">
+    <text class="link" bindtap="goGuide">查看完整说明与要求</text>
+    <text class="link" bindtap="goPrivacy">隐私保护指引</text>
   </view>
 </view>

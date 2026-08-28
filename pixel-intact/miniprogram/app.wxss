@@ -7,13 +7,13 @@ page {
 }
 
 .page {
-  padding: 32rpx 32rpx 48rpx;
+  padding: 32rpx 32rpx 80rpx;
 }
 
 .lede {
   color: #b7aa94;
   font-size: 26rpx;
-  line-height: 1.55;
+  line-height: 1.65;
 }
 
 .btn {
@@ -49,6 +49,11 @@ page {
   border-color: rgba(143, 191, 122, 0.45);
 }
 
+.badge-wait {
+  color: #d29b4a;
+  border-color: rgba(210, 155, 74, 0.45);
+}
+
 .panel {
   margin-top: 24rpx;
   padding: 24rpx;
@@ -71,5 +76,25 @@ page {
 .hint {
   color: #b7aa94;
   font-size: 22rpx;
-  line-height: 1.5;
+  line-height: 1.55;
+}
+
+.hint-warn {
+  color: #d29b4a;
+}
+
+.hint-danger {
+  color: #d36b5a;
+}
+
+.item-title {
+  display: block;
+  margin-bottom: 12rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.link {
+  color: #e0a45a;
+  font-size: 26rpx;
 }

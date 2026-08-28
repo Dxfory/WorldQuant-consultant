@@ -1,7 +1,7 @@
 {
   "miniprogramRoot": "./",
-  "projectname": "pixel-intact",
-  "description": "原图完整 · 无损切图 · 清晰度拉高",
+  "projectname": "pixel-intact-wechat",
+  "description": "原图完整 · 无损切图 · 清晰度 · 拼回",
   "appid": "touristappid",
   "compileType": "miniprogram",
   "libVersion": "3.7.8",

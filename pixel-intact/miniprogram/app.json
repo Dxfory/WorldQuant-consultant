@@ -2,7 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/studio/studio",
-    "pages/join/join"
+    "pages/join/join",
+    "pages/guide/guide",
+    "pages/privacy/privacy"
   ],
   "window": {
     "navigationBarBackgroundColor": "#16110c",
@@ -10,6 +12,38 @@
     "navigationBarTextStyle": "white",
     "backgroundColor": "#0c0907",
     "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#b7aa94",
+    "selectedColor": "#e0a45a",
+    "backgroundColor": "#16110c",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/tab/home.png",
+        "selectedIconPath": "assets/tab/home-on.png"
+      },
+      {
+        "pagePath": "pages/studio/studio",
+        "text": "暗房",
+        "iconPath": "assets/tab/cut.png",
+        "selectedIconPath": "assets/tab/cut-on.png"
+      },
+      {
+        "pagePath": "pages/join/join",
+        "text": "拼回",
+        "iconPath": "assets/tab/join.png",
+        "selectedIconPath": "assets/tab/join-on.png"
+      },
+      {
+        "pagePath": "pages/guide/guide",
+        "text": "说明",
+        "iconPath": "assets/tab/guide.png",
+        "selectedIconPath": "assets/tab/guide-on.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",

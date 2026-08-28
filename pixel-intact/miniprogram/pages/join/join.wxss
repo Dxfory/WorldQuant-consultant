@@ -1,3 +1,23 @@
+.pair {
+  display: flex;
+  gap: 16rpx;
+  margin: 24rpx 0 20rpx;
+}
+
+.field {
+  flex: 1;
+  font-size: 24rpx;
+  color: #b7aa94;
+}
+
+.field input {
+  margin-top: 8rpx;
+  padding: 10rpx;
+  background: #120e0a;
+  color: #ece4d4;
+  border: 1rpx solid #3a2d1f;
+}
+
 .work {
   position: fixed;
   left: -2000px;
@@ -37,4 +57,8 @@
   display: flex;
   gap: 16rpx;
   margin-top: 24rpx;
+}
+
+.btn-primary {
+  margin-bottom: 8rpx;
 }

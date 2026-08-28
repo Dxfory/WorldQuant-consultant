@@ -1,0 +1,56 @@
+<view class="page">
+  <text class="lead">这是微信小程序完整版。规则与电脑工作室相同：原图完整、切图不丢像素、可拼回、需要时再提高清晰度。</text>
+
+  <view class="panel">
+    <text class="item-title">四条硬要求</text>
+    <text class="lede">1. 选图强制「原图」。不走微信压缩，不先缩小再切。</text>
+    <text class="lede">2. 切图只裁切，不重采样。除不尽的余数分给前几列/行，或单独输出余块。discarded pixels = 0。</text>
+    <text class="lede">3. 清晰度只放大和拉局部对比，不生成新内容、不改构图。</text>
+    <text class="lede">4. 全部在手机本地运算。不上传服务器，不社交分发，不支付。</text>
+  </view>
+
+  <view class="panel">
+    <text class="item-title">怎么用</text>
+    <text class="lede">暗房：选原图 → 选九宫格 / 行列 / 像素块 → 需要时勾选先提高清晰度再切 → 点处理 → 保存当前或全部切块。</text>
+    <text class="lede">清晰：只放大并调清晰度、锐化。整张超限时自动先切再逐块提高。</text>
+    <text class="lede">拼回：按从左到右、从上到下选切块。相册常常不保留 r00_c00 文件名，请按选择顺序；若文件名还在会自动认行列。</text>
+  </view>
+
+  <view class="panel">
+    <text class="item-title">和做好图切图的差别</text>
+    <text class="lede">做好图等网站容易先压像素，余数还可能被裁掉。这里按当前像素完整处理；余数留下，拼回应与处理前一一对应。</text>
+  </view>
+
+  <view class="panel">
+    <text class="item-title">手机上限（必须知道）</text>
+    <text class="lede">单张画布边长不超过 4096px，总像素不超过约 1200 万。你的大线稿（例如 9505×13692）不能一次 2× 整张输出。</text>
+    <text class="lede">点处理时：若整张或当前切块超限，会自动改成足够密的网格，先切再逐块提高。状态栏显示「第 i/n 块」。</text>
+    <text class="lede">拼回后若仍超手机画布，请到电脑 Pixel Intact 工作室拼。</text>
+  </view>
+
+  <view class="panel">
+    <text class="item-title">手机版有什么，没有什么</text>
+    <text class="lede">有：原图读入、九宫格/行列/像素块、余数分配、切割线预览、清晰/锐化、超大图自动分块、保存相册、拼回并检查空隙。</text>
+    <text class="lede">没有：FSRCNN 神经网络超分、本地 Python 引擎、zip 打包、1:1 放大镜。这些在电脑 `pixel-intact studio`。</text>
+  </view>
+
+  <view class="panel">
+    <text class="item-title">电脑工作室（更高画质）</text>
+    <text class="lede">在 F:\WorldQuant-consultant\pixel-intact 打开命令行：</text>
+    <text class="code">python -m pixel_intact.cli studio</text>
+    <text class="lede">浏览器打开 http://127.0.0.1:8765/ 可连 FSRCNN。超大图 2× 会先切再逐块超分。</text>
+  </view>
+
+  <view class="panel">
+    <text class="item-title">审核与备案要点</text>
+    <text class="lede">类目：工具 → 图片处理。主体默认个人，不做支付、不做社交传播。</text>
+    <text class="lede">权限：仅申请保存到相册，说明为「把完整切图和清晰图保存到你的相册」。</text>
+    <text class="link" bindtap="goPrivacy">查看隐私保护指引</text>
+  </view>
+
+  <view class="panel">
+    <text class="item-title">用开发者工具打开</text>
+    <text class="lede">下载页请选「稳定版 Stable Build」，Windows 点 Windows 64。不要下 RC、Nightly 或旧版 NWJS。</text>
+    <text class="lede">导入目录：pixel-intact/miniprogram。AppID 可先用测试号；正式上线必须换成你的 AppID。</text>
+  </view>
+</view>

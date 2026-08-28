@@ -10,15 +10,24 @@ Page({
       app.globalData.imagePath = file.tempFilePath;
       app.globalData.width = info.width;
       app.globalData.height = info.height;
-      app.globalData.name = file.tempFilePath.split("/").pop() || "image";
-      wx.navigateTo({ url: "/pages/studio/studio" });
+      app.globalData.name = (file.originalFilePath || file.tempFilePath).split("/").pop() || "image";
+      app.globalData.fileSize = file.size || 0;
+      wx.switchTab({ url: "/pages/studio/studio" });
     } catch (error) {
-      if (error && error.errMsg && error.errMsg.includes("cancel")) return;
+      if (error && error.errMsg && String(error.errMsg).includes("cancel")) return;
       wx.showToast({ title: error.message || "选图失败", icon: "none" });
     }
   },
 
-  goJoin() {
-    wx.navigateTo({ url: "/pages/join/join" });
+  goStudio() {
+    wx.switchTab({ url: "/pages/studio/studio" });
+  },
+
+  goGuide() {
+    wx.switchTab({ url: "/pages/guide/guide" });
+  },
+
+  goPrivacy() {
+    wx.navigateTo({ url: "/pages/privacy/privacy" });
   },
 });

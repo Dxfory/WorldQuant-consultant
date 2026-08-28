@@ -1,0 +1,25 @@
+<view class="page">
+  <text class="item-title">Pixel Intact 隐私保护指引</text>
+  <text class="lede">本小程序仅提供个人图片本地处理。不收集账号资料，不上传你的图片，不提供信息发布、社交传播或交易支付。</text>
+
+  <view class="panel">
+    <text class="item-title">我们处理哪些信息</text>
+    <text class="lede">相册中的图片：仅在你点选之后，在本机内存和临时文件中读取、切割、放大或拼回。</text>
+    <text class="lede">保存到相册：仅在你主动点保存时，把结果图写入系统相册。对应权限说明：把完整切图和清晰图保存到你的相册。</text>
+  </view>
+
+  <view class="panel">
+    <text class="item-title">不做什么</text>
+    <text class="lede">不上传服务器，不建立用户画像，不分享到朋友圈或社交网络，不使用微信支付，不读取通讯录、位置或麦克风。</text>
+  </view>
+
+  <view class="panel">
+    <text class="item-title">存储与删除</text>
+    <text class="lede">处理中的临时文件由微信系统管理。你保存到相册的图片由你自己删除。退出小程序后，未保存的结果不会同步到任何云端。</text>
+  </view>
+
+  <view class="panel">
+    <text class="item-title">备案说明（可对照后台粘贴）</text>
+    <text class="lede">本小程序仅提供个人图片本地处理工具服务。用户从自己的相册选择图片，进行九宫格或自定义行列切割、切块拼回，以及本地放大与清晰度增强，并将结果保存到相册。全部运算在用户手机完成，不上传服务器，不提供信息发布、社交传播或交易支付。</text>
+  </view>
+</view>
