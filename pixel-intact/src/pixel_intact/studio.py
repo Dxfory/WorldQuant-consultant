@@ -9,14 +9,15 @@ from io import BytesIO
 from pathlib import Path
 from urllib.parse import urlparse
 
-from PIL import Image, ImageOps
+from PIL import Image
 
 from .enhance import EnhanceSettings, enhance_pil, output_exceeds
+from .safety import open_local_image
 from .export import encode_png
 from .slice import plan_slice
 from .superres import fsr_available
 
-MAX_UPLOAD = 80 * 1024 * 1024
+MAX_UPLOAD = 120 * 1024 * 1024
 
 
 class StudioHandler(SimpleHTTPRequestHandler):
@@ -81,10 +82,8 @@ class StudioHandler(SimpleHTTPRequestHandler):
 
     def _open_image(self, files: dict[str, tuple[str, bytes]]) -> Image.Image:
         if "image" not in files:
-            raise ValueError("missing image")
-        image = Image.open(BytesIO(files["image"][1]))
-        image = ImageOps.exif_transpose(image)
-        return image.copy()
+            raise ValueError("缺少图片")
+        return open_local_image(BytesIO(files["image"][1]))
 
     def _settings(self, fields: dict[str, str]) -> EnhanceSettings:
         return EnhanceSettings(

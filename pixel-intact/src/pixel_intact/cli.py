@@ -10,8 +10,10 @@ from .completeness import inspect_image
 from .enhance import EnhanceSettings, enhance_image
 from .join import join_tiles
 from .slice import slice_image
+from .safety import allow_large_local_images
 from .studio import serve_studio
 from .superres import fsr_available
+from . import __version__
 
 
 def _print_report(payload: dict) -> None:
@@ -152,8 +154,10 @@ def main(argv: list[str] | None = None) -> int:
             raise SystemExit("cannot find web/index.html; run from the pixel-intact checkout")
         server = serve_studio(web_root, args.port)
         url = f"http://127.0.0.1:{args.port}/"
-        print(f"Pixel Intact studio: {url}")
+        allow_large_local_images()
+        print(f"Pixel Intact studio {__version__}: {url}")
         print(f"local engine: lanczos=yes  fsr={'yes' if fsr_available() else 'no'}")
+        print("large images: slice first, then enhance each tile")
         if not args.no_browser:
             webbrowser.open(url)
         try:

@@ -5,7 +5,9 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-from PIL import Image, ImageOps
+from PIL import Image
+
+from .safety import open_local_image
 
 
 @dataclass(frozen=True)
@@ -34,9 +36,7 @@ def _sha256_pixels(image: Image.Image) -> str:
 
 def load_intact_image(path: str | Path) -> Image.Image:
     """Open an image and apply EXIF orientation without resampling."""
-    with Image.open(path) as raw:
-        image = ImageOps.exif_transpose(raw)
-        return image.copy()
+    return open_local_image(path)
 
 
 def inspect_image(path: str | Path) -> ImageReport:
