@@ -24,12 +24,24 @@ High-fidelity image studio: keep the original complete, cut it without losing pi
 python3 docs/build_mac_guide.py
 ```
 
+## Windows（就用 `F:\Image\pixel-intact`）
+
+这个目录可以不是 git 仓库。更新时在该文件夹里运行 `.\update-from-github.ps1`，或把 README 里那整段 PowerShell 贴进去。然后：
+
+```powershell
+cd F:\Image\pixel-intact
+python -m pip install -e ".[dev,sr]"
+python -m pixel_intact.cli studio
+```
+
+启动成功应看到 `Pixel Intact studio 0.2.1`。
+
 ## Studio
 
 ```bash
-cd pixel-intact
-python -m pip install -e .
-pixel-intact studio
+cd F:\Image\pixel-intact
+python -m pip install -e ".[dev,sr]"
+python -m pixel_intact.cli studio
 ```
 
 打开 `http://127.0.0.1:8765/`。也可以直接：
