@@ -9,3 +9,4 @@ build/
 tiles-out/
 *.png
 !web/**
+!miniprogram/assets/**
